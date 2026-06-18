@@ -346,6 +346,7 @@
 
     function initStepEaseCounters() {
         const counters = document.querySelectorAll("[data-stease-count]");
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
         if (!counters.length) return;
 
@@ -357,6 +358,11 @@
             const startTime = performance.now();
 
             counter.dataset.counted = "true";
+
+            if (prefersReducedMotion) {
+                counter.textContent = target;
+                return;
+            }
 
             const update = (currentTime) => {
                 const progress = Math.min((currentTime - startTime) / duration, 1);

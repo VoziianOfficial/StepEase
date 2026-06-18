@@ -280,13 +280,23 @@
 
     function initContactCounters() {
         const counters = document.querySelectorAll("[data-contact-counter]");
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
         if (!counters.length) return;
 
         const animateCounter = (counter) => {
+            if (counter.dataset.counted === 'true') return;
+
             const target = Number(counter.dataset.count || 0);
             const duration = 900;
             const startTime = performance.now();
+
+            counter.dataset.counted = 'true';
+
+            if (prefersReducedMotion) {
+                counter.textContent = target;
+                return;
+            }
 
             const update = (currentTime) => {
                 const progress = Math.min((currentTime - startTime) / duration, 1);
