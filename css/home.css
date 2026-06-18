@@ -2132,23 +2132,7 @@
     background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
 }
 
-.home-process {
-    background: var(--color-bg-deep);
-    color: var(--color-text-light);
-}
 
-.home-process .section-title,
-.home-process .section-kicker,
-.home-process .eyebrow,
-.home-process .process-step h3,
-.home-process .process-step p {
-    color: var(--color-text-light);
-}
-
-.home-process .section-kicker,
-.home-process .process-step p {
-    color: rgba(248, 245, 239, 0.72);
-}
 
 .home-process .process-step {
     border-color: rgba(248, 245, 239, 0.12);

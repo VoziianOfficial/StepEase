@@ -1825,11 +1825,6 @@
     border-color: rgba(248, 245, 239, 0.12);
 }
 
-.service-cta-band {
-    background:
-        linear-gradient(180deg, rgba(3, 3, 3, 0.94) 0%, rgba(23, 16, 12, 0.98) 100%);
-    color: var(--color-text-light);
-}
 
 .service-cta-content {
     background:

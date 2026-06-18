@@ -2589,12 +2589,7 @@
     }
 }
 
-/* Premium dark refresh */
-.about-hero {
-    background:
-        linear-gradient(180deg, rgba(3, 3, 3, 0.96), rgba(23, 16, 12, 0.98));
-    color: var(--color-text-light);
-}
+
 
 .about-hero-grid-bg {
     background-image:
@@ -2606,13 +2601,7 @@
     background: linear-gradient(90deg, transparent, rgba(248, 245, 239, 0.14), transparent);
 }
 
-.about-hero .eyebrow,
-.about-hero .page-title,
-.about-hero-copy > p,
-.about-hero-note h2,
-.about-hero-note p {
-    color: var(--color-text-light);
-}
+
 
 .about-hero-copy > p,
 .about-hero-note p,
@@ -2622,7 +2611,6 @@
 
 .about-hero-proof article {
     border-color: rgba(248, 245, 239, 0.12);
-    background: rgba(38, 24, 18, 0.92);
 }
 
 .about-hero-proof article:hover {

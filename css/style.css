@@ -3372,15 +3372,6 @@ footer .brand,
     color: var(--text-on-light);
 }
 
-.section-on-light .section-title,
-.section-on-light h1,
-.section-on-light h2,
-.section-on-light h3,
-.section-on-light h4,
-.section-on-light h5,
-.section-on-light h6 {
-    color: var(--color-text);
-}
 
 .section-on-light p,
 .section-on-light li,
@@ -3908,8 +3899,54 @@ footer .brand,
     stroke: currentColor !important;
 }
 
+.about-hero-editorial .hero-actions :is(.btn-outline, .btn-light),
+.about-hero .hero-actions :is(.btn-outline, .btn-light),
+.legal-hero .hero-actions :is(.btn-outline, .btn-light) {
+    background: rgba(255, 255, 255, 0.72);
+    border-color: rgba(221, 212, 199, 0.84);
+    color: var(--color-text) !important;
+}
+
+.about-hero-editorial .hero-actions :is(.btn-outline, .btn-light):hover,
+.about-hero .hero-actions :is(.btn-outline, .btn-light):hover,
+.legal-hero .hero-actions :is(.btn-outline, .btn-light):hover {
+    background: rgba(255, 255, 255, 0.92);
+    border-color: var(--color-accent);
+    color: var(--color-text) !important;
+}
+
 .home-hero .hero-actions .btn-outline {
-    border-color: rgba(248, 245, 239, 0.38) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border-color: rgba(248, 245, 239, 0.34) !important;
+    color: #F8F5EF !important;
+}
+
+.home-hero .hero-actions .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.09) !important;
+    border-color: #B7CD9B !important;
+    color: #F8F5EF !important;
+}
+
+.services-hero-photo .btn-outline {
+    --btn-bg: rgba(255, 255, 255, 0.04);
+    --btn-color: #F8F5EF;
+    --btn-border: rgba(248, 245, 239, 0.34);
+}
+
+.services-hero-photo .btn-outline:hover {
+    color: #F8F5EF;
+    border-color: #B7CD9B;
+}
+
+.contact-hero-clean .btn-outline {
+    --btn-bg: rgba(255, 255, 255, 0.04);
+    --btn-color: #F8F5EF;
+    --btn-border: rgba(248, 245, 239, 0.34);
+}
+
+.contact-hero-clean .btn-outline:hover {
+    color: #F8F5EF !important;
+    border-color: #B7CD9B !important;
 }
 
 .home-hero .hero-actions .btn-outline:hover i,
@@ -3918,7 +3955,138 @@ footer .brand,
     stroke: currentColor !important;
 }
 
+/* Hero contrast repair: dark photo-backed heroes */
+:is(.home-hero, .services-hero, .services-hero-photo, .contact-hero-clean, .service-hero) {
+    color: var(--color-text-light);
+}
 
+.home-hero,
+.services-hero,
+.services-hero-photo,
+.contact-hero-clean,
+.service-hero {
+    background: url("../assets/images/services/window-installation-card.jpg") center right / cover no-repeat;
+}
+
+.home-hero,
+.services-hero,
+.services-hero-photo,
+.contact-hero-clean {
+    background: var(--color-bg-dark);
+}
+
+:is(.home-hero, .services-hero, .services-hero-photo, .contact-hero-clean) :is(
+        .home-hero-bg img,
+        .services-hero-photo__bg img,
+        .contact-hero-clean__bg img
+    ) {
+    opacity: 1;
+    filter: saturate(0.92) contrast(1.04);
+}
+
+:is(.home-hero-overlay, .services-hero-photo__overlay, .contact-hero-clean__overlay) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 100%) !important;
+}
+
+.home-hero::before,
+.services-hero-photo::before,
+.contact-hero-clean::before {
+    background:
+        linear-gradient(rgba(248, 245, 239, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(248, 245, 239, 0.035) 1px, transparent 1px);
+}
+
+.service-hero::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 100%);
+}
+
+.home-hero .eyebrow,
+.services-hero .eyebrow,
+.services-hero-photo .eyebrow,
+.contact-hero-clean .eyebrow,
+.service-hero .eyebrow {
+    color: #B7CD9B;
+}
+
+.home-hero .hero-title,
+.services-hero .page-title,
+.services-hero-photo .page-title,
+.contact-hero-clean .page-title,
+.service-hero .page-title,
+.service-hero .page-title.text-balance {
+    color: #F8F5EF;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.24);
+}
+
+.home-hero-text,
+.services-hero-copy > p,
+.services-hero-photo__content > p,
+.contact-hero-clean__content > p,
+.service-hero-copy p {
+    color: rgba(248, 245, 239, 0.84);
+}
+
+.home-hero-disclaimer-line {
+    color: rgba(248, 245, 239, 0.74);
+}
+
+.home-hero-disclaimer-line i,
+.home-hero-disclaimer-line svg,
+.contact-quick-link i,
+.contact-quick-link svg,
+.services-hero-note i,
+.services-hero-note svg,
+.services-hero-nav i,
+.services-hero-nav svg,
+.contact-hero-nav i,
+.contact-hero-nav svg,
+.service-hero-panel i,
+.service-hero-panel svg {
+    color: #B7CD9B;
+}
+
+.home-hero-disclaimer-line i,
+.home-hero-disclaimer-line svg {
+    border-color: rgba(248, 245, 239, 0.18);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.hero-actions .btn-primary {
+    background: #78945D;
+    border-color: #78945D;
+    color: #0F0907 !important;
+}
+
+.hero-actions .btn-primary:hover {
+    background: #93B477;
+    border-color: #93B477;
+    color: #0F0907 !important;
+}
+
+.hero-actions :is(.btn-outline, .btn-light) {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(248, 245, 239, 0.34);
+    color: #F8F5EF !important;
+}
+
+.hero-actions :is(.btn-outline, .btn-light):hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: #B7CD9B;
+    color: #F8F5EF !important;
+}
+
+.hero-actions :is(.btn-outline, .btn-light) i,
+.hero-actions :is(.btn-outline, .btn-light) svg {
+    color: currentColor !important;
+    stroke: currentColor !important;
+}
+
+@media (max-width: 768px) {
+    :is(.home-hero-overlay, .services-hero-photo__overlay, .contact-hero-clean__overlay),
+    .service-hero::before {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.58) 100%) !important;
+    }
+}
 
 .section.home-marquee-section {
     padding-top: clamp(10px, 1.4vw, 20px) !important;
