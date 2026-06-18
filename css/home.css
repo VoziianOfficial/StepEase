@@ -3461,62 +3461,117 @@
 }
 
 /* =========================================
-   REMODEL LENS — SOFT HOVER UNDERLINES
+   REMODEL LENS — EDITORIAL LINE HOVERS
 ========================================= */
 
 .home-quote-editorial .remodel-lens-item {
     position: relative;
+    isolation: isolate;
     overflow: hidden;
     transition:
-        background-color 260ms var(--ease-out),
-        color 260ms var(--ease-out);
+        color 260ms var(--ease-out),
+        background 260ms var(--ease-out);
 }
 
-/* Тонкая линия снизу каждого пункта */
+/* Очень мягкий свет внутри ячейки */
+.home-quote-editorial .remodel-lens-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg,
+            rgba(114, 128, 93, 0.09) 0%,
+            rgba(85, 126, 141, 0.045) 42%,
+            transparent 76%);
+    opacity: 0;
+    transition: opacity 280ms var(--ease-out);
+}
+
+/* Тонкий вертикальный active-marker возле иконки */
 .home-quote-editorial .remodel-lens-item::after {
     content: "";
     position: absolute;
-    right: clamp(12px, 1.8vw, 24px);
-    bottom: -1px;
-    left: clamp(12px, 1.8vw, 24px);
-    height: 2px;
-    background: linear-gradient(90deg,
-            transparent,
-            var(--color-accent),
+    top: clamp(18px, 2vw, 28px);
+    bottom: clamp(18px, 2vw, 28px);
+    left: 0;
+    width: 2px;
+    background: linear-gradient(180deg,
             var(--brand-blue),
+            var(--color-accent),
             transparent);
     opacity: 0;
-    transform: scaleX(0.18);
+    transform: scaleY(0.3);
     transform-origin: center;
     transition:
         opacity 280ms var(--ease-out),
         transform 280ms var(--ease-out);
 }
 
+/* Заголовок — основная точка hover */
+.home-quote-editorial .remodel-lens-item span {
+    position: relative;
+    width: fit-content;
+    transition:
+        color 260ms var(--ease-out),
+        transform 260ms var(--ease-out);
+}
 
+/* Линия именно под названием, а не под всей ячейкой */
+.home-quote-editorial .remodel-lens-item span::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+    left: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            var(--color-accent),
+            var(--brand-blue),
+            transparent);
+    opacity: 0;
+    transform: scaleX(0.15);
+    transform-origin: left;
+    transition:
+        opacity 300ms var(--ease-out),
+        transform 300ms var(--ease-out);
+}
 
-/* Линия раскрывается */
+/* Hover без тяжёлой "карточности" */
+.home-quote-editorial .remodel-lens-item:hover::before {
+    opacity: 1;
+}
+
 .home-quote-editorial .remodel-lens-item:hover::after {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.home-quote-editorial .remodel-lens-item:hover span {
+    color: var(--color-accent-strong);
+    transform: translateX(4px);
+}
+
+.home-quote-editorial .remodel-lens-item:hover span::after {
     opacity: 1;
     transform: scaleX(1);
 }
 
-/* Иконка чуть оживает */
 .home-quote-editorial .remodel-lens-item:hover i,
 .home-quote-editorial .remodel-lens-item:hover svg {
     color: var(--brand-blue-strong) !important;
-    transform: translateY(-3px);
+    transform: translateY(-3px) rotate(-3deg);
 }
 
-/* Заголовок становится чуть более выразительным */
-.home-quote-editorial .remodel-lens-item:hover span {
-    color: var(--color-accent-strong);
+/* Текст остаётся спокойным и читаемым */
+.home-quote-editorial .remodel-lens-item:hover p {
+    color: var(--color-muted-dark);
 }
 
-/* На мобильных линия идёт на всю доступную ширину */
 @media (max-width: 680px) {
     .home-quote-editorial .remodel-lens-item::after {
-        right: 0;
-        left: 0;
+        top: 16px;
+        bottom: 16px;
     }
 }
