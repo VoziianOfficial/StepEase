@@ -155,9 +155,14 @@
 }
 
 .legal-toc a::after {
-    content: "↗";
+    content: "";
+    width: 8px;
+    height: 8px;
+    flex: 0 0 auto;
+    border-top: 1.75px solid currentColor;
+    border-right: 1.75px solid currentColor;
+    transform: rotate(45deg);
     opacity: 0.45;
-    font-size: 0.85rem;
 }
 
 .legal-toc a:hover,
