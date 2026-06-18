@@ -4906,3 +4906,224 @@ article,
         border-bottom: 0;
     }
 }
+
+
+/* =========================================
+   STEPEASE — FINAL SERVICES DROPDOWN
+   compact premium list / hover open
+========================================= */
+
+/* Сам dropdown */
+.nav-dropdown-menu {
+    position: absolute !important;
+    top: calc(100% + 12px) !important;
+    left: 50% !important;
+    right: auto !important;
+
+    width: min(304px, calc(100vw - 28px)) !important;
+    min-width: min(304px, calc(100vw - 28px)) !important;
+    max-width: calc(100vw - 28px) !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+
+    padding: 10px 12px !important;
+    overflow: hidden;
+
+    border: 1px solid rgba(248, 245, 239, 0.14) !important;
+    border-radius: 14px 8px 14px 8px !important;
+
+    background:
+        radial-gradient(circle at 100% 0%,
+            rgba(94, 148, 170, 0.12),
+            transparent 42%),
+        linear-gradient(145deg,
+            rgba(28, 20, 16, 0.99) 0%,
+            rgba(15, 9, 7, 0.995) 100%) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.07),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.34),
+        0 22px 48px rgba(0, 0, 0, 0.34) !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    transform: translateX(-50%) translateY(10px) !important;
+
+    transition:
+        opacity 220ms var(--ease-out),
+        visibility 220ms var(--ease-out),
+        transform 220ms var(--ease-out) !important;
+}
+
+/* Описания остаются в HTML, но визуально скрыты */
+.nav-dropdown-menu .dropdown-service-link>span {
+    display: none !important;
+}
+
+/* Каждая ссылка — просто изящная строка */
+.nav-dropdown-menu .dropdown-service-link {
+    position: relative;
+
+    min-height: 46px !important;
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 11px 8px 11px 18px !important;
+
+    border: 0 !important;
+    border-bottom: 1px solid rgba(248, 245, 239, 0.09) !important;
+    border-radius: 0 !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+    transform: none !important;
+
+    transition:
+        padding-left 240ms var(--ease-out),
+        background-color 240ms var(--ease-out) !important;
+}
+
+.nav-dropdown-menu .dropdown-service-link:last-child {
+    border-bottom: 0 !important;
+}
+
+/* Маленькая premium-точка слева */
+.nav-dropdown-menu .dropdown-service-link::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 2px;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: var(--brand-blue);
+    box-shadow: 0 0 0 4px rgba(94, 148, 170, 0);
+
+    opacity: 0.58;
+    transform: translateY(-50%) scale(0.82);
+
+    transition:
+        opacity 240ms var(--ease-out),
+        transform 240ms var(--ease-out),
+        background-color 240ms var(--ease-out),
+        box-shadow 240ms var(--ease-out);
+}
+
+/* Линия раскрывается снизу при hover */
+.nav-dropdown-menu .dropdown-service-link::after {
+    content: "";
+
+    position: absolute;
+    right: 10px;
+    bottom: -1px;
+    left: 18px;
+
+    height: 1px;
+
+    background: linear-gradient(90deg,
+            var(--color-accent),
+            var(--brand-blue),
+            transparent);
+
+    opacity: 0;
+    transform: scaleX(0.15);
+    transform-origin: left;
+
+    transition:
+        opacity 260ms var(--ease-out),
+        transform 260ms var(--ease-out);
+}
+
+/* Название сервиса */
+.nav-dropdown-menu .dropdown-service-link strong {
+    display: block;
+
+    color: rgba(248, 245, 239, 0.84) !important;
+
+    font-family: var(--font-body) !important;
+    font-size: 0.76rem !important;
+    font-weight: 700 !important;
+    line-height: 1.32 !important;
+    letter-spacing: 0.03em !important;
+
+    text-transform: uppercase;
+
+    transition:
+        color 240ms var(--ease-out),
+        transform 240ms var(--ease-out) !important;
+}
+
+/* Hover строки */
+.nav-dropdown-menu .dropdown-service-link:hover,
+.nav-dropdown-menu .dropdown-service-link:focus-visible {
+    padding-left: 23px !important;
+
+    background:
+        linear-gradient(90deg,
+            rgba(147, 180, 119, 0.10),
+            rgba(94, 148, 170, 0.025) 74%,
+            transparent) !important;
+
+    transform: none !important;
+}
+
+.nav-dropdown-menu .dropdown-service-link:hover::before,
+.nav-dropdown-menu .dropdown-service-link:focus-visible::before {
+    background: var(--color-accent-hover);
+    box-shadow: 0 0 0 4px rgba(147, 180, 119, 0.10);
+
+    opacity: 1;
+    transform: translateY(-50%) scale(1.15);
+}
+
+.nav-dropdown-menu .dropdown-service-link:hover::after,
+.nav-dropdown-menu .dropdown-service-link:focus-visible::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.nav-dropdown-menu .dropdown-service-link:hover strong,
+.nav-dropdown-menu .dropdown-service-link:focus-visible strong {
+    color: #ffffff !important;
+    transform: translateX(2px);
+}
+
+/* =========================================
+   OPEN ON HOVER — DESKTOP
+========================================= */
+
+@media (min-width: 1121px) {
+
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown.is-open .nav-dropdown-menu,
+    .nav-dropdown.is-click-closed:hover .nav-dropdown-menu {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+
+        transform: translateX(-50%) translateY(0) !important;
+    }
+
+    .nav-dropdown:hover .nav-dropdown-trigger svg,
+    .nav-dropdown:hover .nav-dropdown-trigger i,
+    .nav-dropdown.is-open .nav-dropdown-trigger svg,
+    .nav-dropdown.is-open .nav-dropdown-trigger i {
+        transform: rotate(180deg) !important;
+    }
+}
+
+/* Чуть компактнее на небольших экранах */
+@media (max-width: 1180px) {
+    .nav-dropdown-menu {
+        width: min(292px, calc(100vw - 24px)) !important;
+        min-width: min(292px, calc(100vw - 24px)) !important;
+    }
+}
