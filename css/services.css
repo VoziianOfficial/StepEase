@@ -1690,13 +1690,14 @@
 }
 
 .services-hero-photo .btn-outline {
+    --btn-bg: rgba(255, 255, 255, 0.035);
     --btn-color: var(--color-text-light);
-    --btn-border: rgba(248, 245, 239, 0.34);
+    --btn-border: rgba(248, 245, 239, 0.28);
 }
 
 .services-hero-photo .btn-outline:hover {
-    color: var(--color-dark);
-    border-color: var(--color-accent);
+    color: var(--color-text-light);
+    border-color: var(--color-accent-hover);
 }
 
 
@@ -1864,11 +1865,11 @@
 
 
 .services-hero-photo .hero-actions .btn-outline {
+    --btn-bg: rgba(255, 255, 255, 0.035);
     --btn-color: var(--color-text-light) !important;
-    --btn-border: rgba(248, 245, 239, 0.42) !important;
+    --btn-border: rgba(248, 245, 239, 0.28) !important;
 
     color: var(--color-text-light) !important;
-    border-color: rgba(248, 245, 239, 0.42) !important;
 }
 
 .services-hero-photo .hero-actions .btn-outline i,
@@ -1879,13 +1880,13 @@
 
 
 .services-hero-photo .hero-actions .btn-outline:hover {
-    color: var(--color-dark) !important;
-    border-color: var(--color-accent) !important;
+    color: var(--color-text-light) !important;
+    border-color: var(--color-accent-hover) !important;
 }
 
 .services-hero-photo .hero-actions .btn-outline:hover i,
 .services-hero-photo .hero-actions .btn-outline:hover svg {
-    color: var(--color-dark) !important;
+    color: var(--color-text-light) !important;
     stroke: currentColor !important;
 }
 
@@ -1950,4 +1951,138 @@
 
 .services-directory .service-route-card .service-card-number {
     display: none !important;
+}
+
+/* Premium dark refresh */
+.services-hero {
+    background:
+        linear-gradient(180deg, rgba(3, 3, 3, 0.94) 0%, rgba(23, 16, 12, 0.98) 100%);
+    color: var(--color-text-light);
+}
+
+.services-hero-grid-bg {
+    background-image:
+        linear-gradient(rgba(248, 245, 239, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(248, 245, 239, 0.04) 1px, transparent 1px);
+}
+
+.services-hero::after {
+    background: linear-gradient(90deg, transparent, rgba(248, 245, 239, 0.14), transparent);
+}
+
+.services-hero .eyebrow,
+.services-hero .page-title,
+.services-hero-copy > p {
+    color: var(--color-text-light);
+}
+
+.services-hero-copy > p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.services-hero-note,
+.services-hero-directory-panel {
+    border-color: rgba(248, 245, 239, 0.12);
+    background:
+        linear-gradient(145deg, rgba(5, 5, 5, 0.10), rgba(3, 3, 3, 0.72)),
+        rgba(38, 24, 18, 0.94);
+    color: var(--color-text-light);
+}
+
+.services-directory-head span,
+.services-directory-head strong,
+.services-hero-mini-card strong,
+.services-hero-mini-card p,
+.services-directory-footer span {
+    color: var(--color-text-light);
+}
+
+.services-hero-mini-card,
+.services-directory-footer span {
+    border-color: rgba(248, 245, 239, 0.12);
+    background: rgba(38, 24, 18, 0.92);
+}
+
+.services-directory {
+    background: linear-gradient(180deg, var(--color-bg-deep) 0%, var(--color-bg-cocoa) 100%);
+    color: var(--color-text-light);
+}
+
+.services-directory .section-title,
+.services-directory .section-kicker,
+.services-directory .eyebrow,
+.services-directory-slider-head p {
+    color: var(--color-text-light);
+}
+
+.services-directory .section-kicker,
+.services-directory-slider-head p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.services-directory .slider-btn {
+    background: rgba(255, 255, 255, 0.035);
+    border-color: rgba(248, 245, 239, 0.28);
+    color: var(--color-text-light);
+}
+
+.services-directory .slider-btn:hover {
+    background: rgba(147, 180, 119, 0.10);
+    border-color: var(--color-accent-hover);
+    color: var(--color-text-light);
+}
+
+.services-review {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+}
+
+.services-compare {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+}
+
+.services-request {
+    background:
+        linear-gradient(180deg, rgba(3, 3, 3, 0.94) 0%, rgba(23, 16, 12, 0.98) 100%);
+    color: var(--color-text-light);
+}
+
+.services-request .section-title,
+.services-request .section-kicker,
+.services-request .eyebrow,
+.services-request .choice-lens-row span,
+.services-request .choice-lens-row p,
+.services-request .choice-lens-note,
+.services-request .choice-lens-note p {
+    color: var(--color-text-light);
+}
+
+.services-request .section-kicker,
+.services-request .choice-lens-row p,
+.services-request .choice-lens-note p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.services-request .choice-lens-board,
+.services-request .choice-lens-row,
+.services-request .choice-lens-note {
+    border-color: rgba(248, 245, 239, 0.12);
+    background: rgba(38, 24, 18, 0.94);
+}
+
+.services-request .choice-lens-row i,
+.services-request .choice-lens-row svg,
+.services-request .choice-lens-note i,
+.services-request .choice-lens-note svg {
+    color: var(--color-accent-light);
+}
+
+.services-faq {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+}
+
+.services-hero-photo__overlay {
+    background:
+        linear-gradient(90deg, rgba(3, 3, 3, 0.88) 0%, rgba(5, 5, 5, 0.72) 43%, rgba(5, 5, 5, 0.22) 100%),
+        linear-gradient(180deg, rgba(3, 3, 3, 0.10) 0%, rgba(5, 5, 5, 0.76) 100%),
+        radial-gradient(circle at 50% 18%, rgba(0, 0, 0, 0.18), transparent 34%);
 }

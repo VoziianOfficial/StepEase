@@ -1447,15 +1447,15 @@
 }
 
 .service-request-horizontal .btn-outline {
+    --btn-bg: rgba(255, 255, 255, 0.035);
     --btn-color: var(--color-text-light);
-    --btn-border: rgba(248, 245, 239, 0.34);
+    --btn-border: rgba(248, 245, 239, 0.28);
     color: var(--color-text-light) !important;
-    border-color: rgba(248, 245, 239, 0.34) !important;
 }
 
 .service-request-horizontal .btn-outline:hover {
-    color: var(--color-dark) !important;
-    border-color: var(--color-accent) !important;
+    color: var(--color-text-light) !important;
+    border-color: var(--color-accent-hover) !important;
 }
 
 .service-request-horizontal .btn i,
@@ -1648,13 +1648,14 @@
 }
 
 .service-request-slim .btn-outline {
+    --btn-bg: rgba(255, 255, 255, 0.035);
     color: var(--color-text-light) !important;
-    border-color: rgba(248, 245, 239, 0.34) !important;
+    --btn-border: rgba(248, 245, 239, 0.28);
 }
 
 .service-request-slim .btn-outline:hover {
-    color: var(--color-dark) !important;
-    border-color: var(--color-accent) !important;
+    color: var(--color-text-light) !important;
+    border-color: var(--color-accent-hover) !important;
 }
 
 .service-request-slim .btn i,
@@ -1719,7 +1720,204 @@
         grid-template-columns: 1fr;
     }
 
-    .service-request-slim__actions .btn {
+.service-request-slim__actions .btn {
         width: 100%;
     }
+}
+
+/* Premium dark refresh */
+.service-hero {
+    background:
+        linear-gradient(90deg,
+            rgba(3, 3, 3, 0.94) 0%,
+            rgba(15, 9, 7, 0.90) 45%,
+            rgba(23, 16, 12, 0.72) 100%),
+        linear-gradient(180deg,
+            rgba(3, 3, 3, 0.16) 0%,
+            rgba(5, 5, 5, 0.82) 100%),
+        url("../assets/images/services/window-installation-card.jpg") center right / cover no-repeat;
+    color: var(--color-text-light);
+}
+
+.service-hero::before {
+    background:
+        radial-gradient(circle at 18% 18%, rgba(0, 0, 0, 0.18), transparent 30%),
+        radial-gradient(circle at 82% 18%, rgba(0, 0, 0, 0.08), transparent 28%),
+        linear-gradient(180deg, transparent 0%, rgba(3, 3, 3, 0.30) 100%);
+}
+
+.service-hero .eyebrow,
+.service-hero .page-title,
+.service-hero-copy p {
+    color: var(--color-text-light);
+}
+
+.service-hero-copy p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.service-hero-panel {
+    border-color: rgba(248, 245, 239, 0.12);
+    background:
+        linear-gradient(145deg, rgba(248, 245, 239, 0.08), rgba(248, 245, 239, 0.03)),
+        rgba(38, 24, 18, 0.94);
+}
+
+.service-hero-panel::before {
+    border-color: rgba(147, 180, 119, 0.18);
+}
+
+.service-hero-panel p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.service-overview {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+}
+
+.service-overview-media::after {
+    background:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.04), rgba(3, 3, 3, 0.74)),
+        radial-gradient(circle at 22% 20%, rgba(0, 0, 0, 0.12), transparent 30%) !important;
+}
+
+.service-media-badge {
+    border-color: rgba(248, 245, 239, 0.12);
+    background: rgba(15, 9, 7, 0.70);
+}
+
+.service-evaluate {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%) !important;
+}
+
+.service-factors {
+    background: var(--color-bg-deep);
+    color: var(--color-text-light);
+}
+
+.service-factors .eyebrow,
+.service-factors .section-title,
+.service-factors .section-kicker,
+.service-factors .factor-item h3,
+.service-factors .factor-item p {
+    color: var(--color-text-light);
+}
+
+.service-factors .section-kicker,
+.service-factors .factor-item p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.service-factors .factor-item {
+    border-top-color: rgba(248, 245, 239, 0.12);
+}
+
+.service-factors .factor-item:last-child {
+    border-bottom-color: rgba(248, 245, 239, 0.12);
+}
+
+.service-factors .factor-item>span,
+.service-factors .factor-item i,
+.service-factors .factor-item svg {
+    background: rgba(147, 180, 119, 0.14);
+    color: var(--color-text-light);
+    border-color: rgba(248, 245, 239, 0.12);
+}
+
+.service-cta-band {
+    background:
+        linear-gradient(180deg, rgba(3, 3, 3, 0.94) 0%, rgba(23, 16, 12, 0.98) 100%);
+    color: var(--color-text-light);
+}
+
+.service-cta-content {
+    background:
+        linear-gradient(145deg, rgba(248, 245, 239, 0.08), rgba(248, 245, 239, 0.03)),
+        rgba(38, 24, 18, 0.94);
+    border-color: rgba(248, 245, 239, 0.12);
+}
+
+.service-cta-content .section-title,
+.service-cta-content p,
+.service-cta-content .eyebrow {
+    color: var(--color-text-light);
+}
+
+.service-cta-content p {
+    color: rgba(248, 245, 239, 0.72) !important;
+}
+
+.service-cta-image::after {
+    background:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.04), rgba(3, 3, 3, 0.74)),
+        radial-gradient(circle at 24% 18%, rgba(0, 0, 0, 0.14), transparent 30%);
+}
+
+.service-request,
+.service-request-slim,
+.service-request-horizontal {
+    background:
+        linear-gradient(180deg, rgba(3, 3, 3, 0.94) 0%, rgba(23, 16, 12, 0.98) 100%) !important;
+    color: var(--color-text-light) !important;
+}
+
+.service-request::before,
+.service-request-slim::after,
+.service-request-horizontal::before {
+    background-image:
+        linear-gradient(rgba(248, 245, 239, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(248, 245, 239, 0.04) 1px, transparent 1px) !important;
+}
+
+.service-request-copy .section-title,
+.service-request-copy .section-kicker,
+.service-request-note,
+.service-request-note p,
+.service-request-horizontal .section-title,
+.service-request-horizontal__copy p,
+.service-request-slim h2,
+.service-request-slim p {
+    color: var(--color-text-light) !important;
+}
+
+.service-request-copy .section-kicker,
+.service-request-note p,
+.service-request-horizontal__copy p,
+.service-request-slim p {
+    color: rgba(248, 245, 239, 0.72) !important;
+}
+
+.service-request-note,
+.service-form,
+.service-request-slim__shell,
+.service-request-horizontal__rail article {
+    border-color: rgba(248, 245, 239, 0.12) !important;
+    background: rgba(38, 24, 18, 0.94) !important;
+}
+
+.service-request .form-control,
+.service-request-slim .form-control {
+    background: rgba(248, 245, 239, 0.08) !important;
+    border-color: rgba(248, 245, 239, 0.14) !important;
+    color: var(--color-text-light) !important;
+}
+
+.service-request .form-control::placeholder,
+.service-request-slim .form-control::placeholder {
+    color: rgba(248, 245, 239, 0.42) !important;
+}
+
+.service-request .form-control:focus,
+.service-request-slim .form-control:focus {
+    box-shadow: 0 0 0 4px rgba(147, 180, 119, 0.16) !important;
+}
+
+.service-request .form-label,
+.service-request-slim .eyebrow,
+.service-request-horizontal .eyebrow {
+    color: rgba(248, 245, 239, 0.72) !important;
+}
+
+.service-faq {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
 }

@@ -1305,24 +1305,24 @@
 }
 
 .about-cta .btn-primary {
-    --btn-bg: var(--color-white);
-    --btn-color: var(--color-text);
-    --btn-border: var(--color-white);
+    --btn-bg: #78945D;
+    --btn-color: #0F0907;
+    --btn-border: rgba(255, 255, 255, 0.14);
 }
 
 .about-cta .btn-outline,
 .about-cta .btn-light {
-    --btn-bg: rgba(246, 242, 233, 0.10);
-    --btn-color: var(--color-white);
-    --btn-border: rgba(246, 242, 233, 0.42);
+    --btn-bg: rgba(255, 255, 255, 0.035);
+    --btn-color: var(--color-text-light);
+    --btn-border: rgba(248, 245, 239, 0.28);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 
 .about-cta .btn-outline:hover,
 .about-cta .btn-light:hover {
-    color: var(--color-text);
-    border-color: var(--color-accent);
+    color: var(--color-text-light);
+    border-color: var(--color-accent-hover);
 }
 
 
@@ -2430,24 +2430,24 @@
 }
 
 .about-cta-compact .btn-primary {
-    --btn-bg: var(--color-accent);
-    --btn-color: var(--color-dark);
-    --btn-border: var(--color-accent);
-    color: var(--color-dark) !important;
+    --btn-bg: #78945D;
+    --btn-color: #0F0907;
+    --btn-border: rgba(255, 255, 255, 0.14);
+    color: #0F0907 !important;
 }
 
 .about-cta-compact .btn-outline {
-    --btn-bg: rgba(248, 245, 239, 0.08);
+    --btn-bg: rgba(255, 255, 255, 0.035);
     --btn-color: var(--color-text-light);
-    --btn-border: rgba(248, 245, 239, 0.34);
+    --btn-border: rgba(248, 245, 239, 0.28);
     color: var(--color-text-light) !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 
 .about-cta-compact .btn-outline:hover {
-    color: var(--color-dark) !important;
-    border-color: var(--color-accent) !important;
+    color: var(--color-text-light) !important;
+    border-color: var(--color-accent-hover) !important;
 }
 
 .about-cta-compact .btn i,
@@ -2587,4 +2587,217 @@
     .about-values .values-image-main {
         min-height: 300px !important;
     }
+}
+
+/* Premium dark refresh */
+.about-hero {
+    background:
+        linear-gradient(180deg, rgba(3, 3, 3, 0.96), rgba(23, 16, 12, 0.98));
+    color: var(--color-text-light);
+}
+
+.about-hero-grid-bg {
+    background-image:
+        linear-gradient(rgba(248, 245, 239, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(248, 245, 239, 0.04) 1px, transparent 1px);
+}
+
+.about-hero::after {
+    background: linear-gradient(90deg, transparent, rgba(248, 245, 239, 0.14), transparent);
+}
+
+.about-hero .eyebrow,
+.about-hero .page-title,
+.about-hero-copy > p,
+.about-hero-note h2,
+.about-hero-note p {
+    color: var(--color-text-light);
+}
+
+.about-hero-copy > p,
+.about-hero-note p,
+.about-hero-proof p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.about-hero-proof article {
+    border-color: rgba(248, 245, 239, 0.12);
+    background: rgba(38, 24, 18, 0.92);
+}
+
+.about-hero-proof article:hover {
+    border-color: rgba(147, 180, 119, 0.55);
+    background: rgba(58, 40, 29, 0.96);
+}
+
+.about-hero-note {
+    border-color: rgba(248, 245, 239, 0.12);
+    background:
+        linear-gradient(145deg, rgba(5, 5, 5, 0.10), rgba(3, 3, 3, 0.74)),
+        rgba(38, 24, 18, 0.94);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+.about-hero-photo {
+    border-color: rgba(248, 245, 239, 0.12);
+}
+
+.about-story {
+    background: var(--color-bg-deep);
+    color: var(--color-text-light);
+}
+
+.about-story .section-title,
+.about-story .eyebrow,
+.about-story .about-story-text p,
+.about-story-badge span,
+.about-story-badge strong {
+    color: var(--color-text-light);
+}
+
+.about-story .about-story-text p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.about-story-media::after {
+    background:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.04) 18%, rgba(3, 3, 3, 0.74) 100%);
+}
+
+.about-story-badge {
+    border-color: rgba(248, 245, 239, 0.12);
+    background: rgba(15, 9, 7, 0.76);
+}
+
+.about-model-redesign {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+}
+
+.about-model-redesign .model-mini-card {
+    border-color: rgba(221, 212, 199, 0.9);
+    background: var(--color-card);
+}
+
+.about-model-redesign .model-mini-card:hover {
+    border-color: rgba(147, 180, 119, 0.55);
+    background: var(--color-card);
+}
+
+.about-model-redesign .model-wide-note {
+    background:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.04) 0%, rgba(3, 3, 3, 0.72) 100%),
+        linear-gradient(90deg, rgba(3, 3, 3, 0.54), rgba(3, 3, 3, 0.18)),
+        url("../assets/images/about/about-story-window.jpg") center / cover no-repeat !important;
+    border-color: rgba(248, 245, 239, 0.12) !important;
+}
+
+.about-model-redesign .model-wide-note::after {
+    background:
+        radial-gradient(circle at 88% 12%, rgba(0, 0, 0, 0.18), transparent 34%),
+        radial-gradient(circle at 12% 90%, rgba(0, 0, 0, 0.08), transparent 32%);
+}
+
+.about-compliance {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+}
+
+.about-values {
+    background: var(--color-bg-cocoa);
+    color: var(--color-text-light);
+}
+
+.about-values .section-title,
+.about-values .eyebrow,
+.about-values .values-copy p,
+.about-values .values-stack article h3,
+.about-values .values-stack article p {
+    color: var(--color-text-light);
+}
+
+.about-values .values-stack article p,
+.about-values .values-copy p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.about-values .values-stack article {
+    border-color: rgba(248, 245, 239, 0.12);
+    background: var(--color-bg-panel);
+}
+
+.about-values .values-stack article:hover {
+    border-color: rgba(147, 180, 119, 0.55);
+    background: var(--color-bg-panel-hover);
+}
+
+.about-values .values-image::after,
+.about-values .values-image-main::after {
+    background: linear-gradient(180deg, rgba(5, 5, 5, 0.04) 18%, rgba(3, 3, 3, 0.74) 100%);
+}
+
+.about-cta-compact {
+    background:
+        linear-gradient(180deg, rgba(3, 3, 3, 0.88), rgba(23, 16, 12, 0.94)),
+        url("../assets/images/about/about-cta-bg.jpg") center / cover no-repeat !important;
+    color: var(--color-text-light) !important;
+}
+
+.about-cta-compact::before {
+    background:
+        linear-gradient(90deg, rgba(3, 3, 3, 0.84) 0%, rgba(5, 5, 5, 0.58) 48%, rgba(3, 3, 3, 0.78) 100%),
+        linear-gradient(180deg, rgba(3, 3, 3, 0.18) 0%, rgba(3, 3, 3, 0.62) 100%);
+}
+
+.about-cta-compact::after {
+    background: linear-gradient(90deg, transparent, rgba(147, 180, 119, 0.18), transparent);
+}
+
+.about-cta-compact .about-cta-card {
+    border-color: rgba(248, 245, 239, 0.14) !important;
+    background:
+        linear-gradient(145deg, rgba(248, 245, 239, 0.08), rgba(248, 245, 239, 0.03)) !important;
+    box-shadow: 0 28px 90px rgba(0, 0, 0, 0.28) !important;
+}
+
+.about-cta-compact .about-cta-card::before {
+    border-color: rgba(248, 245, 239, 0.08);
+}
+
+.about-cta-compact .about-cta-card::after {
+    background: linear-gradient(90deg, transparent, rgba(147, 180, 119, 0.55), transparent);
+}
+
+.about-cta-compact .eyebrow,
+.about-cta-compact .section-title,
+.about-cta-compact p,
+.about-cta-compact .about-cta-points span {
+    color: var(--color-text-light) !important;
+}
+
+.about-cta-compact p,
+.about-cta-compact .about-cta-points span {
+    color: rgba(248, 245, 239, 0.76) !important;
+}
+
+.about-cta-compact .btn-outline {
+    --btn-bg: rgba(255, 255, 255, 0.035);
+    --btn-color: var(--color-text-light);
+    --btn-border: rgba(248, 245, 239, 0.28);
+    color: var(--color-text-light) !important;
+}
+
+.about-faq {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+}
+
+.about-hero-editorial::before {
+    background:
+        radial-gradient(circle at 18% 18%, rgba(0, 0, 0, 0.18), transparent 30%),
+        linear-gradient(180deg, transparent 0%, rgba(3, 3, 3, 0.26) 100%);
+}
+
+.about-hero-editorial .about-hero-overlay {
+    background:
+        linear-gradient(90deg, rgba(3, 3, 3, 0.86) 0%, rgba(5, 5, 5, 0.70) 43%, rgba(5, 5, 5, 0.18) 100%),
+        linear-gradient(180deg, rgba(3, 3, 3, 0.08) 0%, rgba(5, 5, 5, 0.72) 100%);
+    opacity: 1;
 }

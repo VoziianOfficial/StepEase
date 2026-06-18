@@ -581,9 +581,9 @@
 }
 
 .home-provider-slider-section .slider-btn {
-    border-color: var(--color-border-dark);
-    background: var(--color-text-light);
-    color: var(--color-accent-light);
+    border-color: rgba(248, 245, 239, 0.28);
+    background: rgba(255, 255, 255, 0.035);
+    color: var(--color-text-light);
 }
 
 .provider-swiper {
@@ -1620,26 +1620,26 @@
 
 
 .home-provider-slider-section .slider-btn {
-    background: rgba(246, 242, 233, 0.92) !important;
-    border: 1px solid rgba(168, 227, 106, 0.42) !important;
-    color: var(--color-dark) !important;
+    background: rgba(255, 255, 255, 0.035) !important;
+    border: 1px solid rgba(248, 245, 239, 0.28) !important;
+    color: var(--color-text-light) !important;
 }
 
 .home-provider-slider-section .slider-btn i,
 .home-provider-slider-section .slider-btn svg {
-    color: var(--color-dark) !important;
+    color: var(--color-text-light) !important;
     stroke: currentColor !important;
 }
 
 .home-provider-slider-section .slider-btn:hover {
-    background: var(--color-accent) !important;
-    border-color: var(--color-accent) !important;
-    color: var(--color-dark) !important;
+    background: rgba(147, 180, 119, 0.10) !important;
+    border-color: var(--color-accent-hover) !important;
+    color: var(--color-text-light) !important;
 }
 
 .home-provider-slider-section .slider-btn:hover i,
 .home-provider-slider-section .slider-btn:hover svg {
-    color: var(--color-dark) !important;
+    color: var(--color-text-light) !important;
     stroke: currentColor !important;
 }
 
@@ -2068,4 +2068,160 @@
 .home-service-strip.section-on-light .home-service-action .btn svg {
     color: currentColor !important;
     stroke: currentColor !important;
+}
+
+/* Premium dark refresh */
+.home-hero-overlay {
+    background:
+        linear-gradient(90deg, rgba(3, 3, 3, 0.88) 0%, rgba(5, 5, 5, 0.72) 43%, rgba(5, 5, 5, 0.25) 72%, rgba(5, 5, 5, 0.05) 100%),
+        linear-gradient(180deg, rgba(3, 3, 3, 0.08) 0%, rgba(5, 5, 5, 0.70) 100%);
+}
+
+.home-service-strip {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+}
+
+.home-marquee-section {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+}
+
+.home-process {
+    background: var(--color-bg-deep);
+    color: var(--color-text-light);
+}
+
+.home-process .section-title,
+.home-process .section-kicker,
+.home-process .eyebrow,
+.home-process .process-step h3,
+.home-process .process-step p {
+    color: var(--color-text-light);
+}
+
+.home-process .section-kicker,
+.home-process .process-step p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.home-process .process-step {
+    border-color: rgba(248, 245, 239, 0.12);
+    background: var(--color-bg-cocoa);
+}
+
+.home-process .process-step:hover {
+    border-color: rgba(147, 180, 119, 0.55);
+    background: var(--color-bg-panel-hover);
+}
+
+.home-process .process-step>span {
+    border-color: rgba(248, 245, 239, 0.14);
+    background: rgba(147, 180, 119, 0.14);
+    color: var(--color-text-light);
+}
+
+.home-process .process-step i,
+.home-process .process-step svg {
+    color: var(--color-accent-light);
+}
+
+.home-showcase {
+    background: linear-gradient(135deg, rgba(15, 9, 7, 0.98), rgba(23, 16, 12, 0.98));
+    color: var(--color-text-light);
+}
+
+.home-showcase .showcase-title-block {
+    background: var(--color-bg-cocoa);
+    border-color: rgba(248, 245, 239, 0.12);
+}
+
+.home-showcase .showcase-copy {
+    background: var(--color-bg-panel);
+    border-color: rgba(248, 245, 239, 0.12);
+}
+
+.home-showcase .showcase-copy p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.home-showcase .showcase-image {
+    border-color: rgba(248, 245, 239, 0.12);
+    background: var(--color-bg-dark);
+}
+
+.home-showcase .showcase-image::after {
+    background:
+        linear-gradient(180deg, rgba(3, 3, 3, 0.06) 36%, rgba(3, 3, 3, 0.78)),
+        linear-gradient(90deg, rgba(3, 3, 3, 0.42), transparent);
+}
+
+.home-provider-slider-section {
+    background: linear-gradient(135deg, rgba(15, 9, 7, 0.98), rgba(23, 16, 12, 0.98));
+    color: var(--color-text-light);
+}
+
+.home-provider-slider-section .section-title,
+.home-provider-slider-section .split-head .section-title,
+.home-provider-slider-section .split-head .section-kicker,
+.home-provider-slider-section .eyebrow {
+    color: var(--color-text-light);
+}
+
+.home-provider-slider-section .split-head .section-kicker {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.home-provider-slider-section .slider-btn {
+    background: rgba(255, 255, 255, 0.035);
+    border-color: rgba(248, 245, 239, 0.28);
+    color: var(--color-text-light);
+}
+
+.home-provider-slider-section .slider-btn:hover {
+    background: rgba(147, 180, 119, 0.10);
+    border-color: var(--color-accent-hover);
+    color: var(--color-text-light);
+}
+
+.home-provider-slider-section .provider-check-card {
+    background: var(--color-bg-cocoa);
+    border-color: rgba(248, 245, 239, 0.12);
+    color: var(--color-text-light);
+}
+
+.home-provider-slider-section .provider-check-card:hover {
+    background: var(--color-bg-panel-hover);
+    border-color: rgba(147, 180, 119, 0.55);
+}
+
+.home-provider-slider-section .provider-check-card h3,
+.home-provider-slider-section .provider-check-card p {
+    color: var(--color-text-light);
+}
+
+.home-provider-slider-section .provider-check-card p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.home-provider-slider-section .provider-check-card i,
+.home-provider-slider-section .provider-check-card svg {
+    color: var(--color-accent-light);
+}
+
+.home-quote {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+}
+
+.home-quote .quote-visual::after {
+    background:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.04) 18%, rgba(3, 3, 3, 0.74) 100%),
+        radial-gradient(circle at 24% 20%, rgba(0, 0, 0, 0.18), transparent 28%);
+}
+
+.home-quote .quote-floating-card {
+    background: rgba(15, 9, 7, 0.84);
+    border-color: rgba(248, 245, 239, 0.14);
+}
+
+.home-faq {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
 }

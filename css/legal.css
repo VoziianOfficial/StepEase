@@ -462,3 +462,81 @@
     position: relative;
     z-index: 2;
 }
+
+/* Premium dark refresh */
+.legal-page {
+    background: var(--color-bg-light);
+}
+
+.legal-hero {
+    background:
+        linear-gradient(180deg, rgba(3, 3, 3, 0.94), rgba(23, 16, 12, 0.98));
+    border-bottom-color: rgba(248, 245, 239, 0.12);
+    color: var(--color-text-light);
+}
+
+.legal-hero::before {
+    background-image:
+        linear-gradient(rgba(248, 245, 239, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(248, 245, 239, 0.04) 1px, transparent 1px);
+}
+
+.legal-hero-copy p,
+.legal-hero-card p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.legal-hero-card {
+    background: rgba(248, 245, 239, 0.96);
+    color: var(--color-text);
+    border-color: rgba(221, 212, 199, 0.84);
+}
+
+.legal-hero-card::before {
+    border-color: rgba(52, 32, 23, 0.08);
+}
+
+.legal-content {
+    background: var(--color-bg-light);
+}
+
+.legal-sidebar-card,
+.legal-section,
+.legal-cta-card {
+    background: var(--color-card);
+    border-color: rgba(221, 212, 199, 0.78);
+}
+
+.legal-contact-card {
+    background: var(--color-bg-cocoa);
+    border-color: rgba(248, 245, 239, 0.12);
+    color: var(--color-text-light);
+}
+
+.legal-contact-card p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.legal-section.dark-note {
+    background: var(--color-card);
+    color: var(--color-text);
+    border-color: rgba(221, 212, 199, 0.78);
+}
+
+.legal-section.dark-note p,
+.legal-section.dark-note li,
+.dark-note .legal-meta span {
+    color: var(--color-muted);
+}
+
+.legal-cta-card {
+    background:
+        linear-gradient(145deg, rgba(248, 245, 239, 0.88), rgba(236, 228, 216, 0.78));
+    border-color: rgba(221, 212, 199, 0.78);
+}
+
+.legal-cta-card::after {
+    background: radial-gradient(circle at var(--legal-cta-x, 90%) var(--legal-cta-y, 12%),
+            rgba(147, 180, 119, 0.22),
+            transparent 34%);
+}

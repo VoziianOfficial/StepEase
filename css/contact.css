@@ -1840,10 +1840,10 @@ background:
 }
 
 .contact-hero-clean .btn-outline {
+    --btn-bg: rgba(255, 255, 255, 0.035);
     --btn-color: var(--color-text-light);
-    --btn-border: rgba(248, 245, 239, 0.38);
+    --btn-border: rgba(248, 245, 239, 0.28);
     color: var(--color-text-light) !important;
-    border-color: rgba(248, 245, 239, 0.38) !important;
 }
 
 .contact-hero-clean .btn-outline i,
@@ -1853,8 +1853,8 @@ background:
 }
 
 .contact-hero-clean .btn-outline:hover {
-    color: var(--color-dark) !important;
-    border-color: var(--color-accent) !important;
+    color: var(--color-text-light) !important;
+    border-color: var(--color-accent-hover) !important;
 }
 
 
@@ -2275,3 +2275,183 @@ background:
     color: var(--color-muted) !important;
 }
 
+/* Premium dark refresh */
+.contact-hero-clean {
+    background: #0F0907;
+}
+
+.contact-hero-clean__overlay {
+    background:
+        linear-gradient(90deg, rgba(3, 3, 3, 0.88) 0%, rgba(5, 5, 5, 0.72) 43%, rgba(5, 5, 5, 0.22) 100%),
+        linear-gradient(180deg, rgba(3, 3, 3, 0.10) 0%, rgba(5, 5, 5, 0.76) 100%);
+}
+
+.contact-hero-clean::before {
+    background-image:
+        linear-gradient(rgba(248, 245, 239, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(248, 245, 239, 0.032) 1px, transparent 1px);
+}
+
+.contact-hero-clean .eyebrow,
+.contact-hero-clean .page-title,
+.contact-hero-clean__content > p {
+    color: var(--color-text-light);
+}
+
+.contact-hero-clean__content > p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.contact-hero-nav {
+    border-color: rgba(248, 245, 239, 0.14);
+    background: rgba(15, 9, 7, 0.34);
+}
+
+.contact-hero-nav a {
+    border-right-color: rgba(248, 245, 239, 0.12);
+}
+
+.contact-main {
+    background: var(--color-bg-deep);
+    color: var(--color-text-light);
+}
+
+.contact-main .eyebrow,
+.contact-main .section-title,
+.contact-main .section-kicker,
+.contact-main .contact-info p,
+.contact-main .contact-form-side p {
+    color: var(--color-text-light);
+}
+
+.contact-main .section-kicker,
+.contact-main .contact-info p,
+.contact-main .contact-form-side p {
+    color: rgba(248, 245, 239, 0.72);
+}
+
+.contact-main .contact-form,
+.contact-main .form-card {
+    background: var(--color-bg-cocoa) !important;
+    border-color: rgba(248, 245, 239, 0.12) !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24) !important;
+}
+
+.contact-main .form-label {
+    color: rgba(248, 245, 239, 0.72) !important;
+}
+
+.contact-main .form-control,
+.contact-main select.form-control,
+.contact-main textarea.form-control {
+    background: rgba(248, 245, 239, 0.08) !important;
+    border-color: rgba(248, 245, 239, 0.14) !important;
+    color: var(--color-text-light) !important;
+}
+
+.contact-main .form-control::placeholder {
+    color: rgba(248, 245, 239, 0.42) !important;
+}
+
+.contact-main .form-control:focus {
+    border-color: var(--color-accent) !important;
+    box-shadow: 0 0 0 4px rgba(147, 180, 119, 0.16) !important;
+}
+
+.contact-main .custom-check {
+    border-color: rgba(248, 245, 239, 0.18) !important;
+    background: rgba(248, 245, 239, 0.08) !important;
+}
+
+.contact-main .custom-check::after {
+    border-right-color: var(--color-text-light) !important;
+    border-bottom-color: var(--color-text-light) !important;
+}
+
+.contact-main .contact-info-card.surface-card.dark {
+    background: var(--color-bg-panel) !important;
+    border-color: rgba(248, 245, 239, 0.12) !important;
+}
+
+.contact-main .contact-mini-card.surface-card.light {
+    background: var(--color-bg-cocoa) !important;
+    color: var(--color-text-light) !important;
+    border-color: rgba(248, 245, 239, 0.12) !important;
+}
+
+.contact-main .contact-mini-card.surface-card.light p,
+.contact-main .contact-info-card.surface-card.dark p {
+    color: rgba(248, 245, 239, 0.72) !important;
+}
+
+.contact-main .contact-mini-card.surface-card.light h3,
+.contact-main .contact-info-card.surface-card.dark h3 {
+    color: var(--color-text-light) !important;
+}
+
+.contact-area-section,
+.contact-area-photo-section {
+    background: var(--color-bg-deep);
+    color: var(--color-text-light);
+}
+
+.contact-area-map-card,
+.real-contact-map,
+.map-card.contact-map-card.real-contact-map {
+    border-color: rgba(248, 245, 239, 0.12) !important;
+}
+
+.contact-area-map-card::after,
+.real-contact-map::after {
+    background:
+        linear-gradient(90deg, rgba(3, 3, 3, 0.72) 0%, rgba(3, 3, 3, 0.38) 38%, rgba(3, 3, 3, 0.04) 100%),
+        linear-gradient(180deg, transparent 0%, rgba(3, 3, 3, 0.34) 100%) !important;
+}
+
+.contact-area-map-overlay,
+.real-contact-map .map-content {
+    background: rgba(15, 9, 7, 0.56) !important;
+    border-color: rgba(248, 245, 239, 0.12) !important;
+}
+
+.contact-area-photo-section .contact-area-head .eyebrow,
+.contact-area-photo-section .contact-area-head .section-title,
+.contact-area-photo-section .contact-area-head .section-kicker,
+.contact-area-section .contact-area-head.centered-head .eyebrow,
+.contact-area-section .contact-area-head.centered-head .section-title,
+.contact-area-section .contact-area-head.centered-head .section-kicker {
+    color: var(--color-text-light) !important;
+}
+
+.contact-area-photo-section .contact-area-head .section-kicker,
+.contact-area-section .contact-area-head.centered-head .section-kicker {
+    color: rgba(248, 245, 239, 0.72) !important;
+}
+
+.contact-area-map-overlay span,
+.real-contact-map .map-content .eyebrow {
+    color: var(--color-accent-light) !important;
+}
+
+.contact-area-steps article {
+    background: var(--color-bg-cocoa) !important;
+    border-color: rgba(248, 245, 239, 0.12) !important;
+    color: var(--color-text-light) !important;
+}
+
+.contact-area-steps article:hover {
+    border-color: rgba(147, 180, 119, 0.55) !important;
+}
+
+.contact-area-steps strong,
+.contact-area-steps p {
+    color: var(--color-text-light) !important;
+}
+
+.contact-area-steps p {
+    color: rgba(248, 245, 239, 0.72) !important;
+}
+
+.contact-faq {
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+}
