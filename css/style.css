@@ -4700,3 +4700,251 @@ article,
         padding-bottom: 28px !important;
     }
 }
+
+/* =========================================
+   SHARED HERO QUICK NAV
+========================================= */
+
+:root {
+    --hero-quick-accent: #61A9C9;
+    /* благородный морской синий */
+    --hero-quick-accent-strong: #3F87A8;
+    --hero-quick-line: rgba(248, 245, 239, 0.16);
+    --hero-quick-line-soft: rgba(248, 245, 239, 0.10);
+    --hero-quick-text: #F8F5EF;
+    --hero-quick-muted: rgba(248, 245, 239, 0.62);
+}
+
+.hero-quick-nav {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin-top: clamp(24px, 3vw, 34px);
+    display: grid;
+    gap: 0;
+    border-top: 1px solid var(--hero-quick-line);
+    border-bottom: 1px solid var(--hero-quick-line-soft);
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.045) 0%,
+            rgba(255, 255, 255, 0.018) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.hero-quick-nav--3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.hero-quick-nav--4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.hero-quick-nav--6 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.hero-quick-link {
+    position: relative;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 20px;
+    color: var(--hero-quick-text);
+    transition:
+        background-color 220ms ease,
+        transform 220ms ease,
+        color 220ms ease;
+}
+
+.hero-quick-link::before {
+    content: "";
+    position: absolute;
+    inset: auto 20px 0 20px;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(97, 169, 201, 0.65) 50%,
+            transparent 100%);
+    transform: scaleX(0.32);
+    transform-origin: center;
+    opacity: 0;
+    transition:
+        transform 220ms ease,
+        opacity 220ms ease;
+}
+
+.hero-quick-link:not(:nth-child(3n)) {
+    border-right: 1px solid var(--hero-quick-line-soft);
+}
+
+/* для 4-колоночного блока */
+.hero-quick-nav--4 .hero-quick-link:not(:nth-child(4n)) {
+    border-right: 1px solid var(--hero-quick-line-soft);
+}
+
+.hero-quick-nav--4 .hero-quick-link:nth-child(3n) {
+    border-right: 1px solid var(--hero-quick-line-soft);
+}
+
+.hero-quick-link i,
+.hero-quick-link svg {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    color: var(--hero-quick-accent);
+    stroke-width: 2.1;
+    transition:
+        transform 220ms ease,
+        color 220ms ease,
+        opacity 220ms ease;
+}
+
+.hero-quick-link__text {
+    min-width: 0;
+    display: grid;
+    gap: 4px;
+}
+
+.hero-quick-link__text small {
+    display: block;
+    color: var(--hero-quick-muted);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.hero-quick-link__text strong {
+    display: block;
+    color: var(--hero-quick-text);
+    font-family: var(--font-body);
+    font-size: 0.96rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+}
+
+.hero-quick-link:hover {
+    background: rgba(255, 255, 255, 0.03);
+    transform: translateY(-2px);
+}
+
+.hero-quick-link:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.hero-quick-link:hover i,
+.hero-quick-link:hover svg {
+    color: var(--hero-quick-accent-strong);
+    transform: translateX(3px);
+}
+
+.hero-quick-link:hover .hero-quick-link__text strong {
+    color: #FFFFFF;
+}
+
+.hero-quick-link:focus-visible {
+    outline: 2px solid rgba(97, 169, 201, 0.45);
+    outline-offset: -2px;
+}
+
+/* Если hero nav стоит сразу после контента */
+.home-hero .hero-quick-nav,
+.services-hero .hero-quick-nav,
+.contact-hero .hero-quick-nav {
+    margin-inline: auto;
+}
+
+/* Главная — можно сделать чуть уже */
+.home-hero .hero-quick-nav {
+    max-width: min(100%, 1180px);
+}
+
+/* Services / Contact */
+.services-hero .hero-quick-nav,
+.contact-hero .hero-quick-nav {
+    max-width: 100%;
+}
+
+/* 6 items: добавляем горизонтальную линию между рядами */
+.hero-quick-nav--6 .hero-quick-link:nth-child(-n + 3) {
+    border-bottom: 1px solid var(--hero-quick-line-soft);
+}
+
+/* 4 items */
+.hero-quick-nav--4 .hero-quick-link {
+    border-bottom: 0;
+}
+
+/* 3 items */
+.hero-quick-nav--3 .hero-quick-link {
+    border-bottom: 0;
+}
+
+/* Tablet */
+@media (max-width: 980px) {
+    .hero-quick-nav--4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-quick-nav--6 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-quick-nav--3 {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-quick-link {
+        padding: 16px 18px;
+    }
+
+    .hero-quick-nav--4 .hero-quick-link,
+    .hero-quick-nav--6 .hero-quick-link,
+    .hero-quick-nav--3 .hero-quick-link {
+        border-right: 0 !important;
+        border-bottom: 1px solid var(--hero-quick-line-soft);
+    }
+
+    .hero-quick-nav--4 .hero-quick-link:nth-last-child(-n + 2),
+    .hero-quick-nav--6 .hero-quick-link:nth-last-child(-n + 2) {
+        border-bottom: 0;
+    }
+
+    .hero-quick-nav--3 .hero-quick-link:last-child {
+        border-bottom: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+
+    .hero-quick-nav--4,
+    .hero-quick-nav--6 {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-quick-link {
+        gap: 14px;
+        padding: 15px 16px;
+    }
+
+    .hero-quick-link i,
+    .hero-quick-link svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .hero-quick-link__text strong {
+        font-size: 0.92rem;
+    }
+
+    .hero-quick-nav--4 .hero-quick-link:last-child,
+    .hero-quick-nav--6 .hero-quick-link:last-child {
+        border-bottom: 0;
+    }
+}
