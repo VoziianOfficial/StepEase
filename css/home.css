@@ -3111,7 +3111,7 @@
     position: absolute;
     top: 20px;
     bottom: 20px;
-    left: 0;
+    left: -1px;
     width: 2px;
     background: var(--color-accent);
     opacity: 0;
@@ -3457,5 +3457,66 @@
 @media (max-width: 620px) {
     .home-provider-slider-section .provider-check-card h3 {
         margin-top: 34px !important;
+    }
+}
+
+/* =========================================
+   REMODEL LENS — SOFT HOVER UNDERLINES
+========================================= */
+
+.home-quote-editorial .remodel-lens-item {
+    position: relative;
+    overflow: hidden;
+    transition:
+        background-color 260ms var(--ease-out),
+        color 260ms var(--ease-out);
+}
+
+/* Тонкая линия снизу каждого пункта */
+.home-quote-editorial .remodel-lens-item::after {
+    content: "";
+    position: absolute;
+    right: clamp(12px, 1.8vw, 24px);
+    bottom: -1px;
+    left: clamp(12px, 1.8vw, 24px);
+    height: 2px;
+    background: linear-gradient(90deg,
+            transparent,
+            var(--color-accent),
+            var(--brand-blue),
+            transparent);
+    opacity: 0;
+    transform: scaleX(0.18);
+    transform-origin: center;
+    transition:
+        opacity 280ms var(--ease-out),
+        transform 280ms var(--ease-out);
+}
+
+
+
+/* Линия раскрывается */
+.home-quote-editorial .remodel-lens-item:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+/* Иконка чуть оживает */
+.home-quote-editorial .remodel-lens-item:hover i,
+.home-quote-editorial .remodel-lens-item:hover svg {
+    color: var(--brand-blue-strong) !important;
+    transform: translateY(-3px);
+}
+
+/* Заголовок становится чуть более выразительным */
+.home-quote-editorial .remodel-lens-item:hover span {
+    color: var(--color-accent-strong);
+}
+
+/* На мобильных линия идёт на всю доступную ширину */
+@media (max-width: 680px) {
+    .home-quote-editorial .remodel-lens-item::after {
+        right: 0;
+        left: 0;
     }
 }
