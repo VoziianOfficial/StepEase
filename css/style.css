@@ -30,6 +30,9 @@
     --color-accent-deep: #34472F;
     --color-accent-light: #D9E4CC;
     --color-accent-soft: #EDF2E7;
+    --brand-blue: #5E94AA;
+    --brand-blue-strong: #3E7188;
+    --brand-blue-soft: rgba(94, 148, 170, 0.12);
 
     --color-border: #DDD4C7;
     --color-border-dark: rgba(248, 245, 239, 0.14);
@@ -4595,22 +4598,16 @@ article,
 
 /* =========================================
    COMPACT HERO HEIGHTS
-   Home / Services / Contact
+   Services / Contact
 ========================================= */
 
 /* Убираем стандартные большие section-padding и full-screen высоту */
-.home-hero.home-hero-flagship,
 .services-hero.services-hero-photo,
 .contact-hero.contact-hero-clean {
     height: auto !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     overflow: hidden;
-}
-
-/* Главная: чуть выше, потому что внизу есть 3 hero-stat */
-.home-hero.home-hero-flagship {
-    min-height: clamp(650px, 48vw, 735px) !important;
 }
 
 /* Services и Contact: более компактные */
@@ -4620,20 +4617,6 @@ article,
 
 .contact-hero.contact-hero-clean {
     min-height: clamp(580px, 42vw, 650px) !important;
-}
-
-/* Внутренняя часть главного hero */
-.home-hero.home-hero-flagship .home-hero-shell {
-    min-height: clamp(430px, 31vw, 500px) !important;
-    padding-top: calc(var(--header-height) + clamp(62px, 6vw, 104px)) !important;
-    padding-bottom: clamp(24px, 3vw, 42px) !important;
-}
-
-/* Нижняя строка с тремя быстрыми пунктами на home */
-.home-hero.home-hero-flagship .home-hero-bottom {
-    margin-top: 0 !important;
-    padding-top: 16px !important;
-    padding-bottom: clamp(28px, 3vw, 46px) !important;
 }
 
 /* Services hero */
@@ -4652,52 +4635,32 @@ article,
 
 /* Планшеты */
 @media (max-width: 900px) {
-    .home-hero.home-hero-flagship {
-        min-height: 610px !important;
-    }
-
     .services-hero.services-hero-photo,
     .contact-hero.contact-hero-clean {
         min-height: 570px !important;
     }
 
-    .home-hero.home-hero-flagship .home-hero-shell,
     .services-hero.services-hero-photo .services-hero-photo__inner,
     .contact-hero.contact-hero-clean .contact-hero-clean__inner {
         min-height: auto !important;
         padding-top: calc(var(--header-height) + 62px) !important;
         padding-bottom: 42px !important;
     }
-
-    .home-hero.home-hero-flagship .home-hero-bottom {
-        padding-bottom: 34px !important;
-    }
 }
 
 /* Телефоны: hero растёт только от контента, без пустого пространства */
 @media (max-width: 767px) {
 
-    .home-hero.home-hero-flagship,
     .services-hero.services-hero-photo,
     .contact-hero.contact-hero-clean {
         min-height: auto !important;
     }
 
-    .home-hero.home-hero-flagship .home-hero-shell,
     .services-hero.services-hero-photo .services-hero-photo__inner,
     .contact-hero.contact-hero-clean .contact-hero-clean__inner {
         min-height: auto !important;
         padding-top: calc(var(--header-height) + 52px) !important;
         padding-bottom: 34px !important;
-    }
-
-    /* Чтобы нижние hero-stat на home точно не налезали на текст */
-    .home-hero.home-hero-flagship .home-hero-bottom {
-        position: relative !important;
-        inset: auto !important;
-        margin-top: 0 !important;
-        padding-top: 12px !important;
-        padding-bottom: 28px !important;
     }
 }
 
@@ -4706,9 +4669,8 @@ article,
 ========================================= */
 
 :root {
-    --hero-quick-accent: #61A9C9;
-    /* благородный морской синий */
-    --hero-quick-accent-strong: #3F87A8;
+    --hero-quick-accent: var(--brand-blue);
+    --hero-quick-accent-strong: var(--brand-blue-strong);
     --hero-quick-line: rgba(248, 245, 239, 0.16);
     --hero-quick-line-soft: rgba(248, 245, 239, 0.10);
     --hero-quick-text: #F8F5EF;
@@ -4765,7 +4727,7 @@ article,
     height: 1px;
     background: linear-gradient(90deg,
             transparent 0%,
-            rgba(97, 169, 201, 0.65) 50%,
+            rgba(94, 148, 170, 0.65) 50%,
             transparent 100%);
     transform: scaleX(0.32);
     transform-origin: center;
@@ -4848,7 +4810,7 @@ article,
 }
 
 .hero-quick-link:focus-visible {
-    outline: 2px solid rgba(97, 169, 201, 0.45);
+    outline: 2px solid rgba(94, 148, 170, 0.45);
     outline-offset: -2px;
 }
 

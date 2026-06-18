@@ -7,7 +7,7 @@
     overflow: hidden;
     padding: clamp(88px, 9vw, 124px) 0 clamp(28px, 4vw, 52px);
     background:
-        radial-gradient(circle at 88% 10%, rgba(168, 227, 106, 0.24), transparent 34%),
+        radial-gradient(circle at 88% 10%, rgba(120, 148, 93, 0.24), transparent 34%),
         linear-gradient(180deg, var(--color-bg) 0%, rgba(237, 230, 218, 0.76) 100%);
     color: var(--color-text);
 }
@@ -84,7 +84,7 @@
     height: 42px;
     padding: 10px;
     border: 1px solid rgba(52, 32, 23, 0.16);
-    background: rgba(168, 227, 106, 0.16);
+    background: rgba(120, 148, 93, 0.16);
     color: var(--color-dark);
 }
 
@@ -102,7 +102,7 @@
     padding: clamp(16px, 2vw, 22px);
     border: 1px solid rgba(221, 212, 199, 0.88);
     background:
-        radial-gradient(circle at 100% 0%, rgba(168, 227, 106, 0.22), transparent 35%),
+        radial-gradient(circle at 100% 0%, rgba(120, 148, 93, 0.22), transparent 35%),
         rgba(246, 242, 233, 0.56);
     box-shadow: var(--shadow-card);
 }
@@ -226,7 +226,7 @@
     align-items: center;
     padding: 7px 10px;
     border: 1px solid rgba(52, 32, 23, 0.14);
-    background: rgba(168, 227, 106, 0.14);
+    background: rgba(120, 148, 93, 0.14);
     color: var(--color-muted-dark);
     font-family: var(--font-accent);
     font-size: 0.62rem;
@@ -435,7 +435,7 @@
     height: 46px;
     padding: 12px;
     border: 1px solid rgba(52, 32, 23, 0.18);
-    background: rgba(168, 227, 106, 0.16);
+    background: rgba(120, 148, 93, 0.16);
     color: var(--color-dark);
 }
 
@@ -489,7 +489,7 @@
     inset: 0;
     background:
         linear-gradient(180deg, rgba(22, 13, 9, 0.04), rgba(22, 13, 9, 0.34)),
-        radial-gradient(circle at 24% 18%, rgba(168, 227, 106, 0.14), transparent 28%);
+        radial-gradient(circle at 24% 18%, rgba(120, 148, 93, 0.14), transparent 28%);
 }
 
 .compare-image img {
@@ -636,7 +636,7 @@
 
 
 .service-route-card.is-key-focused {
-    outline: 3px solid rgba(168, 227, 106, 0.75);
+    outline: 3px solid rgba(120, 148, 93, 0.75);
     outline-offset: 4px;
 }
 
@@ -834,7 +834,7 @@
     z-index: 1;
     pointer-events: none;
     background:
-        radial-gradient(circle at 18% 20%, rgba(168, 227, 106, 0.08), transparent 30%),
+        radial-gradient(circle at 18% 20%, rgba(120, 148, 93, 0.08), transparent 30%),
         linear-gradient(180deg, transparent 0%, rgba(246, 242, 233, 0.22) 100%);
 }
 
@@ -867,7 +867,7 @@
 .services-hero-directory .services-hero-directory-panel {
     background:
         linear-gradient(145deg, rgba(246, 242, 233, 0.58), rgba(237, 230, 218, 0.32)),
-        radial-gradient(circle at 100% 0%, rgba(168, 227, 106, 0.12), transparent 36%);
+        radial-gradient(circle at 100% 0%, rgba(120, 148, 93, 0.12), transparent 36%);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-color: rgba(246, 242, 233, 0.34);
@@ -984,7 +984,7 @@
     z-index: 1;
     pointer-events: none;
     background:
-        radial-gradient(circle at 16% 18%, rgba(168, 227, 106, 0.08), transparent 30%),
+        radial-gradient(circle at 16% 18%, rgba(120, 148, 93, 0.08), transparent 30%),
         radial-gradient(circle at 88% 18%, rgba(52, 32, 23, 0.08), transparent 34%),
         linear-gradient(180deg, transparent 0%, rgba(246, 242, 233, 0.22) 100%);
 }
@@ -1003,14 +1003,14 @@
 .services-compare .compare-image::after {
     background:
         linear-gradient(180deg, rgba(22, 13, 9, 0.02), rgba(22, 13, 9, 0.24)),
-        radial-gradient(circle at 24% 18%, rgba(168, 227, 106, 0.12), transparent 30%);
+        radial-gradient(circle at 24% 18%, rgba(120, 148, 93, 0.12), transparent 30%);
 }
 
 
 .services-compare .compare-content {
     background:
         linear-gradient(145deg, rgba(246, 242, 233, 0.58), rgba(237, 230, 218, 0.34)),
-        radial-gradient(circle at 100% 0%, rgba(168, 227, 106, 0.10), transparent 34%);
+        radial-gradient(circle at 100% 0%, rgba(120, 148, 93, 0.10), transparent 34%);
     border-color: rgba(246, 242, 233, 0.32);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -1360,7 +1360,7 @@
     overflow: hidden;
     padding: clamp(58px, 7vw, 104px) 0;
     background:
-        radial-gradient(circle at 12% 0%, rgba(168, 227, 106, 0.16), transparent 34%),
+        radial-gradient(circle at 12% 0%, rgba(120, 148, 93, 0.16), transparent 34%),
         linear-gradient(180deg, #F6F2E9 0%, #EDE6DA 100%);
     color: var(--color-text);
 }
@@ -1436,7 +1436,7 @@
     width: 1px;
     background: linear-gradient(180deg,
             transparent,
-            rgba(168, 227, 106, 0.9),
+            rgba(120, 148, 93, 0.9),
             rgba(33, 30, 28, 0.12),
             transparent);
 }

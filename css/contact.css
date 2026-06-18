@@ -7,7 +7,7 @@
     overflow: hidden;
     padding: clamp(108px, 12vw, 168px) 0 clamp(42px, 7vw, 92px);
     background:
-        radial-gradient(circle at 86% 8%, rgba(168, 227, 106, 0.22), transparent 34%),
+        radial-gradient(circle at 86% 8%, rgba(120, 148, 93, 0.22), transparent 34%),
         linear-gradient(180deg, var(--color-bg) 0%, rgba(237, 230, 218, 0.76) 100%);
     color: var(--color-text);
 }
@@ -104,7 +104,7 @@
     height: 42px;
     padding: 11px;
     border: 1px solid rgba(52, 32, 23, 0.16);
-    background: rgba(168, 227, 106, 0.16);
+    background: rgba(120, 148, 93, 0.16);
     color: var(--color-dark);
     flex: 0 0 auto;
 }
@@ -210,7 +210,7 @@
     padding: clamp(18px, 2.6vw, 30px);
     border-color: rgba(52, 32, 23, 0.16);
     background:
-        radial-gradient(circle at 100% 0%, rgba(168, 227, 106, 0.2), transparent 34%),
+        radial-gradient(circle at 100% 0%, rgba(120, 148, 93, 0.2), transparent 34%),
         rgba(246, 242, 233, 0.84);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
@@ -427,8 +427,8 @@
 
 .contact-info-links a:hover {
     transform: translateX(4px);
-    border-color: rgba(168, 227, 106, 0.48);
-    background: rgba(168, 227, 106, 0.13);
+    border-color: rgba(120, 148, 93, 0.48);
+    background: rgba(120, 148, 93, 0.13);
     color: var(--color-white);
 }
 
@@ -463,7 +463,7 @@
     height: 44px;
     padding: 11px;
     border: 1px solid rgba(52, 32, 23, 0.18);
-    background: rgba(168, 227, 106, 0.16);
+    background: rgba(120, 148, 93, 0.16);
     color: var(--color-dark);
 }
 
@@ -611,7 +611,7 @@
     z-index: 2;
     pointer-events: none;
     background: radial-gradient(circle at var(--contact-glow-x, 78%) var(--contact-glow-y, 18%),
-            rgba(168, 227, 106, 0.18),
+            rgba(120, 148, 93, 0.18),
             transparent 30%);
     opacity: 0.8;
 }
@@ -775,7 +775,7 @@
     z-index: 1;
     pointer-events: none;
     background:
-        radial-gradient(circle at 18% 18%, rgba(168, 227, 106, 0.12), transparent 30%),
+        radial-gradient(circle at 18% 18%, rgba(120, 148, 93, 0.12), transparent 30%),
         radial-gradient(circle at 88% 14%, rgba(52, 32, 23, 0.10), transparent 34%),
         linear-gradient(180deg, transparent 0%, rgba(246, 242, 233, 0.24) 100%);
 }
@@ -819,7 +819,7 @@
 .contact-hero-form-first .contact-hero-form {
     background:
         linear-gradient(145deg, rgba(246, 242, 233, 0.76), rgba(237, 230, 218, 0.50)),
-        radial-gradient(circle at 100% 0%, rgba(168, 227, 106, 0.14), transparent 36%);
+        radial-gradient(circle at 100% 0%, rgba(120, 148, 93, 0.14), transparent 36%);
     border-color: rgba(246, 242, 233, 0.44);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
@@ -1145,7 +1145,7 @@
     padding: clamp(28px, 3.5vw, 52px) 0 !important;
     overflow: hidden;
     background:
-        radial-gradient(circle at 14% 10%, rgba(168, 227, 106, 0.16), transparent 28%),
+        radial-gradient(circle at 14% 10%, rgba(120, 148, 93, 0.16), transparent 28%),
         linear-gradient(180deg, var(--color-bg) 0%, rgba(237, 230, 218, 0.56) 100%);
 }
 
@@ -1243,7 +1243,7 @@
     padding: clamp(22px, 3vw, 42px) !important;
     border: 1px solid rgba(221, 212, 199, 0.78);
     background:
-        radial-gradient(circle at 100% 0%, rgba(168, 227, 106, 0.18), transparent 34%),
+        radial-gradient(circle at 100% 0%, rgba(120, 148, 93, 0.18), transparent 34%),
         linear-gradient(145deg, rgba(246, 242, 233, 0.78), rgba(237, 230, 218, 0.58));
     box-shadow: var(--shadow-card);
 }
@@ -1305,7 +1305,7 @@
     display: grid !important;
     place-items: center;
     border: 1px solid rgba(52, 32, 23, 0.16);
-    background: rgba(168, 227, 106, 0.18);
+    background: rgba(120, 148, 93, 0.18);
     color: var(--color-dark);
     font-family: var(--font-accent);
     font-size: 0.64rem !important;
@@ -1508,7 +1508,7 @@
 
 .contact-faq .faq-item:hover {
     transform: translateY(-2px);
-    border-color: rgba(168, 227, 106, 0.72);
+    border-color: rgba(120, 148, 93, 0.72);
     background: rgba(246, 242, 233, 0.78);
     box-shadow: 0 20px 54px rgba(22, 13, 9, 0.10);
 }
@@ -1782,7 +1782,7 @@ background:
 .contact-hero-clean__overlay {
     z-index: 1;
     background:
-        radial-gradient(circle at 50% 14%, rgba(168, 227, 106, 0.18), transparent 34%),
+        radial-gradient(circle at 50% 14%, rgba(120, 148, 93, 0.18), transparent 34%),
         linear-gradient(180deg, rgba(22, 13, 9, 0.58) 0%, rgba(33, 18, 12, 0.68) 52%, rgba(22, 13, 9, 0.88) 100%),
         linear-gradient(90deg, rgba(22, 13, 9, 0.52) 0%, rgba(52, 32, 23, 0.28) 50%, rgba(22, 13, 9, 0.52) 100%);
 }
@@ -1906,7 +1906,7 @@ background:
     background: linear-gradient(90deg,
             transparent,
             rgba(255, 255, 255, 0.18),
-            rgba(168, 227, 106, 0.22),
+            rgba(120, 148, 93, 0.22),
             transparent);
     transform: skewX(-18deg);
     opacity: 0;
@@ -1929,7 +1929,7 @@ background:
 
 .contact-hero-nav a:hover {
     color: var(--color-text-light);
-    background: rgba(168, 227, 106, 0.14);
+    background: rgba(120, 148, 93, 0.14);
     transform: translateY(-1px);
 }
 
@@ -2049,7 +2049,7 @@ background:
 .contact-area-photo-section {
     padding: clamp(44px, 5vw, 72px) 0;
     background:
-        radial-gradient(circle at 88% 0%, rgba(168, 227, 106, 0.12), transparent 30%),
+        radial-gradient(circle at 88% 0%, rgba(120, 148, 93, 0.12), transparent 30%),
         linear-gradient(180deg, #F6F2E9 0%, #EDE6DA 100%);
 }
 
@@ -2173,7 +2173,7 @@ background:
 
 .contact-area-steps-compact article:hover {
     transform: translateY(-3px);
-    border-color: rgba(168, 227, 106, 0.64);
+    border-color: rgba(120, 148, 93, 0.64);
     background: rgba(255, 255, 255, 0.82);
 }
 

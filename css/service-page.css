@@ -236,7 +236,7 @@
     pointer-events: none !important;
     background:
         linear-gradient(180deg, rgba(22, 13, 9, 0.02), rgba(22, 13, 9, 0.44)),
-        radial-gradient(circle at 22% 20%, rgba(168, 227, 106, 0.14), transparent 30%) !important;
+        radial-gradient(circle at 22% 20%, rgba(120, 148, 93, 0.14), transparent 30%) !important;
 }
 
 .service-overview-media:hover {
@@ -317,7 +317,7 @@
 
 .service-evaluate {
     background:
-        radial-gradient(circle at 12% 12%, rgba(168, 227, 106, 0.16), transparent 32%),
+        radial-gradient(circle at 12% 12%, rgba(120, 148, 93, 0.16), transparent 32%),
         linear-gradient(180deg, #D5CEC0 0%, #CFC7B8 100%) !important;
 }
 
@@ -452,7 +452,7 @@
     display: grid;
     place-items: center;
     border: 1px solid rgba(52, 32, 23, 0.18);
-    background: rgba(168, 227, 106, 0.16);
+    background: rgba(120, 148, 93, 0.16);
     font-family: var(--font-accent);
     font-size: 0.72rem;
     font-weight: 800;
@@ -482,7 +482,7 @@
     padding: clamp(34px, 4vw, 62px) 0 !important;
     overflow: hidden;
     background:
-        radial-gradient(circle at 8% 12%, rgba(168, 227, 106, 0.18), transparent 30%),
+        radial-gradient(circle at 8% 12%, rgba(120, 148, 93, 0.18), transparent 30%),
         linear-gradient(180deg, rgba(237, 230, 218, 0.62), var(--color-bg));
 }
 
@@ -544,7 +544,7 @@
     pointer-events: none;
     background:
         linear-gradient(180deg, rgba(22, 13, 9, 0.04), rgba(22, 13, 9, 0.42)),
-        radial-gradient(circle at 24% 18%, rgba(168, 227, 106, 0.16), transparent 30%);
+        radial-gradient(circle at 24% 18%, rgba(120, 148, 93, 0.16), transparent 30%);
 }
 
 .service-cta-image:hover img {
@@ -558,7 +558,7 @@
     gap: clamp(14px, 1.8vw, 22px) !important;
     padding: clamp(24px, 4vw, 54px) !important;
     background:
-        radial-gradient(circle at 100% 0%, rgba(168, 227, 106, 0.22), transparent 34%),
+        radial-gradient(circle at 100% 0%, rgba(120, 148, 93, 0.22), transparent 34%),
         linear-gradient(145deg, rgba(246, 242, 233, 0.84), rgba(237, 230, 218, 0.66));
 }
 
@@ -590,7 +590,7 @@
     overflow: hidden;
     padding: clamp(30px, 3.8vw, 56px) 0 !important;
     background:
-        radial-gradient(circle at 12% 18%, rgba(168, 227, 106, 0.18), transparent 32%),
+        radial-gradient(circle at 12% 18%, rgba(120, 148, 93, 0.18), transparent 32%),
         radial-gradient(circle at 92% 8%, rgba(52, 32, 23, 0.16), transparent 34%),
         linear-gradient(180deg, #D2CABB 0%, #C8C0AF 100%) !important;
 }
@@ -679,7 +679,7 @@
     padding: clamp(18px, 2.4vw, 28px) !important;
     border: 1px solid rgba(246, 242, 233, 0.46) !important;
     background:
-        radial-gradient(circle at 100% 0%, rgba(168, 227, 106, 0.16), transparent 34%),
+        radial-gradient(circle at 100% 0%, rgba(120, 148, 93, 0.16), transparent 34%),
         linear-gradient(145deg, rgba(246, 242, 233, 0.78), rgba(237, 230, 218, 0.58)) !important;
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
@@ -688,7 +688,7 @@
 
 .service-form.is-active,
 .service-form:focus-within {
-    border-color: rgba(168, 227, 106, 0.82) !important;
+    border-color: rgba(120, 148, 93, 0.82) !important;
     box-shadow: 0 28px 76px rgba(22, 13, 9, 0.18);
 }
 
@@ -825,8 +825,8 @@
 
 
 .is-active-service {
-    border-color: rgba(168, 227, 106, 0.7) !important;
-    background: rgba(168, 227, 106, 0.16) !important;
+    border-color: rgba(120, 148, 93, 0.7) !important;
+    background: rgba(120, 148, 93, 0.16) !important;
 }
 
 .footer-links .is-active-service {
@@ -1315,7 +1315,7 @@
     overflow: hidden;
     padding: clamp(38px, 5vw, 72px) 0 !important;
     background:
-        radial-gradient(circle at 12% 12%, rgba(168, 227, 106, 0.18), transparent 32%),
+        radial-gradient(circle at 12% 12%, rgba(120, 148, 93, 0.18), transparent 32%),
         radial-gradient(circle at 92% 18%, rgba(246, 242, 233, 0.08), transparent 30%),
         linear-gradient(135deg, #21120C 0%, #342017 52%, #294536 100%);
     color: var(--color-text-light);
@@ -1547,7 +1547,7 @@
     overflow: hidden;
     padding: clamp(22px, 2.8vw, 38px) 0 !important;
     background:
-        radial-gradient(circle at 12% 0%, rgba(168, 227, 106, 0.20), transparent 34%),
+        radial-gradient(circle at 12% 0%, rgba(120, 148, 93, 0.20), transparent 34%),
         linear-gradient(135deg, #160D09 0%, #21120C 48%, #342017 100%) !important;
     color: var(--color-text-light) !important;
 }
@@ -1562,7 +1562,7 @@
     background: linear-gradient(90deg,
             transparent,
             rgba(255, 255, 255, 0.12),
-            rgba(168, 227, 106, 0.24),
+            rgba(120, 148, 93, 0.24),
             transparent);
     transform: skewX(-18deg);
     animation: slimRequestShine 5.8s ease-in-out infinite;

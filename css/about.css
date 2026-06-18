@@ -6,7 +6,7 @@
     overflow: hidden;
     padding: clamp(110px, 12vw, 168px) 0 clamp(42px, 7vw, 92px);
     background:
-        radial-gradient(circle at 84% 10%, rgba(168, 227, 106, 0.22), transparent 34%),
+        radial-gradient(circle at 84% 10%, rgba(120, 148, 93, 0.22), transparent 34%),
         linear-gradient(180deg, var(--color-bg) 0%, rgba(237, 230, 218, 0.72) 100%);
     color: var(--color-text);
 }
@@ -175,7 +175,7 @@
     padding: clamp(18px, 2.4vw, 26px);
     border: 1px solid rgba(52, 32, 23, 0.16);
     background:
-        radial-gradient(circle at 100% 0%, rgba(168, 227, 106, 0.22), transparent 38%),
+        radial-gradient(circle at 100% 0%, rgba(120, 148, 93, 0.22), transparent 38%),
         rgba(246, 242, 233, 0.78);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
@@ -420,7 +420,7 @@
     inset: 0;
     background:
         linear-gradient(180deg, rgba(22, 13, 9, 0.02), rgba(22, 13, 9, 0.46)),
-        radial-gradient(circle at 22% 20%, rgba(168, 227, 106, 0.16), transparent 30%);
+        radial-gradient(circle at 22% 20%, rgba(120, 148, 93, 0.16), transparent 30%);
 }
 
 .about-story-badge {
@@ -603,7 +603,7 @@
     height: 46px;
     padding: 12px;
     border: 1px solid rgba(52, 32, 23, 0.18);
-    background: rgba(168, 227, 106, 0.16);
+    background: rgba(120, 148, 93, 0.16);
     color: var(--color-dark);
 }
 
@@ -679,7 +679,7 @@
     inset: 0;
     background:
         linear-gradient(180deg, rgba(22, 13, 9, 0.02), rgba(22, 13, 9, 0.32)),
-        radial-gradient(circle at 28% 18%, rgba(168, 227, 106, 0.14), transparent 26%);
+        radial-gradient(circle at 28% 18%, rgba(120, 148, 93, 0.14), transparent 26%);
 }
 
 .values-stack {
@@ -746,7 +746,7 @@
     padding: clamp(24px, 5vw, 62px);
     border: 1px solid rgba(221, 212, 199, 0.84);
     background:
-        radial-gradient(circle at 92% 0%, rgba(168, 227, 106, 0.26), transparent 32%),
+        radial-gradient(circle at 92% 0%, rgba(120, 148, 93, 0.26), transparent 32%),
         linear-gradient(135deg, rgba(246, 242, 233, 0.78), rgba(237, 230, 218, 0.72));
     box-shadow: var(--shadow-card);
 }
@@ -930,7 +930,7 @@
     z-index: 1;
     pointer-events: none;
     background: radial-gradient(circle at var(--about-cta-x, 88%) var(--about-cta-y, 18%),
-            rgba(168, 227, 106, 0.28),
+            rgba(120, 148, 93, 0.28),
             transparent 34%);
     opacity: 0.75;
 }
@@ -1060,7 +1060,7 @@
     z-index: 1;
     pointer-events: none;
     background:
-        radial-gradient(circle at 18% 18%, rgba(168, 227, 106, 0.10), transparent 30%),
+        radial-gradient(circle at 18% 18%, rgba(120, 148, 93, 0.10), transparent 30%),
         linear-gradient(180deg, transparent 0%, rgba(246, 242, 233, 0.22) 100%);
 }
 
@@ -1098,7 +1098,7 @@
 .about-hero-editorial .about-hero-note {
     background:
         linear-gradient(145deg, rgba(246, 242, 233, 0.62), rgba(237, 230, 218, 0.36)),
-        radial-gradient(circle at 100% 0%, rgba(168, 227, 106, 0.12), transparent 36%);
+        radial-gradient(circle at 100% 0%, rgba(120, 148, 93, 0.12), transparent 36%);
     border-color: rgba(246, 242, 233, 0.36);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -1293,7 +1293,7 @@
     z-index: 1;
     pointer-events: none;
     background:
-        radial-gradient(circle at 18% 20%, rgba(168, 227, 106, 0.20), transparent 30%),
+        radial-gradient(circle at 18% 20%, rgba(120, 148, 93, 0.20), transparent 30%),
         radial-gradient(circle at 88% 12%, rgba(246, 242, 233, 0.10), transparent 28%);
 }
 
@@ -1983,7 +1983,7 @@
 .about-model-redesign {
     padding: clamp(42px, 5.5vw, 78px) 0;
     background:
-        radial-gradient(circle at 88% 0%, rgba(168, 227, 106, 0.14), transparent 32%),
+        radial-gradient(circle at 88% 0%, rgba(120, 148, 93, 0.14), transparent 32%),
         linear-gradient(180deg, #F6F2E9 0%, #EDE6DA 100%);
 }
 
@@ -2043,7 +2043,7 @@
 
 .model-mini-card:hover {
     transform: translateY(-4px);
-    border-color: rgba(168, 227, 106, 0.68);
+    border-color: rgba(120, 148, 93, 0.68);
     background:
         linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(237, 230, 218, 0.62));
 }
@@ -2102,7 +2102,7 @@
     overflow: hidden;
     border: 1px solid rgba(248, 245, 239, 0.14);
     background:
-        radial-gradient(circle at 92% 0%, rgba(168, 227, 106, 0.18), transparent 32%),
+        radial-gradient(circle at 92% 0%, rgba(120, 148, 93, 0.18), transparent 32%),
         linear-gradient(135deg, #21120C 0%, #342017 52%, #294536 100%);
     color: var(--color-text-light);
 }
@@ -2227,7 +2227,7 @@
     z-index: 1;
     pointer-events: none;
     background:
-        radial-gradient(circle at 88% 12%, rgba(168, 227, 106, 0.22), transparent 34%),
+        radial-gradient(circle at 88% 12%, rgba(120, 148, 93, 0.22), transparent 34%),
         radial-gradient(circle at 12% 90%, rgba(246, 242, 233, 0.08), transparent 32%);
 }
 
@@ -2277,7 +2277,7 @@
     overflow: hidden;
     padding: clamp(32px, 4vw, 56px) 0 !important;
     background:
-        radial-gradient(circle at 16% 12%, rgba(168, 227, 106, 0.26), transparent 30%),
+        radial-gradient(circle at 16% 12%, rgba(120, 148, 93, 0.26), transparent 30%),
         radial-gradient(circle at 88% 18%, rgba(246, 242, 233, 0.10), transparent 28%),
         linear-gradient(135deg, rgba(22, 13, 9, 0.88), rgba(52, 32, 23, 0.72)),
         url("../assets/images/about/about-cta-bg.jpg") center / cover no-repeat !important;
@@ -2305,7 +2305,7 @@
     background: linear-gradient(90deg,
             transparent,
             rgba(255, 255, 255, 0.13),
-            rgba(168, 227, 106, 0.18),
+            rgba(120, 148, 93, 0.18),
             transparent);
     transform: skewX(-18deg);
     animation: aboutCtaShine 6.5s ease-in-out infinite;
@@ -2333,7 +2333,7 @@
     padding: clamp(24px, 3.8vw, 46px) !important;
     border: 1px solid rgba(248, 245, 239, 0.18) !important;
     background:
-        radial-gradient(circle at 92% 0%, rgba(168, 227, 106, 0.28), transparent 30%),
+        radial-gradient(circle at 92% 0%, rgba(120, 148, 93, 0.28), transparent 30%),
         linear-gradient(135deg, rgba(246, 242, 233, 0.10), rgba(246, 242, 233, 0.035)) !important;
     box-shadow: 0 28px 90px rgba(22, 13, 9, 0.28) !important;
     backdrop-filter: blur(12px);

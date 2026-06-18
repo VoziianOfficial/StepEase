@@ -11,7 +11,7 @@
     padding: clamp(104px, 12vw, 168px) 0 clamp(34px, 6vw, 74px);
     overflow: hidden;
     background:
-        radial-gradient(circle at 82% 12%, rgba(168, 227, 106, 0.22), transparent 32%),
+        radial-gradient(circle at 82% 12%, rgba(120, 148, 93, 0.22), transparent 32%),
         linear-gradient(180deg, var(--color-bg), var(--color-bg-soft));
     border-bottom: 1px solid rgba(221, 212, 199, 0.72);
 }
@@ -163,8 +163,8 @@
 .legal-toc a:hover,
 .legal-toc a.is-active {
     color: var(--color-text);
-    border-color: rgba(168, 227, 106, 0.54);
-    background: rgba(168, 227, 106, 0.14);
+    border-color: rgba(120, 148, 93, 0.54);
+    background: rgba(120, 148, 93, 0.14);
     transform: translateX(3px);
 }
 
@@ -211,7 +211,7 @@
 
 .legal-section.dark-note {
     background:
-        radial-gradient(circle at 100% 0%, rgba(168, 227, 106, 0.2), transparent 35%),
+        radial-gradient(circle at 100% 0%, rgba(120, 148, 93, 0.2), transparent 35%),
         var(--color-dark);
     color: var(--color-white);
     border-color: rgba(52, 32, 23, 0.28);
@@ -291,7 +291,7 @@
     min-height: 34px;
     padding: 8px 12px;
     border: 1px solid rgba(52, 32, 23, 0.14);
-    background: rgba(168, 227, 106, 0.14);
+    background: rgba(120, 148, 93, 0.14);
     color: var(--color-muted-dark);
     font-family: var(--font-accent);
     font-size: 0.72rem;
@@ -312,8 +312,8 @@
     gap: 14px;
     margin-top: 18px;
     padding: 16px;
-    border: 1px solid rgba(168, 227, 106, 0.44);
-    background: rgba(168, 227, 106, 0.14);
+    border: 1px solid rgba(120, 148, 93, 0.44);
+    background: rgba(120, 148, 93, 0.14);
 }
 
 .legal-callout i,
@@ -355,7 +355,7 @@
     padding: clamp(22px, 4vw, 46px);
     border: 1px solid rgba(221, 212, 199, 0.84);
     background:
-        radial-gradient(circle at 94% 0%, rgba(168, 227, 106, 0.24), transparent 32%),
+        radial-gradient(circle at 94% 0%, rgba(120, 148, 93, 0.24), transparent 32%),
         linear-gradient(135deg, rgba(246, 242, 233, 0.74), rgba(237, 230, 218, 0.68));
     box-shadow: var(--shadow-card);
 }
@@ -453,7 +453,7 @@
     inset: 0;
     pointer-events: none;
     background: radial-gradient(circle at var(--legal-cta-x, 90%) var(--legal-cta-y, 12%),
-            rgba(168, 227, 106, 0.28),
+            rgba(120, 148, 93, 0.28),
             transparent 34%);
     opacity: 0.75;
 }
