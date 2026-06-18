@@ -470,24 +470,24 @@
 
 .legal-hero {
     background:
-        linear-gradient(180deg, rgba(3, 3, 3, 0.94), rgba(23, 16, 12, 0.98));
-    border-bottom-color: rgba(248, 245, 239, 0.12);
-    color: var(--color-text-light);
+        linear-gradient(180deg, rgba(247, 243, 235, 0.98), rgba(247, 243, 235, 0.90));
+    border-bottom-color: rgba(221, 212, 199, 0.78);
+    color: var(--color-text);
 }
 
 .legal-hero::before {
     background-image:
-        linear-gradient(rgba(248, 245, 239, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(248, 245, 239, 0.04) 1px, transparent 1px);
+        linear-gradient(rgba(52, 32, 23, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(52, 32, 23, 0.035) 1px, transparent 1px);
 }
 
 .legal-hero-copy p,
 .legal-hero-card p {
-    color: rgba(248, 245, 239, 0.72);
+    color: var(--color-muted);
 }
 
 .legal-hero-card {
-    background: rgba(248, 245, 239, 0.96);
+    background: rgba(255, 255, 255, 0.86);
     color: var(--color-text);
     border-color: rgba(221, 212, 199, 0.84);
 }
@@ -518,7 +518,7 @@
 }
 
 .legal-section.dark-note {
-    background: var(--color-card);
+    background: var(--color-bg-panel);
     color: var(--color-text);
     border-color: rgba(221, 212, 199, 0.78);
 }
@@ -531,12 +531,12 @@
 
 .legal-cta-card {
     background:
-        linear-gradient(145deg, rgba(248, 245, 239, 0.88), rgba(236, 228, 216, 0.78));
+        linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(236, 228, 216, 0.78));
     border-color: rgba(221, 212, 199, 0.78);
 }
 
 .legal-cta-card::after {
     background: radial-gradient(circle at var(--legal-cta-x, 90%) var(--legal-cta-y, 12%),
-            rgba(147, 180, 119, 0.22),
+            rgba(120, 148, 93, 0.20),
             transparent 34%);
 }

@@ -2277,43 +2277,54 @@ background:
 
 /* Premium dark refresh */
 .contact-hero-clean {
-    background: #0F0907;
+    background: var(--color-bg-light);
+    color: var(--color-text);
 }
 
 .contact-hero-clean__overlay {
     background:
-        linear-gradient(90deg, rgba(3, 3, 3, 0.88) 0%, rgba(5, 5, 5, 0.72) 43%, rgba(5, 5, 5, 0.22) 100%),
-        linear-gradient(180deg, rgba(3, 3, 3, 0.10) 0%, rgba(5, 5, 5, 0.76) 100%);
+        linear-gradient(90deg,
+            rgba(247, 243, 235, 0.98) 0%,
+            rgba(247, 243, 235, 0.92) 38%,
+            rgba(247, 243, 235, 0.34) 68%,
+            rgba(0, 0, 0, 0.04) 100%),
+        linear-gradient(180deg, rgba(247, 243, 235, 0.04) 0%, rgba(247, 243, 235, 0.90) 100%);
 }
 
 .contact-hero-clean::before {
     background-image:
-        linear-gradient(rgba(248, 245, 239, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(248, 245, 239, 0.032) 1px, transparent 1px);
+        linear-gradient(rgba(52, 32, 23, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(52, 32, 23, 0.032) 1px, transparent 1px);
 }
 
 .contact-hero-clean .eyebrow,
 .contact-hero-clean .page-title,
 .contact-hero-clean__content > p {
-    color: var(--color-text-light);
+    color: var(--color-text);
 }
 
 .contact-hero-clean__content > p {
-    color: rgba(248, 245, 239, 0.72);
+    color: var(--color-muted);
 }
 
 .contact-hero-nav {
-    border-color: rgba(248, 245, 239, 0.14);
-    background: rgba(15, 9, 7, 0.34);
+    border-color: rgba(221, 212, 199, 0.84);
+    background: rgba(255, 255, 255, 0.72);
 }
 
 .contact-hero-nav a {
-    border-right-color: rgba(248, 245, 239, 0.12);
+    border-right-color: rgba(221, 212, 199, 0.78);
+    color: var(--color-text);
+}
+
+.contact-hero-nav a:hover,
+.contact-hero-nav a.is-active {
+    color: var(--color-accent-strong);
 }
 
 .contact-main {
-    background: var(--color-bg-deep);
-    color: var(--color-text-light);
+    background: var(--color-bg-light);
+    color: var(--color-text);
 }
 
 .contact-main .eyebrow,
@@ -2321,36 +2332,36 @@ background:
 .contact-main .section-kicker,
 .contact-main .contact-info p,
 .contact-main .contact-form-side p {
-    color: var(--color-text-light);
+    color: var(--color-text);
 }
 
 .contact-main .section-kicker,
 .contact-main .contact-info p,
 .contact-main .contact-form-side p {
-    color: rgba(248, 245, 239, 0.72);
+    color: var(--color-muted);
 }
 
 .contact-main .contact-form,
 .contact-main .form-card {
-    background: var(--color-bg-cocoa) !important;
-    border-color: rgba(248, 245, 239, 0.12) !important;
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.24) !important;
+    background: var(--color-white) !important;
+    border-color: rgba(221, 212, 199, 0.78) !important;
+    box-shadow: var(--shadow-card) !important;
 }
 
 .contact-main .form-label {
-    color: rgba(248, 245, 239, 0.72) !important;
+    color: var(--color-muted-dark) !important;
 }
 
 .contact-main .form-control,
 .contact-main select.form-control,
 .contact-main textarea.form-control {
-    background: rgba(248, 245, 239, 0.08) !important;
-    border-color: rgba(248, 245, 239, 0.14) !important;
-    color: var(--color-text-light) !important;
+    background: rgba(255, 255, 255, 0.86) !important;
+    border-color: rgba(221, 212, 199, 0.88) !important;
+    color: var(--color-text) !important;
 }
 
 .contact-main .form-control::placeholder {
-    color: rgba(248, 245, 239, 0.42) !important;
+    color: rgba(101, 91, 84, 0.72) !important;
 }
 
 .contact-main .form-control:focus {
@@ -2359,34 +2370,35 @@ background:
 }
 
 .contact-main .custom-check {
-    border-color: rgba(248, 245, 239, 0.18) !important;
-    background: rgba(248, 245, 239, 0.08) !important;
+    border-color: rgba(221, 212, 199, 0.88) !important;
+    background: rgba(255, 255, 255, 0.86) !important;
 }
 
 .contact-main .custom-check::after {
-    border-right-color: var(--color-text-light) !important;
-    border-bottom-color: var(--color-text-light) !important;
+    border-right-color: var(--color-accent-strong) !important;
+    border-bottom-color: var(--color-accent-strong) !important;
 }
 
 .contact-main .contact-info-card.surface-card.dark {
-    background: var(--color-bg-panel) !important;
-    border-color: rgba(248, 245, 239, 0.12) !important;
+    background: var(--color-white) !important;
+    border-color: rgba(221, 212, 199, 0.78) !important;
+    color: var(--color-text) !important;
 }
 
 .contact-main .contact-mini-card.surface-card.light {
-    background: var(--color-bg-cocoa) !important;
-    color: var(--color-text-light) !important;
-    border-color: rgba(248, 245, 239, 0.12) !important;
+    background: var(--color-white) !important;
+    color: var(--color-text) !important;
+    border-color: rgba(221, 212, 199, 0.78) !important;
 }
 
 .contact-main .contact-mini-card.surface-card.light p,
 .contact-main .contact-info-card.surface-card.dark p {
-    color: rgba(248, 245, 239, 0.72) !important;
+    color: var(--color-muted) !important;
 }
 
 .contact-main .contact-mini-card.surface-card.light h3,
 .contact-main .contact-info-card.surface-card.dark h3 {
-    color: var(--color-text-light) !important;
+    color: var(--color-text) !important;
 }
 
 .contact-area-section,

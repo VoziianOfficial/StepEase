@@ -2791,13 +2791,17 @@
 
 .about-hero-editorial::before {
     background:
-        radial-gradient(circle at 18% 18%, rgba(0, 0, 0, 0.18), transparent 30%),
-        linear-gradient(180deg, transparent 0%, rgba(3, 3, 3, 0.26) 100%);
+        radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.24), transparent 30%),
+        linear-gradient(180deg, rgba(247, 243, 235, 0.08) 0%, rgba(247, 243, 235, 0.94) 100%);
 }
 
 .about-hero-editorial .about-hero-overlay {
     background:
-        linear-gradient(90deg, rgba(3, 3, 3, 0.86) 0%, rgba(5, 5, 5, 0.70) 43%, rgba(5, 5, 5, 0.18) 100%),
-        linear-gradient(180deg, rgba(3, 3, 3, 0.08) 0%, rgba(5, 5, 5, 0.72) 100%);
+        linear-gradient(90deg,
+            rgba(247, 243, 235, 0.98) 0%,
+            rgba(247, 243, 235, 0.92) 36%,
+            rgba(247, 243, 235, 0.34) 68%,
+            rgba(0, 0, 0, 0.04) 100%),
+        linear-gradient(180deg, rgba(247, 243, 235, 0.04) 0%, rgba(247, 243, 235, 0.90) 100%);
     opacity: 1;
 }

@@ -5,8 +5,8 @@
     align-items: center;
     padding: clamp(104px, 10vw, 160px) 0 clamp(22px, 3vw, 34px);
     overflow: hidden;
-    background: var(--color-dark);
-    color: var(--color-white);
+    background: var(--color-bg-light);
+    color: var(--color-text);
 }
 
 .home-hero-bg,
@@ -20,16 +20,19 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: saturate(0.82) contrast(1.05);
-    transform: scale(1.04);
+    filter: saturate(0.9) contrast(0.98);
+    transform: scale(1.02);
 }
 
 .home-hero-overlay {
     z-index: 1;
     background:
-        radial-gradient(circle at 82% 16%, rgba(168, 227, 106, 0.16), transparent 34%),
-        linear-gradient(90deg, rgba(22, 13, 9, 0.94) 0%, rgba(33, 18, 12, 0.74) 45%, rgba(52, 32, 23, 0.42) 100%),
-        linear-gradient(180deg, rgba(22, 13, 9, 0.14) 0%, rgba(33, 18, 12, 0.72) 100%);
+        linear-gradient(90deg,
+            rgba(247, 243, 235, 0.98) 0%,
+            rgba(247, 243, 235, 0.90) 38%,
+            rgba(247, 243, 235, 0.34) 68%,
+            rgba(0, 0, 0, 0.04) 100%),
+        linear-gradient(180deg, rgba(247, 243, 235, 0.06) 0%, rgba(247, 243, 235, 0.90) 100%);
 }
 
 .home-hero .noise-layer {
@@ -43,10 +46,10 @@
     z-index: 2;
     pointer-events: none;
     background:
-        linear-gradient(rgba(246, 242, 233, 0.055) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(246, 242, 233, 0.045) 1px, transparent 1px);
+        linear-gradient(rgba(52, 32, 23, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(52, 32, 23, 0.035) 1px, transparent 1px);
     background-size: 64px 64px;
-    opacity: 0.22;
+    opacity: 0.14;
     mask-image: linear-gradient(90deg, black 0%, black 54%, transparent 100%);
 }
 
@@ -71,13 +74,13 @@
 }
 
 .home-hero .eyebrow {
-    color: rgba(246, 242, 233, 0.78);
+    color: var(--color-accent-strong);
 }
 
 .home-hero .hero-title {
     width: 100%;
     max-width: none;
-    color: var(--color-white);
+    color: var(--color-text);
     font-family: var(--font-heading);
     font-size: clamp(4rem, 9vw, 10.4rem);
     font-weight: 600;
@@ -87,7 +90,7 @@
 
 .home-hero-text {
     max-width: 860px;
-    color: rgba(246, 242, 233, 0.76);
+    color: var(--color-muted-dark);
     font-size: clamp(1rem, 1.35vw, 1.16rem);
     line-height: 1.76;
 }
@@ -103,7 +106,7 @@
     align-items: start;
     padding: 0;
     text-align: left;
-    color: rgba(246, 242, 233, 0.62);
+    color: var(--color-muted-dark);
     font-size: 0.84rem;
     line-height: 1.45;
 }
@@ -113,9 +116,9 @@
     width: 32px;
     height: 32px;
     padding: 7px;
-    border: 1px solid rgba(246, 242, 233, 0.16);
-    background: rgba(246, 242, 233, 0.06);
-    color: var(--color-accent);
+    border: 1px solid rgba(52, 32, 23, 0.16);
+    background: rgba(168, 227, 106, 0.16);
+    color: var(--color-dark);
 }
 
 .home-hero .hero-actions {
@@ -2071,10 +2074,54 @@
 }
 
 /* Premium dark refresh */
+.home-hero {
+    background: var(--color-bg-light);
+    color: var(--color-text);
+}
+
+.home-hero-bg img {
+    filter: saturate(0.9) contrast(0.98);
+    opacity: 0.30;
+}
+
 .home-hero-overlay {
     background:
-        linear-gradient(90deg, rgba(3, 3, 3, 0.88) 0%, rgba(5, 5, 5, 0.72) 43%, rgba(5, 5, 5, 0.25) 72%, rgba(5, 5, 5, 0.05) 100%),
-        linear-gradient(180deg, rgba(3, 3, 3, 0.08) 0%, rgba(5, 5, 5, 0.70) 100%);
+        linear-gradient(90deg,
+            rgba(247, 243, 235, 0.98) 0%,
+            rgba(247, 243, 235, 0.90) 38%,
+            rgba(247, 243, 235, 0.34) 68%,
+            rgba(0, 0, 0, 0.04) 100%),
+        linear-gradient(180deg, rgba(247, 243, 235, 0.06) 0%, rgba(247, 243, 235, 0.90) 100%);
+}
+
+.home-hero::before {
+    background:
+        linear-gradient(rgba(52, 32, 23, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(52, 32, 23, 0.035) 1px, transparent 1px);
+    opacity: 0.14;
+}
+
+.home-hero .eyebrow {
+    color: var(--color-accent-strong);
+}
+
+.home-hero .hero-title {
+    color: var(--color-text);
+}
+
+.home-hero-text {
+    color: var(--color-muted-dark);
+}
+
+.home-hero-disclaimer-line {
+    color: var(--color-muted-dark);
+}
+
+.home-hero-disclaimer-line i,
+.home-hero-disclaimer-line svg {
+    border-color: rgba(52, 32, 23, 0.14);
+    background: rgba(255, 255, 255, 0.55);
+    color: var(--color-accent-strong);
 }
 
 .home-service-strip {
@@ -2130,7 +2177,7 @@
 }
 
 .home-showcase .showcase-title-block {
-    background: var(--color-bg-cocoa);
+    background: var(--color-bg-panel);
     border-color: rgba(248, 245, 239, 0.12);
 }
 
@@ -2183,7 +2230,7 @@
 }
 
 .home-provider-slider-section .provider-check-card {
-    background: var(--color-bg-cocoa);
+    background: var(--color-bg-panel);
     border-color: rgba(248, 245, 239, 0.12);
     color: var(--color-text-light);
 }
@@ -2218,8 +2265,9 @@
 }
 
 .home-quote .quote-floating-card {
-    background: rgba(15, 9, 7, 0.84);
-    border-color: rgba(248, 245, 239, 0.14);
+    background: var(--color-bg-panel);
+    border-color: rgba(248, 245, 239, 0.12);
+    color: var(--color-text-light);
 }
 
 .home-faq {

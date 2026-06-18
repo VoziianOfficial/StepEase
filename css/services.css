@@ -1600,8 +1600,8 @@
     align-items: center;
     overflow: hidden;
     padding: clamp(104px, 10vw, 150px) 0 clamp(30px, 4vw, 54px);
-    background: #21120C;
-    color: var(--color-text-light);
+    background: var(--color-bg-light);
+    color: var(--color-text);
 }
 
 .services-hero-photo__bg,
@@ -1624,9 +1624,12 @@
 .services-hero-photo__overlay {
     z-index: 1;
     background:
-        radial-gradient(circle at 50% 18%, rgba(168, 227, 106, 0.18), transparent 34%),
-        linear-gradient(180deg, rgba(22, 13, 9, 0.62) 0%, rgba(33, 18, 12, 0.66) 48%, rgba(22, 13, 9, 0.88) 100%),
-        linear-gradient(90deg, rgba(22, 13, 9, 0.48) 0%, rgba(52, 32, 23, 0.32) 50%, rgba(22, 13, 9, 0.48) 100%);
+        linear-gradient(90deg,
+            rgba(247, 243, 235, 0.98) 0%,
+            rgba(247, 243, 235, 0.90) 34%,
+            rgba(247, 243, 235, 0.34) 62%,
+            rgba(0, 0, 0, 0.04) 100%),
+        linear-gradient(180deg, rgba(247, 243, 235, 0.06) 0%, rgba(247, 243, 235, 0.90) 100%);
 }
 
 .services-hero-photo::before {
@@ -1636,8 +1639,8 @@
     z-index: 2;
     pointer-events: none;
     background-image:
-        linear-gradient(rgba(246, 242, 233, 0.045) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(246, 242, 233, 0.035) 1px, transparent 1px);
+        linear-gradient(rgba(52, 32, 23, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(52, 32, 23, 0.035) 1px, transparent 1px);
     background-size: 58px 58px;
     opacity: 0.18;
 }
@@ -1661,7 +1664,7 @@
 }
 
 .services-hero-photo .eyebrow {
-    color: var(--color-accent-light);
+    color: var(--color-accent-strong);
 }
 
 .services-hero-photo .eyebrow::before {
@@ -1670,7 +1673,7 @@
 
 .services-hero-photo .page-title {
     max-width: 1120px;
-    color: var(--color-text-light);
+    color: var(--color-text);
     font-size: clamp(3.2rem, 7.2vw, 8.2rem);
     font-weight: 500;
     line-height: 0.9;
@@ -1679,7 +1682,7 @@
 
 .services-hero-photo__content>p {
     max-width: 820px;
-    color: rgba(248, 245, 239, 0.72);
+    color: var(--color-muted);
     font-size: clamp(0.98rem, 1.2vw, 1.14rem);
     line-height: 1.72;
 }
@@ -1690,14 +1693,14 @@
 }
 
 .services-hero-photo .btn-outline {
-    --btn-bg: rgba(255, 255, 255, 0.035);
-    --btn-color: var(--color-text-light);
-    --btn-border: rgba(248, 245, 239, 0.28);
+    --btn-bg: rgba(255, 255, 255, 0.86);
+    --btn-color: var(--color-text);
+    --btn-border: rgba(221, 212, 199, 0.84);
 }
 
 .services-hero-photo .btn-outline:hover {
-    color: var(--color-text-light);
-    border-color: var(--color-accent-hover);
+    color: var(--color-accent-strong);
+    border-color: var(--color-accent);
 }
 
 
@@ -1708,8 +1711,8 @@
     justify-content: center;
     gap: 1px;
     overflow: hidden;
-    border: 1px solid rgba(248, 245, 239, 0.16);
-    background: rgba(22, 13, 9, 0.34);
+    border: 1px solid rgba(221, 212, 199, 0.84);
+    background: rgba(255, 255, 255, 0.76);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 }
@@ -1723,8 +1726,8 @@
     justify-content: center;
     gap: 10px;
     padding: 12px 14px;
-    color: rgba(248, 245, 239, 0.76);
-    border-right: 1px solid rgba(248, 245, 239, 0.12);
+    color: var(--color-text);
+    border-right: 1px solid rgba(221, 212, 199, 0.78);
     overflow: hidden;
     transition:
         color 0.28s var(--ease-out),
@@ -1744,7 +1747,7 @@
     background: linear-gradient(90deg,
             transparent,
             rgba(255, 255, 255, 0.18),
-            rgba(168, 227, 106, 0.22),
+            rgba(120, 148, 93, 0.16),
             transparent);
     transform: skewX(-18deg);
     opacity: 0;
@@ -1760,14 +1763,14 @@
     right: 16px;
     bottom: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+    background: linear-gradient(90deg, transparent, var(--color-accent-strong), transparent);
     opacity: 0;
     transition: opacity 0.28s var(--ease-out);
 }
 
 .services-hero-nav a:hover {
-    color: var(--color-text-light);
-    background: rgba(168, 227, 106, 0.14);
+    color: var(--color-accent-strong);
+    background: rgba(120, 148, 93, 0.10);
     transform: translateY(-1px);
 }
 
@@ -1785,7 +1788,7 @@
     width: 19px;
     height: 19px;
     flex: 0 0 auto;
-    color: var(--color-accent-light);
+    color: var(--color-accent-strong);
     stroke-width: 1.75;
     background: transparent !important;
     border: 0 !important;
@@ -1982,11 +1985,11 @@
 
 .services-hero-note,
 .services-hero-directory-panel {
-    border-color: rgba(248, 245, 239, 0.12);
+    border-color: rgba(221, 212, 199, 0.84);
     background:
-        linear-gradient(145deg, rgba(5, 5, 5, 0.10), rgba(3, 3, 3, 0.72)),
-        rgba(38, 24, 18, 0.94);
-    color: var(--color-text-light);
+        linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(246, 242, 233, 0.68)),
+        rgba(255, 255, 255, 0.88);
+    color: var(--color-text);
 }
 
 .services-directory-head span,
@@ -1994,42 +1997,42 @@
 .services-hero-mini-card strong,
 .services-hero-mini-card p,
 .services-directory-footer span {
-    color: var(--color-text-light);
+    color: var(--color-text);
 }
 
 .services-hero-mini-card,
 .services-directory-footer span {
-    border-color: rgba(248, 245, 239, 0.12);
-    background: rgba(38, 24, 18, 0.92);
+    border-color: rgba(221, 212, 199, 0.78);
+    background: rgba(255, 255, 255, 0.82);
 }
 
 .services-directory {
-    background: linear-gradient(180deg, var(--color-bg-deep) 0%, var(--color-bg-cocoa) 100%);
-    color: var(--color-text-light);
+    background: linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-bg-cream) 100%);
+    color: var(--color-text);
 }
 
 .services-directory .section-title,
 .services-directory .section-kicker,
 .services-directory .eyebrow,
 .services-directory-slider-head p {
-    color: var(--color-text-light);
+    color: var(--color-text);
 }
 
 .services-directory .section-kicker,
 .services-directory-slider-head p {
-    color: rgba(248, 245, 239, 0.72);
+    color: var(--color-muted);
 }
 
 .services-directory .slider-btn {
-    background: rgba(255, 255, 255, 0.035);
-    border-color: rgba(248, 245, 239, 0.28);
-    color: var(--color-text-light);
+    background: rgba(255, 255, 255, 0.86);
+    border-color: rgba(221, 212, 199, 0.84);
+    color: var(--color-text);
 }
 
 .services-directory .slider-btn:hover {
-    background: rgba(147, 180, 119, 0.10);
-    border-color: var(--color-accent-hover);
-    color: var(--color-text-light);
+    background: #FFFFFF;
+    border-color: var(--color-accent);
+    color: var(--color-accent-strong);
 }
 
 .services-review {
@@ -2042,8 +2045,8 @@
 
 .services-request {
     background:
-        linear-gradient(180deg, rgba(3, 3, 3, 0.94) 0%, rgba(23, 16, 12, 0.98) 100%);
-    color: var(--color-text-light);
+        linear-gradient(180deg, var(--color-bg-light) 0%, rgba(236, 228, 216, 0.84) 100%);
+    color: var(--color-text);
 }
 
 .services-request .section-title,
@@ -2053,20 +2056,20 @@
 .services-request .choice-lens-row p,
 .services-request .choice-lens-note,
 .services-request .choice-lens-note p {
-    color: var(--color-text-light);
+    color: var(--color-text);
 }
 
 .services-request .section-kicker,
 .services-request .choice-lens-row p,
 .services-request .choice-lens-note p {
-    color: rgba(248, 245, 239, 0.72);
+    color: var(--color-muted);
 }
 
 .services-request .choice-lens-board,
 .services-request .choice-lens-row,
 .services-request .choice-lens-note {
-    border-color: rgba(248, 245, 239, 0.12);
-    background: rgba(38, 24, 18, 0.94);
+    border-color: rgba(221, 212, 199, 0.78);
+    background: rgba(255, 255, 255, 0.84);
 }
 
 .services-request .choice-lens-row i,
@@ -2082,7 +2085,10 @@
 
 .services-hero-photo__overlay {
     background:
-        linear-gradient(90deg, rgba(3, 3, 3, 0.88) 0%, rgba(5, 5, 5, 0.72) 43%, rgba(5, 5, 5, 0.22) 100%),
-        linear-gradient(180deg, rgba(3, 3, 3, 0.10) 0%, rgba(5, 5, 5, 0.76) 100%),
-        radial-gradient(circle at 50% 18%, rgba(0, 0, 0, 0.18), transparent 34%);
+        linear-gradient(90deg,
+            rgba(247, 243, 235, 0.98) 0%,
+            rgba(247, 243, 235, 0.90) 34%,
+            rgba(247, 243, 235, 0.34) 62%,
+            rgba(0, 0, 0, 0.04) 100%),
+        linear-gradient(180deg, rgba(247, 243, 235, 0.06) 0%, rgba(247, 243, 235, 0.90) 100%);
 }
