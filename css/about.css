@@ -2690,32 +2690,15 @@
 }
 
 .about-values {
-    background: var(--color-bg-cocoa);
     color: var(--color-text-light);
 }
 
-.about-values .section-title,
-.about-values .eyebrow,
-.about-values .values-copy p,
-.about-values .values-stack article h3,
-.about-values .values-stack article p {
-    color: var(--color-text-light);
-}
-
-.about-values .values-stack article p,
-.about-values .values-copy p {
-    color: rgba(248, 245, 239, 0.72);
-}
 
 .about-values .values-stack article {
     border-color: rgba(248, 245, 239, 0.12);
-    background: var(--color-bg-panel);
 }
 
-.about-values .values-stack article:hover {
-    border-color: rgba(147, 180, 119, 0.55);
-    background: var(--color-bg-panel-hover);
-}
+
 
 .about-values .values-image::after,
 .about-values .values-image-main::after {

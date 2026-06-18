@@ -3373,11 +3373,7 @@ footer .brand,
 }
 
 
-.section-on-light p,
-.section-on-light li,
-.section-on-light .section-kicker {
-    color: var(--text-on-light-muted);
-}
+
 
 .section-on-light .eyebrow {
     color: var(--accent-deep);
