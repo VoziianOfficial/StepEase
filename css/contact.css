@@ -2283,7 +2283,7 @@ background:
     color: var(--color-muted) !important;
 }
 
-/* Premium dark refresh */
+
 .contact-hero-clean {
     background: var(--color-bg-light);
     color: var(--color-text);
@@ -2465,9 +2465,7 @@ background:
 }
 
 
-/* =========================================
-   CONTACT CARDS — CLEAN HOVERS + BRIGHT ICONS
-========================================= */
+
 
 .contact-info-side .surface-card {
     position: relative;
@@ -2480,7 +2478,7 @@ background:
         box-shadow 280ms var(--ease-out);
 }
 
-/* Тонкая линия снизу каждой карточки */
+
 .contact-info-side .surface-card::after {
     content: "";
     position: absolute;
@@ -2505,7 +2503,7 @@ background:
         transform 360ms var(--ease-out);
 }
 
-/* ---------- Большая тёмная карточка ---------- */
+
 
 .contact-info-card:hover {
     transform: translateY(-5px);
@@ -2524,7 +2522,7 @@ background:
     transform: scaleX(1);
 }
 
-/* ---------- Светлые mini-карточки ---------- */
+
 
 .contact-mini-card:hover {
     transform: translateY(-5px);
@@ -2537,7 +2535,7 @@ background:
         0 20px 30px rgba(38, 25, 20, 0.12) !important;
 }
 
-/* ---------- Яркие иконки в mini-карточках ---------- */
+
 
 .contact-mini-card>i,
 .contact-mini-card>svg {
@@ -2572,7 +2570,7 @@ background:
         drop-shadow(0 8px 14px rgba(120, 148, 93, 0.42)) drop-shadow(0 0 12px rgba(120, 148, 93, 0.24));
 }
 
-/* ---------- Иконки ссылок в тёмной карточке ---------- */
+
 
 .contact-info-links a {
     transition:
@@ -2603,7 +2601,7 @@ background:
         drop-shadow(0 0 10px rgba(94, 148, 170, 0.72)) drop-shadow(0 6px 12px rgba(94, 148, 170, 0.34));
 }
 
-/* На телефоне карточки не должны слишком прыгать */
+
 @media (max-width: 680px) {
 
     .contact-info-card:hover,
@@ -2616,9 +2614,7 @@ background:
         left: 16px;
     }
 }
-/* =========================================
-   CONTACT — DARK COUNTER STRIP
-========================================= */
+
 
 .contact-stats-strip {
     position: relative;
@@ -2821,7 +2817,7 @@ background:
     line-height: 1.48;
 }
 
-/* Hover карточек без перекрашивания текста */
+
 @media (hover: hover) {
     .contact-stat:hover {
         transform: translateY(-4px);

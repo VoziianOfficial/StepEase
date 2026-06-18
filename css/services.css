@@ -1966,7 +1966,7 @@
     display: none !important;
 }
 
-/* Premium dark refresh */
+
 .services-hero {
     background:
         linear-gradient(180deg, rgba(3, 3, 3, 0.94) 0%, rgba(23, 16, 12, 0.98) 100%);
@@ -2103,9 +2103,7 @@
 }
 
 
-/* =========================================
-   STEP EASE — EXPANDING PROVIDER STRIP
-========================================= */
+
 
 .stease-compare-strip {
     position: relative;
@@ -2125,7 +2123,7 @@
             #0c0b0a 100%);
 }
 
-/* Большой логотип спокойно плавает на фоне */
+
 .stease-compare-strip::before {
     content: "";
     position: absolute;
@@ -2147,7 +2145,7 @@
     pointer-events: none;
 }
 
-/* Тонкая световая линия сверху */
+
 .stease-compare-strip::after {
     content: "";
     position: absolute;
@@ -2172,7 +2170,7 @@
     z-index: 2;
 }
 
-/* Верхняя часть */
+
 .stease-compare-strip__head {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(230px, 0.43fr);
@@ -2206,7 +2204,7 @@
     line-height: 1.68;
 }
 
-/* Общая длинная панель */
+
 .stease-compare-strip__rail {
     display: flex;
     min-height: clamp(260px, 24vw, 335px);
@@ -2227,7 +2225,7 @@
         0 28px 54px rgba(0, 0, 0, 0.22);
 }
 
-/* Каждый блок */
+
 .stease-compare-strip__item {
     position: relative;
     isolation: isolate;
@@ -2255,7 +2253,7 @@
     border-left: 1px solid rgba(248, 245, 239, 0.13);
 }
 
-/* Внутренний свет при hover */
+
 .stease-compare-strip__item::before {
     content: "";
     position: absolute;
@@ -2274,7 +2272,7 @@
     transition: opacity 360ms var(--ease-out);
 }
 
-/* Нижняя длинная линия */
+
 .stease-compare-strip__item::after {
     content: "";
     position: absolute;
@@ -2299,7 +2297,7 @@
         transform 480ms var(--ease-out);
 }
 
-/* Верхний ряд */
+
 .stease-compare-strip__item-top {
     display: flex;
     align-items: flex-start;
@@ -2348,7 +2346,7 @@
     height: 18px;
 }
 
-/* Текст */
+
 .stease-compare-strip__content {
     display: grid;
     align-content: end;
@@ -2389,12 +2387,12 @@
         transform 360ms var(--ease-out);
 }
 
-/* Когда курсор в rail — остальные сжимаются */
+
 .stease-compare-strip__rail:hover .stease-compare-strip__item {
     flex-grow: 0.78;
 }
 
-/* Активный раскрывается */
+
 .stease-compare-strip__item:hover,
 .stease-compare-strip__item:focus-visible {
     flex-grow: 2.1;
@@ -2448,7 +2446,7 @@
     transform: translateY(0);
 }
 
-/* Tablet */
+
 @media (max-width: 980px) {
     .stease-compare-strip__head {
         grid-template-columns: 1fr;
@@ -2472,7 +2470,7 @@
     }
 }
 
-/* Mobile: раскрывающийся эффект превращается в нормальный список */
+
 @media (max-width: 700px) {
     .stease-compare-strip {
         padding: 42px 0 !important;
@@ -2564,9 +2562,7 @@
     }
 }
 
-/* =========================================
-   SERVICES COMPARE — JUICY POINT HOVERS
-========================================= */
+
 
 .services-compare .compare-points>div {
     position: relative;
@@ -2578,7 +2574,7 @@
         box-shadow 260ms var(--ease-out);
 }
 
-/* Мягкий свет внутри пункта */
+
 .services-compare .compare-points>div::before {
     content: "";
     position: absolute;
@@ -2596,7 +2592,7 @@
     transition: opacity 280ms var(--ease-out);
 }
 
-/* Акцентная вертикальная линия слева */
+
 .services-compare .compare-points>div::after {
     content: "";
     position: absolute;
@@ -2620,7 +2616,7 @@
         transform 320ms var(--ease-out);
 }
 
-/* Заголовок */
+
 .services-compare .compare-points strong {
     position: relative;
     display: inline-block;
@@ -2629,7 +2625,7 @@
         transform 260ms var(--ease-out);
 }
 
-/* Линия именно под заголовком */
+
 .services-compare .compare-points strong::after {
     content: "";
     position: absolute;
@@ -2653,7 +2649,7 @@
         transform 320ms var(--ease-out);
 }
 
-/* Hover */
+
 .services-compare .compare-points>div:hover {
     padding-left: 18px;
     background: rgba(255, 255, 255, 0.24);
@@ -2681,7 +2677,7 @@
     transform: scaleX(1);
 }
 
-/* На мобилке без лишнего смещения */
+
 @media (max-width: 680px) {
     .services-compare .compare-points>div:hover {
         padding-left: 14px;
@@ -2693,9 +2689,7 @@
     }
 }
 
-/* =========================================
-   CHOICE LENS — PREMIUM ROW HOVERS
-========================================= */
+
 
 .services-choice-lens .choice-lens-row {
     position: relative;
@@ -2708,7 +2702,7 @@
         transform 280ms var(--ease-out);
 }
 
-/* Мягкий свет внутри строки */
+
 .services-choice-lens .choice-lens-row::before {
     content: "";
     position: absolute;
@@ -2726,7 +2720,7 @@
     transition: opacity 280ms var(--ease-out);
 }
 
-/* Акцентный контур: короткое ребро слева + линия снизу */
+
 .services-choice-lens .choice-lens-row::after {
     content: "";
     position: absolute;
@@ -2751,7 +2745,7 @@
         transform 380ms var(--ease-out);
 }
 
-/* Иконки — ярче, но без фона */
+
 .services-choice-lens .choice-lens-row>i,
 .services-choice-lens .choice-lens-row>svg {
     position: relative;
@@ -2774,7 +2768,7 @@
         filter 280ms var(--ease-out);
 }
 
-/* Текст */
+
 .services-choice-lens .choice-lens-row>div {
     position: relative;
     z-index: 2;
@@ -2785,7 +2779,7 @@
     transition: color 280ms var(--ease-out);
 }
 
-/* Hover */
+
 .services-choice-lens .choice-lens-row:hover {
     z-index: 2;
     border-color: rgba(94, 148, 170, 0.34) !important;
@@ -2827,7 +2821,7 @@
     color: var(--color-accent-strong) !important;
 }
 
-/* На мобилке без сильного горизонтального сдвига */
+
 @media (max-width: 680px) {
     .services-choice-lens .choice-lens-row:hover {
         transform: translateX(2px);
@@ -2839,11 +2833,9 @@
     }
 }
 
-/* =========================================
-   CHOICE LENS — SHINE HOVER, NO BLUE BACKGROUND
-========================================= */
 
-/* Вместо голубой подсветки — движущийся световой блик */
+
+
 .services-choice-lens .choice-lens-row::before {
     background: linear-gradient(108deg,
             transparent 18%,
@@ -2861,28 +2853,26 @@
         transform 720ms var(--ease-out) !important;
 }
 
-/* Не меняем фон карточки на голубой или белый */
+
 .services-choice-lens .choice-lens-row:hover {
     background: transparent !important;
 
 }
 
-/* Блик пробегает по строке */
+
 .services-choice-lens .choice-lens-row:hover::before {
     opacity: 1;
     transform: translateX(135%) skewX(-16deg);
 }
 
-/* Иконка остаётся яркой, но без фона */
+
 .services-choice-lens .choice-lens-row:hover>i,
 .services-choice-lens .choice-lens-row:hover>svg {
     color: #86BED1 !important;
     filter: drop-shadow(0 10px 15px rgba(94, 148, 170, 0.30));
 }
 
-/* =========================================
-   STEP EASE — DARK ICON RAIL
-========================================= */
+
 
 .stease-icon-rail {
     position: relative;
@@ -2952,7 +2942,7 @@
         transform 300ms var(--ease-out);
 }
 
-/* Лёгкий внутренний блик */
+
 .stease-icon-rail__item::before {
     content: "";
     position: absolute;
@@ -2976,7 +2966,7 @@
         transform 720ms var(--ease-out);
 }
 
-/* Нижняя линия раскрывается на hover */
+
 .stease-icon-rail__item::after {
     content: "";
     position: absolute;
@@ -3019,7 +3009,7 @@
         filter 340ms var(--ease-out);
 }
 
-/* Hover */
+
 .stease-icon-rail__item:hover,
 .stease-icon-rail__item:focus-visible {
     color: var(--color-accent-light);
@@ -3051,7 +3041,7 @@
     filter: drop-shadow(0 12px 18px rgba(94, 148, 170, 0.34));
 }
 
-/* Tablet */
+
 @media (max-width: 900px) {
     .stease-icon-rail__list {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3062,7 +3052,7 @@
     }
 }
 
-/* Mobile */
+
 @media (max-width: 560px) {
     .stease-icon-rail {
         padding: 12px 0;
@@ -3088,7 +3078,7 @@
 }
 
 
-/* SERVICES FAQ — REMOVE BACKGROUND GRID */
+
 .services-faq::before {
     content: none !important;
     display: none !important;
@@ -3096,9 +3086,7 @@
     background-image: none !important;
 }
 
-/* =========================================
-   STEP EASE — HORIZONTAL DARK CTA
-========================================= */
+
 
 .stease-action-cta {
     position: relative;
@@ -3264,7 +3252,7 @@
     transform: translateX(4px);
 }
 
-/* Tablet */
+
 @media (max-width: 980px) {
     .stease-action-cta__shell {
         grid-template-columns: 1fr auto;
@@ -3277,7 +3265,7 @@
     }
 }
 
-/* Mobile */
+
 @media (max-width: 640px) {
     .stease-action-cta {
         padding: 16px 0;

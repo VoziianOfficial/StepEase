@@ -7,14 +7,14 @@
 
 
 :root {
-    /* Premium dark espresso base */
+    
     --color-bg-dark: #0F0907;
     --color-bg-deep: #17100C;
     --color-bg-cocoa: #261812;
     --color-bg-panel: #322117;
     --color-bg-panel-hover: #3A281D;
 
-    /* Light contrast zone */
+    
     --color-bg-light: #F7F3EB;
     --color-bg-cream: #ECE4D8;
     --color-white: #FFFFFF;
@@ -23,7 +23,7 @@
     --color-text-light: #F8F5EF;
     --color-text-muted: #857A72;
 
-    /* Premium green-bronze accents */
+    
     --color-accent: #78945D;
     --color-accent-hover: #93B477;
     --color-accent-strong: #536C45;
@@ -4148,7 +4148,7 @@ footer .brand,
     stroke: currentColor !important;
 }
 
-/* Hero contrast repair: dark photo-backed heroes */
+
 :is(.home-hero, .services-hero, .services-hero-photo, .contact-hero-clean, .service-hero) {
     color: var(--color-text-light);
 }
@@ -4347,10 +4347,7 @@ footer .brand,
     }
 }
 
-/* =========================
-   GLOBAL CARD JUICE + PREMIUM SHINE
-   Safe sitewide enhancement
-========================= */
+
 
 :where(.surface-card,
     .image-card,
@@ -4381,7 +4378,7 @@ footer .brand,
         filter 0.28s var(--ease-out);
 }
 
-/* мягкий общий shine-слой */
+
 :where(.surface-card,
     .home-service-card,
     .service-route-card,
@@ -4417,7 +4414,7 @@ footer .brand,
         opacity 0.28s var(--ease-out);
 }
 
-/* чтобы контент был поверх блеска */
+
 :where(.surface-card,
     .home-service-card,
     .service-route-card,
@@ -4439,7 +4436,7 @@ footer .brand,
     z-index: 3;
 }
 
-/* hover — сочнее, но без сильного прыжка */
+
 :where(.surface-card,
     .home-service-card,
     .service-route-card,
@@ -4464,7 +4461,7 @@ footer .brand,
     filter: saturate(1.04) contrast(1.02);
 }
 
-/* сам проходящий блеск */
+
 :where(.surface-card,
     .home-service-card,
     .service-route-card,
@@ -4486,7 +4483,7 @@ footer .brand,
     opacity: 1;
 }
 
-/* лёгкая нижняя акцентная линия на hover */
+
 :where(.surface-card,
     .home-service-card,
     .provider-check-card,
@@ -4536,12 +4533,12 @@ footer .brand,
     opacity: 1;
 }
 
-/* Image cards: не трогаем overlay ::after, только делаем фото сочнее */
+
 :where(.image-card, .service-route-card, .home-service-card):hover img {
     filter: saturate(1.08) contrast(1.04) brightness(1.02);
 }
 
-/* Иконки становятся чуть выразительнее */
+
 :where(.surface-card,
     .image-card,
     .home-service-card,
@@ -4581,7 +4578,7 @@ footer .brand,
     transform: translateY(-2px);
 }
 
-/* На мобильных убираем активный блеск, чтобы не было лишней дерготни */
+
 @media (max-width: 760px) {
 
     :where(.surface-card,
@@ -4628,12 +4625,9 @@ footer .brand,
 }
 
 
-/* =========================================
-   COMPACT HERO HEIGHTS
-   Services / Contact
-========================================= */
 
-/* Убираем стандартные большие section-padding и full-screen высоту */
+
+
 .services-hero.services-hero-photo,
 .contact-hero.contact-hero-clean {
     height: auto !important;
@@ -4642,7 +4636,7 @@ footer .brand,
     overflow: hidden;
 }
 
-/* Services и Contact: более компактные */
+
 .services-hero.services-hero-photo {
     min-height: clamp(600px, 44vw, 670px) !important;
 }
@@ -4651,21 +4645,21 @@ footer .brand,
     min-height: clamp(580px, 42vw, 650px) !important;
 }
 
-/* Services hero */
+
 .services-hero.services-hero-photo .services-hero-photo__inner {
     min-height: clamp(600px, 44vw, 670px) !important;
     padding-top: calc(var(--header-height) + clamp(58px, 5.5vw, 92px)) !important;
     padding-bottom: clamp(48px, 4.5vw, 72px) !important;
 }
 
-/* Contact hero */
+
 .contact-hero.contact-hero-clean .contact-hero-clean__inner {
     min-height: clamp(580px, 42vw, 650px) !important;
     padding-top: calc(var(--header-height) + clamp(58px, 5.5vw, 92px)) !important;
     padding-bottom: clamp(48px, 4.5vw, 72px) !important;
 }
 
-/* Планшеты */
+
 @media (max-width: 900px) {
     .services-hero.services-hero-photo,
     .contact-hero.contact-hero-clean {
@@ -4680,7 +4674,7 @@ footer .brand,
     }
 }
 
-/* Телефоны: hero растёт только от контента, без пустого пространства */
+
 @media (max-width: 767px) {
 
     .services-hero.services-hero-photo,
@@ -4696,9 +4690,7 @@ footer .brand,
     }
 }
 
-/* =========================================
-   SHARED HERO QUICK NAV
-========================================= */
+
 
 :root {
     --hero-quick-accent: var(--brand-blue);
@@ -4773,7 +4765,7 @@ footer .brand,
     border-right: 1px solid var(--hero-quick-line-soft);
 }
 
-/* для 4-колоночного блока */
+
 .hero-quick-nav--4 .hero-quick-link:not(:nth-child(4n)) {
     border-right: 1px solid var(--hero-quick-line-soft);
 }
@@ -4846,40 +4838,40 @@ footer .brand,
     outline-offset: -2px;
 }
 
-/* Если hero nav стоит сразу после контента */
+
 .home-hero .hero-quick-nav,
 .services-hero .hero-quick-nav,
 .contact-hero .hero-quick-nav {
     margin-inline: auto;
 }
 
-/* Главная — можно сделать чуть уже */
+
 .home-hero .hero-quick-nav {
     max-width: min(100%, 1180px);
 }
 
-/* Services / Contact */
+
 .services-hero .hero-quick-nav,
 .contact-hero .hero-quick-nav {
     max-width: 100%;
 }
 
-/* 6 items: добавляем горизонтальную линию между рядами */
+
 .hero-quick-nav--6 .hero-quick-link:nth-child(-n + 3) {
     border-bottom: 1px solid var(--hero-quick-line-soft);
 }
 
-/* 4 items */
+
 .hero-quick-nav--4 .hero-quick-link {
     border-bottom: 0;
 }
 
-/* 3 items */
+
 .hero-quick-nav--3 .hero-quick-link {
     border-bottom: 0;
 }
 
-/* Tablet */
+
 @media (max-width: 980px) {
     .hero-quick-nav--4 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4914,7 +4906,7 @@ footer .brand,
     }
 }
 
-/* Mobile */
+
 @media (max-width: 640px) {
 
     .hero-quick-nav--4,
@@ -4944,12 +4936,9 @@ footer .brand,
 }
 
 
-/* =========================================
-   STEPEASE — FINAL SERVICES DROPDOWN
-   compact premium list / hover open
-========================================= */
 
-/* Сам dropdown */
+
+
 .nav-dropdown-menu {
     position: absolute !important;
     top: calc(100% + 12px) !important;
@@ -4995,12 +4984,12 @@ footer .brand,
         transform 220ms var(--ease-out) !important;
 }
 
-/* Описания остаются в HTML, но визуально скрыты */
+
 .nav-dropdown-menu .dropdown-service-link>span {
     display: none !important;
 }
 
-/* Каждая ссылка — просто изящная строка */
+
 .nav-dropdown-menu .dropdown-service-link {
     position: relative;
 
@@ -5027,7 +5016,7 @@ footer .brand,
     border-bottom: 0 !important;
 }
 
-/* Маленькая premium-точка слева */
+
 .nav-dropdown-menu .dropdown-service-link::before {
     content: "";
 
@@ -5053,7 +5042,7 @@ footer .brand,
         box-shadow 240ms var(--ease-out);
 }
 
-/* Линия раскрывается снизу при hover */
+
 .nav-dropdown-menu .dropdown-service-link::after {
     content: "";
 
@@ -5078,7 +5067,7 @@ footer .brand,
         transform 260ms var(--ease-out);
 }
 
-/* Название сервиса */
+
 .nav-dropdown-menu .dropdown-service-link strong {
     display: block;
 
@@ -5097,7 +5086,7 @@ footer .brand,
         transform 240ms var(--ease-out) !important;
 }
 
-/* Hover строки */
+
 .nav-dropdown-menu .dropdown-service-link:hover,
 .nav-dropdown-menu .dropdown-service-link:focus-visible {
     padding-left: 23px !important;
@@ -5132,9 +5121,7 @@ footer .brand,
     transform: translateX(2px);
 }
 
-/* =========================================
-   OPEN ON HOVER — DESKTOP
-========================================= */
+
 
 @media (min-width: 1121px) {
 
@@ -5156,7 +5143,7 @@ footer .brand,
     }
 }
 
-/* Чуть компактнее на небольших экранах */
+
 @media (max-width: 1180px) {
     .nav-dropdown-menu {
         width: min(292px, calc(100vw - 24px)) !important;

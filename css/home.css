@@ -2021,9 +2021,7 @@
 }
 
 
-/* =========================================
-   HOME — WALK-IN TUB CHOICE STRIP
-========================================= */
+
 
 :root {
     --choice-blue: var(--brand-blue);
@@ -2188,7 +2186,7 @@
     transform: translateY(-4px) rotate(-4deg);
 }
 
-/* Tablet */
+
 @media (max-width: 1180px) {
     .home-choice-strip__inner {
         grid-template-columns: 1fr;
@@ -2218,7 +2216,7 @@
     }
 }
 
-/* Mobile */
+
 @media (max-width: 560px) {
     .home-choice-strip {
         padding: 40px 0;
@@ -2258,9 +2256,7 @@
         left: 0;
     }
 }
-/* =========================================
-   STEP EASE — CALM PREMIUM SERVICE RIBBON
-========================================= */
+
 
 .stease-service-ribbon {
     position: relative;
@@ -2295,7 +2291,7 @@
     align-items: center;
 }
 
-/* Общий элемент */
+
 .stease-service-ribbon__item {
     --ribbon-icon: var(--color-accent-light);
 
@@ -2314,7 +2310,7 @@
         background-color 220ms var(--ease-out);
 }
 
-/* Только две благородные группы цветов */
+
 .stease-service-ribbon__item--blue,
 .stease-service-ribbon__item--aqua {
     --ribbon-icon: var(--brand-blue, #557E8D);
@@ -2327,7 +2323,7 @@
     --ribbon-icon: var(--color-accent-light);
 }
 
-/* Иконки — крупные, но спокойные */
+
 .stease-service-ribbon__item i,
 .stease-service-ribbon__item svg {
     width: clamp(28px, 2.4vw, 40px);
@@ -2338,7 +2334,7 @@
     transition: color 220ms var(--ease-out);
 }
 
-/* Обычный дорогой текст, без outline */
+
 .stease-service-ribbon__item span {
     display: block;
     color: currentColor;
@@ -2351,7 +2347,7 @@
     -webkit-text-stroke: 0;
 }
 
-/* Тонкая аккуратная линия при hover */
+
 .stease-service-ribbon__item::after {
     content: "";
     position: absolute;
@@ -2367,7 +2363,7 @@
         transform 220ms var(--ease-out);
 }
 
-/* Без дёрганья, поворотов и прыжков */
+
 .stease-service-ribbon__item:hover {
     color: #FFFFFF;
     background: rgba(255, 255, 255, 0.025);
@@ -2383,7 +2379,7 @@
     color: var(--color-accent-hover);
 }
 
-/* Края ленты */
+
 .stease-service-ribbon__fade {
     position: absolute;
     top: 0;
@@ -2451,9 +2447,7 @@
 }
 
 
-/* =========================================
-   HOME PROCESS — LIGHT 3D HORIZONTAL CARDS
-========================================= */
+
 
 .home-process {
     position: relative;
@@ -2467,13 +2461,13 @@
             var(--color-bg-light) 100%);
 }
 
-/* Делаем именно эту секцию шире общей ширины сайта */
+
 .home-process>.container {
     width: min(100% - clamp(36px, 6vw, 112px), 1440px);
     max-width: 1440px;
 }
 
-/* Больше пространства справа под горизонтальные карточки */
+
 .home-process .process-layout {
     display: grid;
     grid-template-columns: minmax(300px, 0.72fr) minmax(620px, 1.28fr);
@@ -2481,7 +2475,7 @@
     align-items: center;
 }
 
-/* Чуть компактнее текстовый блок, чтобы секция была горизонтальной */
+
 .home-process .process-copy {
     max-width: 500px;
 }
@@ -2832,7 +2826,7 @@
         box-shadow 320ms var(--ease-out);
 }
 
-/* Inner transparent edge */
+
 .stease-faq-stage__answer-panel::before {
     content: "";
     position: absolute;
@@ -2843,7 +2837,7 @@
     pointer-events: none;
 }
 
-/* Decorative line */
+
 .stease-faq-stage__answer-panel::after {
     content: "";
     position: absolute;
@@ -2873,7 +2867,7 @@
         perspective(1400px) rotateX(0.6deg) rotateY(-0.7deg) translateY(-4px);
 }
 
-/* Eyebrow inside the glass panel */
+
 .stease-faq-stage__eyebrow {
     position: absolute;
     top: clamp(26px, 3vw, 42px);
@@ -2882,7 +2876,7 @@
     color: var(--color-accent-strong);
 }
 
-/* Dynamic answer content */
+
 .stease-faq-stage__answer {
     position: absolute;
     inset: 0;
@@ -2998,7 +2992,7 @@
     border-top: 1px solid rgba(42, 29, 23, 0.18);
 }
 
-/* Not cards — interactive horizontal editorial lines */
+
 .stease-faq-stage__question {
     position: relative;
     width: 100%;
@@ -3037,7 +3031,7 @@
         transform 280ms var(--ease-out);
 }
 
-/* Bottom underline */
+
 .stease-faq-stage__question::after {
     content: "";
     position: absolute;
@@ -3330,7 +3324,7 @@
     filter: drop-shadow(0 10px 16px rgba(114, 128, 93, 0.22));
 }
 
-/* Mobile */
+
 @media (max-width: 620px) {
     .home-provider-slider-section .provider-check-card {
         min-height: 240px !important;
@@ -3573,7 +3567,7 @@
             transparent 100%);
 }
 
-/* Wrapper floats, logo itself rotates */
+
 .stease-gallery__logo-float {
     position: absolute;
     top: clamp(20px, 3vw, 42px);

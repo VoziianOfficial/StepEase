@@ -2785,9 +2785,7 @@
     opacity: 1;
 }
 
-/* =========================================
-   ABOUT HERO — GLASS 3D PROOF CARDS
-========================================= */
+
 
 .about-hero-proof {
     position: relative;
@@ -2824,7 +2822,7 @@
         background 420ms var(--ease-out);
 }
 
-/* Мягкий внутренний свет и стеклянный блик */
+
 .about-hero-proof article::before {
     content: "";
     position: absolute;
@@ -2863,7 +2861,7 @@
         background-position 760ms var(--ease-out);
 }
 
-/* Маленькое декоративное ребро снизу */
+
 .about-hero-proof article::after {
     content: "";
     position: absolute;
@@ -2888,7 +2886,7 @@
         transform 420ms var(--ease-out);
 }
 
-/* Чуть разная глубина у карточек */
+
 .about-hero-proof article:nth-child(1) {
     transform: translateY(4px) rotateZ(-0.35deg);
 }
@@ -2901,7 +2899,7 @@
     transform: translateY(5px) rotateZ(0.35deg);
 }
 
-/* Иконки остаются без фона, но выглядят ярче */
+
 .about-hero-proof article .section-icon,
 .about-hero-proof article i,
 .about-hero-proof article svg {
@@ -2921,7 +2919,7 @@
         filter 360ms var(--ease-out);
 }
 
-/* Hover */
+
 .about-hero-proof article:hover {
     z-index: 3;
 
@@ -2966,7 +2964,7 @@
     filter: drop-shadow(0 12px 16px rgba(83, 108, 69, 0.24));
 }
 
-/* На телефоне сохраняем эффект, но без сильного наклона */
+
 @media (max-width: 680px) {
 
     .about-hero-proof article:nth-child(1),
@@ -2985,9 +2983,7 @@
     }
 }
 
-/* =========================================
-   ABOUT HERO PROOF — COMPACT, ICONS RIGHT
-========================================= */
+
 
 .about-hero-proof article {
     min-height: 154px !important;
@@ -3003,7 +2999,7 @@
     padding: clamp(18px, 1.7vw, 23px) !important;
 }
 
-/* Иконка уходит вправо */
+
 .about-hero-proof article .section-icon,
 .about-hero-proof article>i,
 .about-hero-proof article>svg {
@@ -3016,7 +3012,7 @@
     margin: 0 !important;
 }
 
-/* Заголовок */
+
 .about-hero-proof article strong {
     grid-area: title !important;
     align-self: start;
@@ -3025,7 +3021,7 @@
     padding-right: 4px;
 }
 
-/* Описание */
+
 .about-hero-proof article p {
     grid-area: text !important;
     align-self: start;
@@ -3036,20 +3032,20 @@
     line-height: 1.48 !important;
 }
 
-/* На hover карточки остаются компактными */
+
 .about-hero-proof article:hover {
     transform:
         perspective(1100px) translateY(-7px) rotateX(2deg) rotateY(-1.4deg) !important;
 }
 
-/* Планшет */
+
 @media (max-width: 980px) {
     .about-hero-proof article {
         min-height: 136px !important;
     }
 }
 
-/* Телефон */
+
 @media (max-width: 680px) {
     .about-hero-proof article {
         min-height: 0 !important;
@@ -3068,7 +3064,7 @@
     }
 }
 
-/* ABOUT HERO PROOF — WIDER TEXT AREA */
+
 
 .about-hero-proof article {
     display: block !important;
@@ -3103,7 +3099,7 @@
     line-height: 1.5 !important;
 }
 
-/* На телефоне оставляем достаточно места для иконки */
+
 @media (max-width: 680px) {
     .about-hero-proof article {
         min-height: 0 !important;
@@ -3114,9 +3110,7 @@
     }
 }
 
-/* =========================================
-   ABOUT MODEL — COMPACT CARDS
-========================================= */
+
 
 .about-model-redesign {
     padding: clamp(42px, 5vw, 68px) 0 !important;
@@ -3126,13 +3120,13 @@
     gap: clamp(10px, 1.2vw, 16px) !important;
 }
 
-/* Три основные карточки */
+
 .about-model-redesign .model-mini-card {
     min-height: 142px !important;
     padding: clamp(18px, 1.8vw, 24px) !important;
 }
 
-/* Чуть компактнее внутренние отступы текста */
+
 .about-model-redesign .model-mini-card h3 {
     margin-bottom: 7px !important;
     font-size: clamp(1.22rem, 1.55vw, 1.55rem) !important;
@@ -3145,7 +3139,7 @@
     line-height: 1.48 !important;
 }
 
-/* Иконки не должны раздувать высоту */
+
 .about-model-redesign .model-mini-card .section-icon,
 .about-model-redesign .model-mini-card>i,
 .about-model-redesign .model-mini-card>svg {
@@ -3153,7 +3147,7 @@
     height: 34px !important;
 }
 
-/* Нижняя широкая карточка Important */
+
 .about-model-redesign .model-wide-note {
     min-height: 0 !important;
     padding: clamp(18px, 1.8vw, 24px) !important;
@@ -3177,7 +3171,7 @@
     height: 32px !important;
 }
 
-/* Мобилка */
+
 @media (max-width: 680px) {
     .about-model-redesign {
         padding: 44px 0 !important;
@@ -3190,9 +3184,7 @@
     }
 }
 
-/* =========================================
-   ABOUT MODEL — INDIVIDUAL CARD HOVERS
-========================================= */
+
 
 .about-model-redesign .model-mini-card,
 .about-model-redesign .model-wide-note {
@@ -3207,7 +3199,7 @@
         box-shadow 340ms var(--ease-out);
 }
 
-/* Общий быстрый световой блик */
+
 .about-model-redesign .model-mini-card::before,
 .about-model-redesign .model-wide-note::before {
     content: "";
@@ -3233,7 +3225,7 @@
         transform 680ms var(--ease-out);
 }
 
-/* Нижняя линия */
+
 .about-model-redesign .model-mini-card::after,
 .about-model-redesign .model-wide-note::after {
     content: "";
@@ -3253,7 +3245,7 @@
         transform 360ms var(--ease-out);
 }
 
-/* Иконки без фона */
+
 .about-model-redesign .model-mini-card>i,
 .about-model-redesign .model-mini-card>svg,
 .about-model-redesign .model-wide-note>i,
@@ -3272,7 +3264,7 @@
         filter 340ms var(--ease-out);
 }
 
-/* ---------- 1. Organizes request — blue ---------- */
+
 
 .about-model-redesign .model-mini-card:nth-child(1)::after {
     background: linear-gradient(90deg,
@@ -3302,7 +3294,7 @@
     filter: drop-shadow(0 10px 14px rgba(94, 148, 170, 0.28));
 }
 
-/* ---------- 2. Supports matching — green ---------- */
+
 
 .about-model-redesign .model-mini-card:nth-child(2)::after {
     background: linear-gradient(90deg,
@@ -3332,7 +3324,7 @@
     filter: drop-shadow(0 10px 15px rgba(83, 108, 69, 0.25));
 }
 
-/* ---------- 3. Encourages comparison — mixed line ---------- */
+
 
 .about-model-redesign .model-mini-card:nth-child(3)::after {
     background: linear-gradient(90deg,
@@ -3362,7 +3354,7 @@
     filter: drop-shadow(0 10px 15px rgba(94, 148, 170, 0.25));
 }
 
-/* ---------- Wide Important card ---------- */
+
 
 .about-model-redesign .model-wide-note::after {
     background: linear-gradient(90deg,
@@ -3393,7 +3385,7 @@
     filter: drop-shadow(0 10px 14px rgba(83, 108, 69, 0.24));
 }
 
-/* Общие реакции при hover */
+
 .about-model-redesign .model-mini-card:hover::before,
 .about-model-redesign .model-wide-note:hover::before {
     opacity: 1;
@@ -3406,7 +3398,7 @@
     transform: scaleX(1);
 }
 
-/* На телефоне без наклонов */
+
 @media (max-width: 680px) {
 
     .about-model-redesign .model-mini-card:hover,
@@ -3421,9 +3413,7 @@
     }
 }
 
-/* =========================================
-   ABOUT COMPLIANCE — CLEAN PREMIUM HOVERS
-========================================= */
+
 
 .about-compliance .compliance-item {
     position: relative;
@@ -3436,7 +3426,7 @@
         box-shadow 320ms var(--ease-out);
 }
 
-/* Внутренний сатиновый блик */
+
 .about-compliance .compliance-item::before {
     content: "";
     position: absolute;
@@ -3461,7 +3451,7 @@
         transform 700ms var(--ease-out);
 }
 
-/* Нижняя акцентная линия */
+
 .about-compliance .compliance-item::after {
     content: "";
     position: absolute;
@@ -3486,7 +3476,7 @@
         transform 420ms var(--ease-out);
 }
 
-/* Текст и иконка всегда поверх блика */
+
 .about-compliance .compliance-item>i,
 .about-compliance .compliance-item>svg,
 .about-compliance .compliance-item>div {
@@ -3494,7 +3484,7 @@
     z-index: 2;
 }
 
-/* Иконки: без фона, но ярче */
+
 .about-compliance .compliance-item>i,
 .about-compliance .compliance-item>svg {
     padding: 0 !important;
@@ -3522,7 +3512,7 @@
         transform 280ms var(--ease-out);
 }
 
-/* Очень тонкое подчеркивание только у заголовка */
+
 .about-compliance .compliance-item h3::after {
     content: "";
     position: absolute;
@@ -3546,7 +3536,7 @@
         transform 360ms var(--ease-out);
 }
 
-/* ---------- HOVER ---------- */
+
 
 .about-compliance .compliance-item:hover {
     z-index: 3;
@@ -3592,7 +3582,7 @@
     transform: scaleX(1);
 }
 
-/* Вторая карточка — чуть больше зелёного акцента */
+
 .about-compliance .compliance-item:nth-child(2):hover {
     border-color: rgba(120, 148, 93, 0.58) !important;
 
@@ -3609,7 +3599,7 @@
     filter: drop-shadow(0 11px 16px rgba(83, 108, 69, 0.28));
 }
 
-/* Третья — смешанная blue/green линия */
+
 .about-compliance .compliance-item:nth-child(3)::after {
     background: linear-gradient(90deg,
             var(--color-accent),
@@ -3617,7 +3607,7 @@
             transparent);
 }
 
-/* Мобилка: без сильного сдвига вправо */
+
 @media (max-width: 680px) {
     .about-compliance .compliance-item:hover {
         transform: translateY(-4px);
@@ -3629,22 +3619,20 @@
     }
 }
 
-/* =========================================
-   ABOUT VALUES — COMPACT STACK + ICONS RIGHT
-========================================= */
+
 
 .about-values .values-shell {
     align-items: stretch !important;
 }
 
-/* Фото и стопка карточек получают одинаковую высоту */
+
 .about-values .values-image-main,
 .about-values .values-stack {
     align-self: stretch;
     min-height: 0;
 }
 
-/* Само фото растягивается ровно по высоте карточек */
+
 .about-values .values-image-main {
     height: 100% !important;
     min-height: 0 !important;
@@ -3656,14 +3644,14 @@
     object-fit: cover;
 }
 
-/* Правая колонка: три компактные карточки на всю высоту фото */
+
 .about-values .values-stack {
     display: grid !important;
     grid-template-rows: repeat(3, minmax(0, 1fr));
     gap: 10px !important;
 }
 
-/* Карточки ниже и плотнее */
+
 .about-values .values-stack article {
     position: relative;
     isolation: isolate;
@@ -3674,7 +3662,7 @@
     padding: clamp(17px, 1.55vw, 22px) !important;
 }
 
-/* Иконка справа сверху */
+
 .about-values .values-stack article .section-icon,
 .about-values .values-stack article>i,
 .about-values .values-stack article>svg {
@@ -3692,7 +3680,7 @@
     box-shadow: none !important;
 }
 
-/* Заголовок оставляет место справа только для иконки */
+
 .about-values .values-stack article strong {
     display: block;
     margin: 0 46px 8px 0 !important;
@@ -3701,7 +3689,7 @@
     line-height: 1.04 !important;
 }
 
-/* Параграф идёт почти на всю ширину карточки */
+
 .about-values .values-stack article p {
     width: 100% !important;
     max-width: none !important;
@@ -3711,12 +3699,12 @@
     line-height: 1.46 !important;
 }
 
-/* Чуть компактнее весь блок по вертикали */
+
 .about-values {
     padding: clamp(44px, 5vw, 72px) 0 !important;
 }
 
-/* Планшет: фото и карточки всё ещё ровные */
+
 @media (max-width: 1180px) {
     .about-values .values-image-main {
         min-height: 390px !important;
@@ -3727,7 +3715,7 @@
     }
 }
 
-/* Мобильный: возвращаем естественную высоту */
+
 @media (max-width: 760px) {
 
     .about-values .values-image-main,
@@ -3758,11 +3746,9 @@
     }
 }
 
-/* =========================================
-   ABOUT CTA — GLASS CARD + MOVING LOGO
-========================================= */
 
-/* Движущийся логотип на фоне секции */
+
+
 .about-cta-compact::after {
     content: "" !important;
     position: absolute !important;
@@ -3787,7 +3773,7 @@
     pointer-events: none !important;
 }
 
-/* Прозрачная заблюренная CTA-карточка */
+
 .about-cta-compact .about-cta-card {
     position: relative;
     isolation: isolate;
@@ -3809,13 +3795,13 @@
         0 18px 48px rgba(0, 0, 0, 0.24) !important;
 }
 
-/* Убираем старую кремовую заливку и внутреннюю рамку */
+
 .about-cta-compact .about-cta-card::before {
     content: none !important;
     display: none !important;
 }
 
-/* Оставляем только очень тонкую нижнюю линию */
+
 .about-cta-compact .about-cta-card::after {
     content: "" !important;
     position: absolute !important;
@@ -3838,9 +3824,7 @@
     pointer-events: none !important;
 }
 
-/* =========================================
-   ABOUT CTA POINTS — HOVERS WITHOUT RECOLOR
-========================================= */
+
 
 .about-cta-points span {
     position: relative;
@@ -3855,7 +3839,7 @@
         border-color 280ms var(--ease-out) !important;
 }
 
-/* Быстрый стеклянный блик */
+
 .about-cta-points span::before {
     content: "" !important;
     position: absolute;
@@ -3880,7 +3864,7 @@
         transform 650ms var(--ease-out);
 }
 
-/* Hover без смены цвета текста или фона */
+
 .about-cta-points span:hover {
     transform: translateY(-4px) !important;
 
@@ -3897,7 +3881,7 @@
     transform: translateX(135%) skewX(-15deg);
 }
 
-/* Тонкая линия раскрывается снизу, но цвет текста не меняется */
+
 .about-cta-points span::after {
     opacity: 0 !important;
     transform: scaleX(0.18) !important;
@@ -3913,7 +3897,7 @@
     transform: scaleX(1) !important;
 }
 
-/* На мобилке логотип не занимает место */
+
 @media (max-width: 680px) {
     .about-cta-compact::after {
         top: auto !important;
@@ -3942,9 +3926,7 @@
     }
 }
 
-/* =========================================
-   STEP EASE — DARK ICON MARQUEE
-========================================= */
+
 
 .stease-icon-marquee {
     position: relative;
@@ -4082,7 +4064,7 @@
         filter 260ms var(--ease-out);
 }
 
-/* Цвета повторяются гармонично */
+
 .stease-icon-marquee__item:nth-child(5n + 1) {
     color: #8fc8dd;
 }
@@ -4103,7 +4085,7 @@
     color: #a4c27f;
 }
 
-/* Hover каждой иконки */
+
 .stease-icon-marquee__item:hover {
     transform: translateY(-7px);
     filter: brightness(1.18);
@@ -4117,7 +4099,7 @@
         drop-shadow(0 12px 18px rgba(0, 0, 0, 0.34)) drop-shadow(0 0 15px currentColor);
 }
 
-/* При наведении на ленту анимация останавливается */
+
 .stease-icon-marquee:hover .stease-icon-marquee__track {
     animation-play-state: paused;
 }
