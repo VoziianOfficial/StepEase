@@ -2716,7 +2716,7 @@
 .about-cta-compact {
     background:
         linear-gradient(180deg, rgba(3, 3, 3, 0.88), rgba(23, 16, 12, 0.94)),
-        url("../assets/images/about/about-cta-bg.jpg") center / cover no-repeat !important;
+        url("../assets/images/home/service-glass.jpg") center / cover no-repeat !important;
     color: var(--color-text-light) !important;
 }
 
