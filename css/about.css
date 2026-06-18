@@ -3420,3 +3420,211 @@
         left: 16px;
     }
 }
+
+/* =========================================
+   ABOUT COMPLIANCE — CLEAN PREMIUM HOVERS
+========================================= */
+
+.about-compliance .compliance-item {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    transition:
+        transform 320ms var(--ease-out),
+        border-color 320ms var(--ease-out),
+        box-shadow 320ms var(--ease-out);
+}
+
+/* Внутренний сатиновый блик */
+.about-compliance .compliance-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    background: linear-gradient(108deg,
+            transparent 18%,
+            transparent 37%,
+            rgba(255, 255, 255, 0.10) 44%,
+            rgba(255, 255, 255, 0.52) 49%,
+            rgba(255, 255, 255, 0.10) 55%,
+            transparent 65%,
+            transparent 100%);
+
+    opacity: 0;
+    transform: translateX(-135%) skewX(-15deg);
+
+    transition:
+        opacity 170ms ease,
+        transform 700ms var(--ease-out);
+}
+
+/* Нижняя акцентная линия */
+.about-compliance .compliance-item::after {
+    content: "";
+    position: absolute;
+    right: clamp(18px, 2vw, 28px);
+    bottom: 0;
+    left: clamp(18px, 2vw, 28px);
+    z-index: 1;
+
+    height: 2px;
+
+    background: linear-gradient(90deg,
+            var(--brand-blue),
+            var(--color-accent),
+            transparent);
+
+    opacity: 0;
+    transform: scaleX(0.12);
+    transform-origin: left;
+
+    transition:
+        opacity 300ms var(--ease-out),
+        transform 420ms var(--ease-out);
+}
+
+/* Текст и иконка всегда поверх блика */
+.about-compliance .compliance-item>i,
+.about-compliance .compliance-item>svg,
+.about-compliance .compliance-item>div {
+    position: relative;
+    z-index: 2;
+}
+
+/* Иконки: без фона, но ярче */
+.about-compliance .compliance-item>i,
+.about-compliance .compliance-item>svg {
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+
+    color: var(--brand-blue) !important;
+    stroke-width: 1.65;
+
+    filter: drop-shadow(0 5px 10px rgba(94, 148, 170, 0.16));
+
+    transition:
+        color 300ms var(--ease-out),
+        transform 340ms var(--ease-out),
+        filter 340ms var(--ease-out);
+}
+
+.about-compliance .compliance-item h3 {
+    position: relative;
+    width: fit-content;
+    transition:
+        color 280ms var(--ease-out),
+        transform 280ms var(--ease-out);
+}
+
+/* Очень тонкое подчеркивание только у заголовка */
+.about-compliance .compliance-item h3::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    left: 0;
+
+    height: 1px;
+
+    background: linear-gradient(90deg,
+            var(--brand-blue),
+            var(--color-accent),
+            transparent);
+
+    opacity: 0;
+    transform: scaleX(0.16);
+    transform-origin: left;
+
+    transition:
+        opacity 280ms var(--ease-out),
+        transform 360ms var(--ease-out);
+}
+
+/* ---------- HOVER ---------- */
+
+.about-compliance .compliance-item:hover {
+    z-index: 3;
+
+    border-color: rgba(120, 148, 93, 0.45) !important;
+
+    transform:
+        translateX(7px) translateY(-3px);
+
+    box-shadow:
+        inset 1px 0 0 rgba(94, 148, 170, 0.70),
+        inset 0 1px 0 rgba(255, 255, 255, 0.78),
+        0 16px 28px rgba(38, 25, 20, 0.10) !important;
+}
+
+.about-compliance .compliance-item:hover::before {
+    opacity: 1;
+    transform: translateX(135%) skewX(-15deg);
+}
+
+.about-compliance .compliance-item:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.about-compliance .compliance-item:hover>i,
+.about-compliance .compliance-item:hover>svg {
+    color: #8FC8DD !important;
+
+    transform:
+        translateY(-5px) rotate(-5deg) scale(1.11);
+
+    filter: drop-shadow(0 11px 16px rgba(94, 148, 170, 0.30));
+}
+
+.about-compliance .compliance-item:hover h3 {
+    color: var(--color-accent-deep) !important;
+    transform: translateX(3px);
+}
+
+.about-compliance .compliance-item:hover h3::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+/* Вторая карточка — чуть больше зелёного акцента */
+.about-compliance .compliance-item:nth-child(2):hover {
+    border-color: rgba(120, 148, 93, 0.58) !important;
+
+    box-shadow:
+        inset 1px 0 0 rgba(120, 148, 93, 0.76),
+        inset 0 1px 0 rgba(255, 255, 255, 0.78),
+        0 16px 28px rgba(38, 25, 20, 0.10) !important;
+}
+
+.about-compliance .compliance-item:nth-child(2):hover>i,
+.about-compliance .compliance-item:nth-child(2):hover>svg {
+    color: var(--color-accent-strong) !important;
+
+    filter: drop-shadow(0 11px 16px rgba(83, 108, 69, 0.28));
+}
+
+/* Третья — смешанная blue/green линия */
+.about-compliance .compliance-item:nth-child(3)::after {
+    background: linear-gradient(90deg,
+            var(--color-accent),
+            var(--brand-blue),
+            transparent);
+}
+
+/* Мобилка: без сильного сдвига вправо */
+@media (max-width: 680px) {
+    .about-compliance .compliance-item:hover {
+        transform: translateY(-4px);
+    }
+
+    .about-compliance .compliance-item::after {
+        right: 16px;
+        left: 16px;
+    }
+}
