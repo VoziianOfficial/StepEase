@@ -1,0 +1,31 @@
+<svg width="320" height="320" viewBox="0 0 640 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="stepease-bubbles-title">
+  <title id="stepease-bubbles-title">StepEase bubbles mark</title>
+  <defs>
+    <linearGradient id="bubble-outline" x1="80" y1="70" x2="560" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9CE5F8"/>
+      <stop offset="0.5" stop-color="#55B7DE"/>
+      <stop offset="1" stop-color="#2D8DB5"/>
+    </linearGradient>
+    <radialGradient id="bubble-fill" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 130) rotate(48) scale(440)">
+      <stop stop-color="#F9FEFF" stop-opacity="0.96"/>
+      <stop offset="0.56" stop-color="#D9F4FC" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#8DD9F0" stop-opacity="0.12"/>
+    </radialGradient>
+  </defs>
+  <g fill="url(#bubble-fill)" stroke="url(#bubble-outline)" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="112" cy="108" r="54" stroke-width="11"/>
+    <path d="M91 102C91 91 100 82 112 82" stroke="#C9F4FF" stroke-width="14"/>
+    <circle cx="424" cy="124" r="76" stroke-width="11"/>
+    <path d="M390 117C390 96 406 79 428 79" stroke="#C9F4FF" stroke-width="14"/>
+    <circle cx="255" cy="300" r="101" stroke-width="12"/>
+    <path d="M190 294C190 258 219 228 256 228" stroke="#C9F4FF" stroke-width="15"/>
+    <circle cx="397" cy="380" r="72" stroke-width="11"/>
+    <path d="M367 373C367 355 381 340 400 340" stroke="#C9F4FF" stroke-width="14"/>
+    <circle cx="108" cy="502" r="55" stroke-width="11"/>
+    <path d="M87 496C87 485 96 476 108 476" stroke="#C9F4FF" stroke-width="14"/>
+    <circle cx="304" cy="545" r="59" stroke-width="11"/>
+    <path d="M280 539C280 526 291 515 305 515" stroke="#C9F4FF" stroke-width="14"/>
+    <circle cx="516" cy="505" r="51" stroke-width="11"/>
+    <path d="M496 500C496 489 505 480 517 480" stroke="#C9F4FF" stroke-width="14"/>
+  </g>
+</svg>

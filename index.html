@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="StepEase helps homeowners compare local bathroom remodeling service providers for installation, replacement, repair, tile installation, vanity & sink upgrades, and custom bathroom remodeling projects." />
+
+    <title>StepEase | Compare Bathroom Remodeling Providers</title>
+
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg?v=3" />
+    <link rel="shortcut icon" href="./assets/images/favicon.svg?v=3" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="page home-page">
+
+        <header class="site-header" data-header>
+            <div class="header-shell">
+                <a class="brand" href="index.html" aria-label="StepEase home">
+                    <span class="brand-mark" aria-hidden="true">
+                        <img src="assets/images/stepease-bubbles.svg" alt="" width="64" height="64">
+                    </span>
+
+                    <span class="brand-text">
+                        <span class="brand-name" aria-label="StepEase">
+                            <span class="brand-name__step">Step</span><span class="brand-name__ease">Ease</span>
+                        </span>
+                        <span class="brand-label">Walk-In Tubs</span>
+                    </span>
+                </a>
+
+                <nav class="desktop-nav" aria-label="Primary navigation">
+                    <a class="nav-link is-active" href="index.html">Home</a>
+                    <div class="nav-dropdown">
+                        <button class="nav-dropdown-trigger" type="button" aria-expanded="false">
+                            Services
+                            <i data-lucide="chevron-down" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="nav-dropdown-menu" aria-label="Service pages">
+                            <a class="dropdown-service-link" href="bathroom-remodeling.html">
+                                <strong>Installation</strong>
+                                <span>Compare providers for new bathroom remodeling projects.</span>
+                            </a>
+
+                            <a class="dropdown-service-link" href="shower-remodeling.html">
+                                <strong>Replacement</strong>
+                                <span>Explore options for bathrooms that need style and function updates.</span>
+                            </a>
+
+                            <a class="dropdown-service-link" href="bathtub-replacement.html">
+                                <strong>Repair</strong>
+                                <span>Compare bathroom remodeling providers by scope, style, and timeline.</span>
+                            </a>
+
+                            <a class="dropdown-service-link" href="tile-installation.html">
+                                <strong>Tile Installation</strong>
+                                <span>Compare companies for aging tile, fixtures, or wet-area finishes.</span>
+                            </a>
+
+                            <a class="dropdown-service-link" href="vanity-sink-upgrades.html">
+                                <strong>Energy-Efficient</strong>
+                                <span>Plan vanity, sink, and storage upgrades with premium finishes.</span>
+                            </a>
+
+                            <a class="dropdown-service-link" href="accessible-bathroom-updates.html">
+                                <strong>Custom Design</strong>
+                                <span>Connect with accessible and specialty bathroom update providers.</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a class="nav-link" href="services.html">All Services</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a class="btn btn-primary btn-small header-phone" href="tel:+18885550148" data-config-href="phone">
+                        <span data-config="contact.phoneButtonText">Call Now</span>
+                        <i data-lucide="phone" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="btn btn-primary btn-small mobile-phone" href="tel:+18885550148" data-config-href="phone"
+                        aria-label="Call StepEase">
+                        <i data-lucide="phone" aria-hidden="true"></i>
+                    </a>
+
+                    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                        data-menu-toggle>
+                        <span class="nav-toggle-lines" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+        <aside class="mobile-menu" data-mobile-menu aria-hidden="true">
+            <div class="mobile-menu-inner">
+                <div class="mobile-menu-panel">
+                    <nav class="mobile-nav-main" aria-label="Mobile navigation">
+                        <a href="index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+
+                <div class="mobile-menu-panel mobile-services">
+                    <div class="mobile-services-head">
+                        <span>Service categories</span>
+                        <a class="btn btn-outline btn-small" href="services.html">View all</a>
+                    </div>
+
+                    <div class="mobile-services-grid">
+                        <a class="mobile-service-link" href="bathroom-remodeling.html">
+                            <i data-lucide="panel-top" aria-hidden="true"></i>
+                            <span>Bathroom Remodeling</span>
+                        </a>
+
+                        <a class="mobile-service-link" href="shower-remodeling.html">
+                            <i data-lucide="refresh-cw" aria-hidden="true"></i>
+                            <span>Shower Remodeling</span>
+                        </a>
+
+                        <a class="mobile-service-link" href="bathtub-replacement.html">
+                            <i data-lucide="wrench" aria-hidden="true"></i>
+                            <span>Bathtub Replacement</span>
+                        </a>
+
+                        <a class="mobile-service-link" href="tile-installation.html">
+                            <i data-lucide="scan" aria-hidden="true"></i>
+                            <span>Tile Installation</span>
+                        </a>
+
+                        <a class="mobile-service-link" href="vanity-sink-upgrades.html">
+                            <i data-lucide="leaf" aria-hidden="true"></i>
+                            <span>Vanity & Sink Upgrades</span>
+                        </a>
+
+                        <a class="mobile-service-link" href="accessible-bathroom-updates.html">
+                            <i data-lucide="drafting-compass" aria-hidden="true"></i>
+                            <span>Accessible Bathroom Updates</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-panel mobile-contact">
+                    <a class="mobile-contact-row" href="tel:+18885550148" data-config-href="phone">
+                        <i data-lucide="phone" aria-hidden="true"></i>
+                        <span data-config="contact.phoneDisplay">(888) 555-0148</span>
+                    </a>
+
+                    <a class="mobile-contact-row" href="mailto:hello@tileandbath.com" data-config-href="email">
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                        <span data-config="contact.email">hello@tileandbath.com</span>
+                    </a>
+
+                    <div class="mobile-contact-row">
+                        <i data-lucide="map-pin" aria-hidden="true"></i>
+                        <span data-config="company.serviceArea">Available across selected areas in the United
+                            States</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main id="main-content">
+
+            <section class="home-hero home-hero-flagship section-on-dark" aria-labelledby="home-hero-title">
+                <div class="home-hero-bg" aria-hidden="true">
+                    <img src="assets/images/about/about-hero-windows.jpg"
+                        alt="Premium bathroom interior concept with warm architectural lighting" />
+                </div>
+
+                <div class="home-hero-overlay" aria-hidden="true"></div>
+                <div class="noise-layer" aria-hidden="true"></div>
+
+                <div class="container-wide home-hero-shell">
+                    <div class="home-hero-content" data-aos="fade-up">
+                        <span class="eyebrow">Independent Bathroom Remodeling Platform</span>
+
+                        <h1 class="hero-title text-balance" id="home-hero-title">
+                            Compare trusted bathroom remodeling providers with clarity.
+                        </h1>
+
+                        <p class="home-hero-text">
+                            StepEase helps homeowners compare independent provider options for bathroom remodeling
+                            projects.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="contact.html">
+                                Request Quotes
+                                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                            </a>
+
+                            <a class="btn btn-light" href="services.html">
+                                View Services
+                                <i data-lucide="panel-top" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="home-hero-disclaimer-line">
+                            <i data-lucide="info" aria-hidden="true"></i>
+                            <span>Independent providers. Verify licensing, insurance, scope, and contract terms directly with each provider. A free estimate is not provided.</span>
+                        </div>
+                    </div>
+                </div>
+
+    <div class="home-hero-bottom container-wide" data-aos="fade-up" data-aos-delay="250">
+        <a class="hero-stat" href="services.html">
+            <i class="section-icon" data-lucide="bath" aria-hidden="true"></i>
+            <strong>Choose category</strong>
+        </a>
+
+        <a class="hero-stat" href="contact.html">
+            <i class="section-icon" data-lucide="shower-head" aria-hidden="true"></i>
+            <strong>Submit project basics</strong>
+        </a>
+
+        <a class="hero-stat" href="about.html">
+            <i class="section-icon" data-lucide="grid-2x2" aria-hidden="true"></i>
+            <strong>Review provider fit</strong>
+        </a>
+    </div>
+    </section>
+
+
+    <section class="section-compact home-service-strip section-on-light" aria-labelledby="home-services-title">
+        <div class="container-wide">
+            <div class="section-head split-head" data-aos="fade-up">
+                <div>
+                    <span class="eyebrow">Bathroom remodeling categories</span>
+                    <h2 class="section-title" id="home-services-title">Start with the right project type.</h2>
+                </div>
+
+                <p class="section-kicker">
+                    Select the category that fits your project and compare independent providers who may serve
+                    your area.
+                </p>
+            </div>
+
+            <div class="home-service-grid">
+                <a class="home-service-card image-card tilt-card" href="bathroom-remodeling.html" data-aos="fade-up">
+                    <img src="assets/images/contact/contact-hero-bg.jpg"
+                        alt="Bathroom remodeling inspiration with clean lines and natural light" />
+                    <span class="image-card-icon">
+                        <i data-lucide="panel-top" aria-hidden="true"></i>
+                    </span>
+                    <div class="image-card-content">
+                        <h3>Installation</h3>
+                        <p>Compare provider options for new bathroom remodeling and remodel projects in your area. Find local companies that serve your area.</p>
+                    </div>
+                </a>
+
+                <a class="home-service-card image-card tilt-card" href="shower-remodeling.html" data-aos="fade-up"
+                    data-aos-delay="80">
+                    <img src="assets/images/contact/contact-faq-bg.jpg"
+                        alt="Minimal spa-like bathroom design with soft daylight" />
+                    <span class="image-card-icon">
+                        <i data-lucide="refresh-cw" aria-hidden="true"></i>
+                    </span>
+                    <div class="image-card-content">
+                        <h3>Replacement</h3>
+                        <p>Explore local companies for aging finishes, layout issues, and comfort-focused
+                            bathroom upgrades.</p>
+                    </div>
+                </a>
+
+                <a class="home-service-card image-card tilt-card" href="tile-installation.html" data-aos="fade-up"
+                    data-aos-delay="160">
+                    <img src="assets/images/home/service-glass.jpg"
+                        alt="Clean bathroom detail with architectural tile and fixture lines" />
+                    <span class="image-card-icon">
+                        <i data-lucide="scan" aria-hidden="true"></i>
+                    </span>
+                    <div class="image-card-content">
+                        <h3>Glass Work</h3>
+                        <p>Compare providers for tile quality, waterproofing approach, fixture compatibility,
+                            and installation detail.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="section-actions home-service-action" data-aos="fade-up">
+                <a class="btn btn-outline" href="services.html">
+                    Explore All Categories
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<section class="section home-marquee-section" aria-label="Bathroom remodeling highlights">
+    <div class="container-wide">
+        <div class="bath-marquee">
+            <div class="bath-marquee__fade bath-marquee__fade--left" aria-hidden="true"></div>
+            <div class="bath-marquee__fade bath-marquee__fade--right" aria-hidden="true"></div>
+
+            <div class="bath-marquee__track">
+                <div class="bath-marquee__group">
+                    <a href="bathroom-remodeling.html" class="bath-marquee__item">
+                        <i data-lucide="bath" aria-hidden="true"></i>
+                        <span>Bathroom remodeling</span>
+                    </a>
+
+                    <a href="shower-remodeling.html" class="bath-marquee__item">
+                        <i data-lucide="shower-head" aria-hidden="true"></i>
+                        <span>Shower upgrades</span>
+                    </a>
+
+                    <a href="bathtub-replacement.html" class="bath-marquee__item">
+                        <i data-lucide="waves" aria-hidden="true"></i>
+                        <span>Bathtub replacement</span>
+                    </a>
+
+                    <a href="tile-installation.html" class="bath-marquee__item">
+                        <i data-lucide="grid-2x2" aria-hidden="true"></i>
+                        <span>Tile installation</span>
+                    </a>
+
+                    <a href="vanity-sink-upgrades.html" class="bath-marquee__item">
+                        <i data-lucide="droplets" aria-hidden="true"></i>
+                        <span>Vanity & sink upgrades</span>
+                    </a>
+
+                    <a href="accessible-bathroom-updates.html" class="bath-marquee__item">
+                        <i data-lucide="sparkles" aria-hidden="true"></i>
+                        <span>Accessible updates</span>
+                    </a>
+                </div>
+
+                <div class="bath-marquee__group" aria-hidden="true">
+                    <a href="bathroom-remodeling.html" class="bath-marquee__item">
+                        <i data-lucide="bath" aria-hidden="true"></i>
+                        <span>Bathroom remodeling</span>
+                    </a>
+
+                    <a href="shower-remodeling.html" class="bath-marquee__item">
+                        <i data-lucide="shower-head" aria-hidden="true"></i>
+                        <span>Shower upgrades</span>
+                    </a>
+
+                    <a href="bathtub-replacement.html" class="bath-marquee__item">
+                        <i data-lucide="waves" aria-hidden="true"></i>
+                        <span>Bathtub replacement</span>
+                    </a>
+
+                    <a href="tile-installation.html" class="bath-marquee__item">
+                        <i data-lucide="grid-2x2" aria-hidden="true"></i>
+                        <span>Tile installation</span>
+                    </a>
+
+                    <a href="vanity-sink-upgrades.html" class="bath-marquee__item">
+                        <i data-lucide="droplets" aria-hidden="true"></i>
+                        <span>Vanity & sink upgrades</span>
+                    </a>
+
+                    <a href="accessible-bathroom-updates.html" class="bath-marquee__item">
+                        <i data-lucide="sparkles" aria-hidden="true"></i>
+                        <span>Accessible updates</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="section home-process section-on-light" aria-labelledby="home-process-title">
+        <div class="container">
+            <div class="process-layout">
+                <div class="process-copy" data-aos="fade-right">
+                    <span class="eyebrow">How the platform works</span>
+                    <h2 class="section-title" id="home-process-title">
+                        A simple path from project idea to provider comparison.
+                    </h2>
+                    <p class="section-kicker">
+                        StepEase keeps the first step organized. You share the project type, location,
+                        timing, and basic preferences. Matching providers may then contact you with next steps.
+                    </p>
+
+                    <div class="section-actions">
+                        <a class="btn btn-primary" href="contact.html">
+                            Start a Request
+                            <i data-lucide="send" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="process-steps" data-aos="fade-left">
+                    <article class="process-step surface-card light">
+                        <i class="section-icon" data-lucide="bath" aria-hidden="true"></i>
+                        <div>
+                            <h3>Describe the bathroom remodeling project</h3>
+                            <p>
+                                Choose installation, replacement, repair, tile installation, energy-efficient
+                                upgrades, or a custom bathroom remodeling service.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="process-step surface-card light">
+                        <i class="section-icon" data-lucide="shower-head" aria-hidden="true"></i>
+                        <div>
+                            <h3>Connect with independent providers</h3>
+                            <p>
+                                The request helps identify provider options that may be relevant to your area
+                                and service category.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="process-step surface-card light">
+                        <i class="section-icon" data-lucide="grid-2x2" aria-hidden="true"></i>
+                        <div>
+                            <h3>Compare before choosing</h3>
+                            <p>
+                                Review estimates, timelines, materials, warranties, licensing, insurance, and
+                                contract terms directly with each provider.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section home-showcase section-on-dark" aria-labelledby="home-showcase-title">
+        <div class="container-wide">
+            <div class="showcase-grid">
+                <div class="showcase-title-block" data-aos="fade-up">
+                    <span class="eyebrow">Architectural clarity</span>
+                    <h2 class="section-title" id="home-showcase-title">
+                        Bathroom design shapes comfort, flow, and the daily feel of your home.
+                    </h2>
+                </div>
+
+                <div class="showcase-copy surface-card dark" data-aos="fade-up" data-aos-delay="120">
+                    <p>
+                        The right provider can help discuss material quality, waterproofing systems, fixture
+                        style,
+                        measurements, and installation approach. StepEase helps organize the connection
+                        stage without presenting itself as the contractor.
+                    </p>
+                </div>
+
+                <figure class="showcase-image showcase-image-large" data-aos="zoom-in">
+                    <img src="assets/images/home/showcase-large-window.jpg"
+                        alt="Luxury bathroom ambiance with warm layered lighting" />
+                </figure>
+
+                <figure class="showcase-image" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="assets/images/service-pages/window-installation-overview.jpg"
+                        alt="Minimal fixture base detail with natural light" />
+                </figure>
+
+                <figure class="showcase-image" data-aos="zoom-in" data-aos-delay="180">
+                    <img src="assets/images/home/showcase-bedroom-window.jpg"
+                        alt="Calm bathroom design concept with modern finishes" />
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="section home-quote home-quote-editorial section-on-light" aria-labelledby="home-quote-title">
+        <div class="container">
+            <div class="quote-editorial-layout">
+                <div class="quote-visual quote-editorial-visual" data-aos="fade-right">
+                    <img src="assets/images/services/glass-replacement-card.jpg"
+                        alt="Premium bathroom interior with warm stone, modern bathtub, and calm lighting" />
+    
+                    <div class="quote-floating-card quote-editorial-caption">
+                        <span>Bathroom remodel lens</span>
+                        <strong>Style, materials, layout, comfort, and provider fit.</strong>
+                    </div>
+                </div>
+    
+                <div class="quote-editorial-content" data-aos="fade-left">
+                    <span class="eyebrow">Compare with clarity</span>
+    
+                    <h2 class="section-title" id="home-quote-title">
+                        Look beyond the quote. Compare the details that shape the remodel.
+                    </h2>
+    
+                    <p class="section-kicker">
+                        A bathroom project is more than one price. StepEase helps homeowners think through
+                        the right comparison points before speaking directly with independent providers.
+                    </p>
+    
+                    <div class="remodel-lens" aria-label="Bathroom remodeling comparison focus areas">
+                        <div class="remodel-lens-item">
+                            <i data-lucide="bath" aria-hidden="true"></i>
+                            <div>
+                                <span>Bath experience</span>
+                                <p>Comfort, tub or shower preference, daily use, and the feeling you want from the space.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="remodel-lens-item">
+                            <i data-lucide="grid-2x2" aria-hidden="true"></i>
+                            <div>
+                                <span>Tile and surfaces</span>
+                                <p>Floor tile, shower walls, grout details, waterproofing notes, and finish direction.</p>
+                            </div>
+                        </div>
+    
+                        <div class="remodel-lens-item">
+                            <i data-lucide="droplets" aria-hidden="true"></i>
+                            <div>
+                                <span>Fixtures and flow</span>
+                                <p>Shower heads, faucets, vanity fit, sink placement, storage, lighting, and access.</p>
+                            </div>
+                        </div>
+    
+                        <div class="remodel-lens-item">
+                            <i data-lucide="sparkles" aria-hidden="true"></i>
+                            <div>
+                                <span>Final finish</span>
+                                <p>Clean lines, material quality, warranty terms, project cleanup, and provider
+                                    communication.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="quote-editorial-note">
+                        <span>Independent platform</span>
+                        <p>
+                            StepEase does not perform remodeling work directly. Homeowners should verify
+                            licensing, insurance, materials, project scope, timelines, warranties, and contract terms
+                            with each provider.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-compact home-provider-slider-section section-on-dark" aria-labelledby="home-provider-title">
+        <div class="container-wide">
+            <div class="section-head split-head">
+                <div data-aos="fade-up">
+                    <span class="eyebrow">Before choosing</span>
+                    <h2 class="section-title" id="home-provider-title">Compare more than a before-and-after
+                        photo.</h2>
+                </div>
+
+                <div class="slider-controls" data-aos="fade-up" data-aos-delay="100">
+                    <button class="slider-btn provider-prev" type="button" aria-label="Previous slide">
+                        <i data-lucide="arrow-left" aria-hidden="true"></i>
+                    </button>
+
+                    <button class="slider-btn provider-next" type="button" aria-label="Next slide">
+                        <i data-lucide="arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="swiper provider-swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="provider-check-card surface-card light">
+                            <i data-lucide="badge-check" aria-hidden="true"></i>
+                            <h3>License & insurance</h3>
+                            <p>
+                                Ask each provider what credentials are required for your state, city, and
+                                project type.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="provider-check-card surface-card light">
+                            <i data-lucide="file-text" aria-hidden="true"></i>
+                            <h3>Written estimate</h3>
+                            <p>
+                                Compare labor scope, materials, exclusions, payment terms, and timeline details
+                                before signing.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="provider-check-card surface-card light">
+                            <i data-lucide="thermometer-sun" aria-hidden="true"></i>
+                            <h3>Design process</h3>
+                            <p>
+                                Discuss tile and fixture packages, waterproofing details, layout fit, and
+                                comfort expectations.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="provider-check-card surface-card light">
+                            <i data-lucide="ruler" aria-hidden="true"></i>
+                            <h3>Measurements</h3>
+                            <p>
+                                Confirm how measurements are taken, who verifies them, and what happens if
+                                adjustments are needed.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="provider-check-card surface-card light">
+                            <i data-lucide="shield-check" aria-hidden="true"></i>
+                            <h3>Warranty terms</h3>
+                            <p>
+                                Ask what is covered by product warranties, labor warranties, and any service
+                                limitations.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ 
+
+
+    <section class="section home-faq section-on-light" aria-labelledby="home-faq-title">
+        <div class="container">
+            <div class="faq-layout">
+                <div class="faq-copy" data-aos="fade-right">
+                    <span class="eyebrow">Common questions</span>
+                    <h2 class="section-title" id="home-faq-title">Clear answers before you compare.</h2>
+                    <p class="section-kicker">
+                        StepEase is designed to simplify the first step while keeping the homeowner in
+                        control of provider review and final hiring decisions.
+                    </p>
+                </div>
+
+                <div class="faq-list" data-aos="fade-left">
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            How do I compare local bathroom remodeling providers?
+                            <i data-lucide="plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    Compare written estimates, product options, warranty terms, licensing,
+                                    insurance, reviews, timelines, and how each provider explains the scope of
+                                    work.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            Is StepEase a bathroom remodeling contractor?
+                            <i data-lucide="plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    No. StepEase is an independent matching platform. It does not install,
+                                    repair, replace, or inspect bathroom spaces directly.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            Are quotes from providers usually free?
+                            <i data-lucide="plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    Many providers may offer free initial quotes, but policies can vary.
+                                    Homeowners should confirm quote terms directly with each provider.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            What affects bathroom remodeling project pricing?
+                            <i data-lucide="plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    Pricing can depend on bathroom size, material package, fixture scope,
+                                    labor complexity, accessibility, permits, location, and provider-specific
+                                    pricing.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            How do I know if a provider serves my area?
+                            <i data-lucide="plus" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    After submitting project details, relevant providers may contact you. Always
+                                    confirm service area, availability, and scheduling directly before moving
+                                    forward.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "How do I compare local bathroom remodeling providers?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Compare written estimates, product options, warranty terms, licensing, insurance, reviews, timelines, and how each provider explains the scope of work."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Is StepEase a bathroom remodeling contractor?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "No. StepEase is an independent matching platform. It does not install, repair, replace, or inspect bathroom spaces directly."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Are quotes from providers usually free?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Many providers may offer free initial quotes, but policies can vary. Homeowners should confirm quote terms directly with each provider."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What affects bathroom remodeling project pricing?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Pricing can depend on bathroom size, material package, fixture scope, labor complexity, accessibility, permits, location, and provider-specific pricing."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How do I know if a provider serves my area?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "After submitting project details, relevant providers may contact you. Always confirm service area, availability, and scheduling directly before moving forward."
+                            }
+                        }
+                    ]
+                }
+                </script>
+    </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container-wide">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html" aria-label="StepEase home">
+                            <span class="brand-mark" aria-hidden="true">
+                                <img src="assets/images/stepease-bubbles.svg" alt="" width="64" height="64">
+                            </span>
+
+                            <span class="brand-text">
+                                <span class="brand-name" aria-label="StepEase">
+                                    <span class="brand-name__step">Step</span><span class="brand-name__ease">Ease</span>
+                                </span>
+                                <span class="brand-label">Walk-In Tubs</span>
+                            </span>
+                        </a>
+
+                    <p class="footer-description" dataBathroom Remodeling A calm, modern way to compare bathroom
+                        remodeling service categories and request contact from independent local providers. </p>
+
+
+                </div>
+
+                <div class="footer-col">
+                    <h2 class="footer-title">Navigation</h2>
+                    <nav class="footer-links" aria-label="Footer navigation">
+                        <a href="index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+
+                <div class="footer-col">
+                    <h2 class="footer-title">Services</h2>
+                    <nav class="footer-links" aria-labBathroom Remodeling <a href="bathroom-remodeling.html">Bathroom
+                        Remodeling</a>
+                        <a href="shower-remodeling.html">Shower Remodeling</a>
+                        <a href="bathtub-replacement.html">Bathtub Replacement</a>
+                        <a href="tile-installation.html">Tile Installation</a>
+                        <a href="vanity-sink-upgrades.html">Vanity & Sink Upgrades</a>
+                        <a href="accessible-bathroom-updates.html">Accessible Bathroom Updates</a>
+                    </nav>
+                </div>
+
+                <div class="footer-col">
+                    <h2 class="footer-title">Contact</h2>
+                    <div class="footer-contact">
+                        <a href="tel:+18885550148" data-config-href="phone" data-config="contact.phoneDisplay">(888)
+                            555-0148</a>
+                        <a href="mailto:hello@tileandbath.com" data-config-href="email"
+                            data-config="contact.email">hello@tileandbath.com</a>
+                        <span data-config="company.address">USA Service Area</span>
+                        <span>Company ID: <span data-config="company.companyId">FL-WIN-2048</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-disclaimer" data-config="legal.disclaimer">
+                Disclaimer: This site is a free service to assist homeowners in connecting with local service
+                providers. All contractors/providers are independent and this site does not warrant or guarantee any
+                work performed. It is the responsibility of the homeowner to verify that the hired contractor
+                furnishes the necessary license and insurance required for the work being performed. All persons
+                depicted in a photo or video are actors or models and not contractors listed on this site.
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © <span data-current-year>2026</span>
+                    <span data-config="company.name">StepEase</span>.
+                    <span data-config="footer.copyright">All rights reserved.</span>
+                </p>
+
+                <nav class="footer-bottom-links" aria-label="Legal navigation">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="cookie-banner" data-cookie-banner role="dialog" aria-live="polite" aria-label="Privacy preferences">
+        <div class="cookie-inner">
+            <div class="cookie-copy">
+                <h2 class="cookie-title" data-cookie-title>Privacy preferences</h2>
+                <p class="cookie-text" data-cookie-text>
+                    StepEase uses basic cookies and similar technologies to improve site functionality and
+                    understand general usage. Please review our policies before continuing.
+                </p>
+
+                <div class="cookie-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+
+            <div class="cookie-actions">
+                <button class="btn btn-outline btn-small" type="button" data-cookie-decline>
+                    Decline
+                </button>
+
+                <button class="btn btn-primary btn-small" type="button" data-cookie-accept>
+                    Accept
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <script src="js/site-config.js"></script>
+    <script src="js/services-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

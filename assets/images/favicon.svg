@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="favicon-title">
+  <title id="favicon-title">StepEase favicon</title>
+  <g fill="#F9FEFF" fill-opacity="0.72" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="33" cy="33" r="19" stroke="#55B7DE" stroke-width="3.2"/>
+    <path d="M24.5 31.5C24.5 27.2 28 23.8 32.4 23.8" stroke="#C9F4FF" stroke-width="3.4"/>
+    <circle cx="17.5" cy="19" r="7.5" stroke="#9CE5F8" stroke-width="2.8"/>
+    <path d="M14.2 18C14.2 15.8 16 14 18.2 14" stroke="#C9F4FF" stroke-width="3"/>
+    <circle cx="49" cy="19.5" r="9" stroke="#55B7DE" stroke-width="2.8"/>
+    <path d="M45 18.2C45 15.6 47.1 13.6 49.7 13.6" stroke="#C9F4FF" stroke-width="3"/>
+  </g>
+</svg>
