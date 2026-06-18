@@ -3628,3 +3628,132 @@
         left: 16px;
     }
 }
+
+/* =========================================
+   ABOUT VALUES — COMPACT STACK + ICONS RIGHT
+========================================= */
+
+.about-values .values-shell {
+    align-items: stretch !important;
+}
+
+/* Фото и стопка карточек получают одинаковую высоту */
+.about-values .values-image-main,
+.about-values .values-stack {
+    align-self: stretch;
+    min-height: 0;
+}
+
+/* Само фото растягивается ровно по высоте карточек */
+.about-values .values-image-main {
+    height: 100% !important;
+    min-height: 0 !important;
+}
+
+.about-values .values-image-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Правая колонка: три компактные карточки на всю высоту фото */
+.about-values .values-stack {
+    display: grid !important;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 10px !important;
+}
+
+/* Карточки ниже и плотнее */
+.about-values .values-stack article {
+    position: relative;
+    isolation: isolate;
+
+    min-height: 112px !important;
+    display: block !important;
+
+    padding: clamp(17px, 1.55vw, 22px) !important;
+}
+
+/* Иконка справа сверху */
+.about-values .values-stack article .section-icon,
+.about-values .values-stack article>i,
+.about-values .values-stack article>svg {
+    position: absolute !important;
+    top: clamp(17px, 1.55vw, 22px);
+    right: clamp(17px, 1.55vw, 22px);
+
+    width: 32px !important;
+    height: 32px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Заголовок оставляет место справа только для иконки */
+.about-values .values-stack article strong {
+    display: block;
+    margin: 0 46px 8px 0 !important;
+
+    font-size: clamp(1.08rem, 1.25vw, 1.35rem) !important;
+    line-height: 1.04 !important;
+}
+
+/* Параграф идёт почти на всю ширину карточки */
+.about-values .values-stack article p {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+
+    font-size: 0.82rem !important;
+    line-height: 1.46 !important;
+}
+
+/* Чуть компактнее весь блок по вертикали */
+.about-values {
+    padding: clamp(44px, 5vw, 72px) 0 !important;
+}
+
+/* Планшет: фото и карточки всё ещё ровные */
+@media (max-width: 1180px) {
+    .about-values .values-image-main {
+        min-height: 390px !important;
+    }
+
+    .about-values .values-stack {
+        min-height: 390px;
+    }
+}
+
+/* Мобильный: возвращаем естественную высоту */
+@media (max-width: 760px) {
+
+    .about-values .values-image-main,
+    .about-values .values-stack {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    .about-values .values-image-main {
+        min-height: 300px !important;
+    }
+
+    .about-values .values-stack {
+        grid-template-rows: none;
+        gap: 9px !important;
+    }
+
+    .about-values .values-stack article {
+        min-height: 0 !important;
+        padding: 18px !important;
+    }
+
+    .about-values .values-stack article .section-icon,
+    .about-values .values-stack article>i,
+    .about-values .values-stack article>svg {
+        top: 18px;
+        right: 18px;
+    }
+}
