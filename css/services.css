@@ -55,8 +55,10 @@
 .services-hero .page-title {
     max-width: 920px;
     color: var(--color-text);
-    font-size: clamp(3rem, 6.3vw, 7rem);
-    line-height: 0.88;
+    font-size: clamp(2.7rem, 5.15vw, 5.35rem);
+    font-weight: 400;
+    line-height: 0.99;
+    letter-spacing: -0.045em;
 }
 
 .services-hero-copy>p {
@@ -254,8 +256,9 @@
 
 .services-directory .section-title {
     max-width: 920px;
-    font-size: clamp(2.4rem, 4.3vw, 5rem);
-    line-height: 0.9;
+    font-size: clamp(2.1rem, 3.65vw, 3.8rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
 }
 
 .services-directory .section-kicker {
@@ -514,7 +517,9 @@
 
 .compare-content .section-title {
     max-width: 880px;
-    font-size: clamp(2.6rem, 5vw, 5.8rem);
+    font-size: clamp(2.1rem, 3.65vw, 3.8rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
 }
 
 .compare-content p {
@@ -688,7 +693,9 @@
     }
 
     .services-hero .page-title {
-        font-size: clamp(2.8rem, 11vw, 4.8rem);
+        font-size: clamp(2.45rem, 10vw, 3.45rem);
+        line-height: 1.01;
+        letter-spacing: -0.04em;
     }
 
     .services-hero-mini-card {
@@ -852,7 +859,9 @@
 }
 
 .services-hero-directory .page-title {
-    text-shadow: 0 10px 32px rgba(246, 242, 233, 0.24);
+    text-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.48),
+        0 5px 14px rgba(38, 25, 20, 0.045);
 }
 
 .services-hero-directory .services-hero-directory-panel {
@@ -917,8 +926,8 @@
 .services-hero-directory .page-title {
     color: #261914;
     text-shadow:
-        0 2px 18px rgba(246, 242, 233, 0.72),
-        0 14px 42px rgba(246, 242, 233, 0.42);
+        0 1px 0 rgba(255, 255, 255, 0.48),
+        0 5px 14px rgba(38, 25, 20, 0.045);
 }
 
 .services-hero-directory .services-hero-copy>p {
@@ -1082,10 +1091,10 @@
 
 .services-hero-directory .page-title.text-balance {
     max-width: 760px;
-    font-size: clamp(2.65rem, 5.2vw, 5.85rem);
-    font-weight: 500;
-    line-height: 0.98;
-    letter-spacing: -0.035em;
+    font-size: clamp(2.7rem, 5.15vw, 5.35rem);
+    font-weight: 400;
+    line-height: 0.99;
+    letter-spacing: -0.045em;
     text-wrap: initial;
 }
 
@@ -1105,7 +1114,7 @@
 @media (max-width: 1180px) {
     .services-hero-directory .page-title.text-balance {
         max-width: 880px;
-        font-size: clamp(2.8rem, 8vw, 5.2rem);
+        font-size: clamp(2.85rem, 7.6vw, 4.6rem);
     }
 
     .services-hero-directory .services-directory-head strong {
@@ -1117,8 +1126,8 @@
 
 @media (max-width: 680px) {
     .services-hero-directory .page-title.text-balance {
-        font-size: clamp(2.45rem, 12vw, 4rem);
-        line-height: 1;
+        font-size: clamp(2.45rem, 10vw, 3.45rem);
+        line-height: 1.01;
     }
 
     .services-hero-directory .services-directory-head {
@@ -1205,10 +1214,10 @@
 
 .services-review .review-copy .section-title {
     max-width: 960px !important;
-    font-size: clamp(2.55rem, 4.6vw, 5.25rem) !important;
-    line-height: 0.96 !important;
-    font-weight: 500 !important;
-    letter-spacing: -0.035em !important;
+    font-size: clamp(2.1rem, 3.65vw, 3.8rem) !important;
+    line-height: 1.02 !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.04em !important;
     text-wrap: initial !important;
 }
 
@@ -1265,8 +1274,8 @@
 
 @media (max-width: 680px) {
     .services-review .review-copy .section-title {
-        font-size: clamp(2.35rem, 11vw, 4rem) !important;
-        line-height: 1 !important;
+        font-size: clamp(2rem, 8vw, 2.85rem) !important;
+        line-height: 1.05 !important;
     }
 
     .services-review .review-check {
@@ -1674,10 +1683,10 @@
 .services-hero-photo .page-title {
     max-width: 1120px;
     color: var(--color-text);
-    font-size: clamp(3.2rem, 7.2vw, 8.2rem);
-    font-weight: 500;
-    line-height: 0.9;
-    letter-spacing: -0.055em;
+    font-size: clamp(2.7rem, 5.15vw, 5.35rem);
+    font-weight: 400;
+    line-height: 0.99;
+    letter-spacing: -0.045em;
 }
 
 .services-hero-photo__content>p {
@@ -1846,8 +1855,9 @@
     }
 
     .services-hero-photo .page-title {
-        font-size: clamp(2.65rem, 13vw, 4.6rem);
-        line-height: 0.96;
+        font-size: clamp(2.45rem, 10vw, 3.45rem);
+        line-height: 1.01;
+        letter-spacing: -0.04em;
     }
 
     .services-hero-photo__content>p {

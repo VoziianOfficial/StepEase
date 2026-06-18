@@ -64,12 +64,14 @@
 .service-hero .page-title.text-balance {
     max-width: 1040px;
     color: #F8F5EF;
-    font-size: clamp(2.8rem, 5.8vw, 6.6rem);
-    font-weight: 500;
-    line-height: 0.92;
-    letter-spacing: -0.055em;
+    font-size: clamp(2.7rem, 5.15vw, 5.35rem);
+    font-weight: 400;
+    line-height: 0.99;
+    letter-spacing: -0.045em;
     text-wrap: initial;
-    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.24);
+    text-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.035),
+        0 6px 18px rgba(0, 0, 0, 0.20);
 }
 
 .service-hero-copy p {
@@ -157,10 +159,10 @@
 
 .service-hero-panel h2 {
     font-family: var(--font-display);
-    font-size: clamp(1.65rem, 2.5vw, 2.55rem);
+    font-size: clamp(1.5rem, 2.2vw, 2.25rem);
     font-weight: 400;
-    line-height: 0.98;
-    letter-spacing: -0.045em;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
 }
 
 .service-hero-panel p {
@@ -290,10 +292,10 @@
 .service-overview-content .section-title,
 .service-overview .section-title {
     max-width: 980px !important;
-    font-size: clamp(2.45rem, 4.5vw, 5.2rem) !important;
-    line-height: 0.94 !important;
-    font-weight: 500 !important;
-    letter-spacing: -0.045em !important;
+    font-size: clamp(2.1rem, 3.65vw, 3.8rem) !important;
+    line-height: 1.02 !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.04em !important;
     text-wrap: initial !important;
 }
 
@@ -411,10 +413,10 @@
 
 .factors-copy .section-title {
     max-width: 960px !important;
-    font-size: clamp(2.55rem, 4.7vw, 5.4rem);
-    line-height: 0.94;
-    font-weight: 500;
-    letter-spacing: -0.045em;
+    font-size: clamp(2.1rem, 3.65vw, 3.8rem);
+    line-height: 1.02;
+    font-weight: 400;
+    letter-spacing: -0.04em;
     text-wrap: initial;
 }
 
@@ -562,10 +564,10 @@
 
 .service-cta-content .section-title {
     max-width: 860px !important;
-    font-size: clamp(2.35rem, 4.2vw, 5rem) !important;
-    line-height: 0.96 !important;
-    font-weight: 500 !important;
-    letter-spacing: -0.045em !important;
+    font-size: clamp(2.1rem, 3.65vw, 3.8rem) !important;
+    line-height: 1.02 !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.04em !important;
     text-wrap: initial !important;
 }
 
@@ -626,10 +628,10 @@
 
 .service-request-copy .section-title {
     max-width: 900px;
-    font-size: clamp(2.45rem, 4.6vw, 5.35rem);
-    line-height: 0.94;
-    font-weight: 500;
-    letter-spacing: -0.045em;
+    font-size: clamp(2.1rem, 3.65vw, 3.8rem);
+    line-height: 1.02;
+    font-weight: 400;
+    letter-spacing: -0.04em;
     color: #261914;
     text-wrap: initial;
 }
@@ -761,10 +763,10 @@
 
 .service-faq .faq-copy .section-title {
     max-width: 1080px !important;
-    font-size: clamp(2.55rem, 4.7vw, 5.4rem);
-    line-height: 0.94;
-    font-weight: 500;
-    letter-spacing: -0.045em;
+    font-size: clamp(2.1rem, 3.65vw, 3.8rem);
+    line-height: 1.02;
+    font-weight: 400;
+    letter-spacing: -0.04em;
     text-wrap: initial;
 }
 
@@ -801,10 +803,10 @@
 
 .service-page .section-head.split-head .section-title {
     max-width: 980px;
-    font-size: clamp(2.45rem, 4.7vw, 5.4rem);
-    line-height: 0.94;
-    font-weight: 500;
-    letter-spacing: -0.045em;
+    font-size: clamp(2.1rem, 3.65vw, 3.8rem);
+    line-height: 1.02;
+    font-weight: 400;
+    letter-spacing: -0.04em;
     text-wrap: initial;
 }
 
@@ -984,8 +986,9 @@
 
     .service-hero .page-title,
     .service-hero .page-title.text-balance {
-        font-size: clamp(2.8rem, 12vw, 5.4rem);
-        line-height: 0.9;
+        font-size: clamp(2.45rem, 10vw, 3.45rem);
+        line-height: 1.01;
+        letter-spacing: -0.04em;
     }
 
     .service-hero-copy p {
@@ -1020,8 +1023,8 @@
 
     .service-overview-content .section-title,
     .service-overview .section-title {
-        font-size: clamp(2.25rem, 10vw, 3.8rem) !important;
-        line-height: 1 !important;
+        font-size: clamp(2rem, 8vw, 2.85rem) !important;
+        line-height: 1.05 !important;
     }
 
     .evaluate-grid {
@@ -1050,8 +1053,8 @@
     }
 
     .service-cta-content .section-title {
-        font-size: clamp(2.15rem, 10vw, 3.6rem) !important;
-        line-height: 1 !important;
+        font-size: clamp(2rem, 8vw, 2.85rem) !important;
+        line-height: 1.05 !important;
     }
 
     .service-cta-content p {
@@ -1073,8 +1076,8 @@
     }
 
     .service-request-copy .section-title {
-        font-size: clamp(2.25rem, 10vw, 3.8rem);
-        line-height: 1;
+        font-size: clamp(2rem, 8vw, 2.85rem);
+        line-height: 1.05;
     }
 
     .service-request-note {
@@ -1102,8 +1105,8 @@
     .factors-copy .section-title,
     .service-faq .faq-copy .section-title,
     .service-page .section-head.split-head .section-title {
-        font-size: clamp(2.25rem, 10vw, 3.8rem);
-        line-height: 1;
+        font-size: clamp(2rem, 8vw, 2.85rem);
+        line-height: 1.05;
     }
 
     .service-page .section-head.split-head {
@@ -1124,9 +1127,9 @@
 
     .service-hero .page-title,
     .service-hero .page-title.text-balance {
-        font-size: clamp(2.45rem, 11.5vw, 4.2rem);
-        line-height: 0.98;
-        letter-spacing: -0.045em;
+        font-size: clamp(2.45rem, 10vw, 3.45rem);
+        line-height: 1.01;
+        letter-spacing: -0.04em;
     }
 
     .service-hero-copy p {
@@ -1372,9 +1375,10 @@
 .service-request-horizontal .section-title {
     max-width: 760px;
     color: var(--color-text-light);
-    font-size: clamp(2.3rem, 4.2vw, 4.8rem);
-    font-weight: 500;
-    line-height: 0.96;
+    font-size: clamp(2.1rem, 3.65vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
 }
 
 .service-request-horizontal__copy p {
@@ -1614,10 +1618,10 @@
     margin: 0;
     color: var(--color-text-light) !important;
     font-family: var(--font-heading);
-    font-size: clamp(1.9rem, 3vw, 3.4rem);
-    font-weight: 500;
-    line-height: 0.96;
-    letter-spacing: -0.045em;
+    font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
 }
 
 .service-request-slim p {
