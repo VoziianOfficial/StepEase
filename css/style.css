@@ -1027,6 +1027,8 @@ h2 > span,
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
+    min-width: 0;
     padding: 18px;
     border-bottom: 1px solid rgba(248, 245, 239, 0.12);
     color: var(--color-text-light);
@@ -1045,12 +1047,20 @@ h2 > span,
     color: var(--color-accent);
 }
 
-.mobile-nav-main a::after {
-    content: "↗";
-    font-family: var(--font-body);
-    font-size: 1rem;
-    opacity: 0.55;
+.mobile-menu svg {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+    stroke-width: 1.8;
+}
+
+.mobile-nav-main a .mobile-menu-row-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
     color: var(--color-accent);
+    opacity: 0.55;
 }
 
 .mobile-services {
@@ -1083,7 +1093,9 @@ h2 > span,
 .mobile-service-link {
     min-height: 92px;
     display: grid;
-    align-content: space-between;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto 1fr;
+    align-items: start;
     gap: 10px;
     padding: 14px;
     border: 1px solid rgba(248, 245, 239, 0.12);
@@ -1094,16 +1106,36 @@ h2 > span,
 }
 
 .mobile-service-link svg {
-    width: 18px;
-    height: 18px;
     color: var(--color-accent);
 }
 
-.mobile-service-link span {
+.mobile-service-link > svg:first-child {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.mobile-service-link__label,
+.mobile-service-link > span:not(.mobile-menu-row-arrow) {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    min-width: 0;
     color: var(--color-text-light);
     font-size: 0.9rem;
     font-weight: 700;
     line-height: 1.25;
+}
+
+.mobile-service-link .mobile-menu-row-arrow {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: end;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    color: var(--color-accent);
+    opacity: 0.72;
 }
 
 .mobile-service-link:hover {
@@ -1122,14 +1154,17 @@ h2 > span,
     display: flex;
     align-items: center;
     gap: 10px;
+    min-width: 0;
     color: rgba(248, 245, 239, 0.74);
     font-weight: 600;
 }
 
 .mobile-contact-row svg {
-    width: 18px;
-    height: 18px;
     color: var(--color-accent);
+}
+
+.mobile-contact-row span {
+    min-width: 0;
 }
 
 

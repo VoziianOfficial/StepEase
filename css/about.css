@@ -1648,14 +1648,7 @@
 
 
 
-@media (max-width: 1180px) {
 
-    .contact-form-side,
-    .contact-form-side.aos-init,
-    .contact-form-side.aos-animate {
-        display: none !important;
-    }
-}
 
 
 

@@ -51,6 +51,36 @@
         return icon;
     }
 
+    function createMobileMenuArrow(iconName) {
+        const arrow = document.createElement('span');
+        arrow.className = 'mobile-menu-row-arrow';
+        arrow.setAttribute('aria-hidden', 'true');
+        arrow.append(createIcon(iconName || 'chevron-right'));
+        return arrow;
+    }
+
+    function ensureMobileMenuArrow(row, iconName) {
+        if (!row || row.querySelector('.mobile-menu-row-arrow')) return;
+
+        row.append(createMobileMenuArrow(iconName));
+    }
+
+    function decorateMobileMenuRows() {
+        document.querySelectorAll('.mobile-nav-main a').forEach((link) => {
+            ensureMobileMenuArrow(link, 'chevron-right');
+        });
+
+        document.querySelectorAll('.mobile-service-link').forEach((link) => {
+            const label = link.querySelector('span:not(.mobile-menu-row-arrow)');
+
+            if (label) {
+                label.classList.add('mobile-service-link__label');
+            }
+
+            ensureMobileMenuArrow(link, 'chevron-right');
+        });
+    }
+
     function setTextContent() {
         const elements = document.querySelectorAll(selectors.configText);
 
@@ -393,6 +423,12 @@
         renderMobileServiceMenus();
         renderFooterServiceLinks();
         renderProjectTypeSelects();
+        decorateMobileMenuRows();
+
+        // Re-hydrate any dynamic mobile-menu placeholders into Lucide SVGs.
+        if (window.lucide) {
+            window.lucide.createIcons();
+        }
     }
 
     function initHeader() {

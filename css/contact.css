@@ -2886,3 +2886,45 @@ background:
         font-size: 3.3rem;
     }
 }
+
+
+@media (max-width: 1180px) {
+    .contact-main .contact-main-layout {
+        grid-template-columns: 1fr !important;
+        gap: clamp(26px, 4vw, 40px) !important;
+    }
+
+    .contact-main .contact-form-side,
+    .contact-main .contact-form-side.aos-init,
+    .contact-main .contact-form-side.aos-animate {
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .contact-main .contact-info-side {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    .contact-main .form-card.contact-form {
+        width: 100% !important;
+        max-width: none !important;
+    }
+}
+
+@media (max-width: 680px) {
+    .contact-main .form-card.contact-form {
+        padding: 18px !important;
+    }
+
+    .contact-main .contact-form .form-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-main .contact-form .btn-full {
+        width: 100% !important;
+    }
+}
