@@ -3,6 +3,10 @@
 window.SiteConfig = {
     company: {
         name: 'StepEase',
+        brandPrimary: 'Step',
+        brandAccent: 'Ease',
+        brandLabel: 'Walk-In Tubs',
+
         companyId: 'WT-STEP-2048',
         address: 'USA Service Area',
         serviceArea: 'Independent Walk-In Tub provider matching across selected areas in the United States'

@@ -64,6 +64,47 @@
         });
     }
 
+    function setBrandContent() {
+        const brandPrimary =
+            config?.company?.brandPrimary ||
+            config?.company?.name ||
+            '';
+
+        const brandAccent =
+            config?.company?.brandAccent ||
+            '';
+
+        const brandLabel =
+            config?.company?.brandLabel ||
+            '';
+
+        const fullBrandName = `${brandPrimary}${brandAccent}`.trim();
+
+        document.querySelectorAll('.brand-name__step').forEach((element) => {
+            element.textContent = brandPrimary;
+        });
+
+        document.querySelectorAll('.brand-name__ease').forEach((element) => {
+            element.textContent = brandAccent;
+        });
+
+        document.querySelectorAll('.brand-label').forEach((element) => {
+            element.textContent = brandLabel;
+        });
+
+        document.querySelectorAll('.brand-name').forEach((element) => {
+            if (fullBrandName) {
+                element.setAttribute('aria-label', fullBrandName);
+            }
+        });
+
+        document.querySelectorAll('.brand').forEach((element) => {
+            if (fullBrandName) {
+                element.setAttribute('aria-label', `${fullBrandName} home`);
+            }
+        });
+    }
+
     function setDynamicLinks() {
         const phoneRaw = config?.contact?.phoneRaw || '';
         const email = config?.contact?.email || '';
@@ -174,12 +215,12 @@
     }
 
     function initConfigInjection() {
+        setBrandContent();
         setTextContent();
         setDynamicLinks();
         setCurrentYear();
         replaceHardcodedConfigText();
     }
-
 
     function renderDesktopServiceMenus() {
         if (!servicesData.length) return;
