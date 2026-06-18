@@ -3067,3 +3067,356 @@
         transform: translateY(-4px) !important;
     }
 }
+
+/* ABOUT HERO PROOF — WIDER TEXT AREA */
+
+.about-hero-proof article {
+    display: block !important;
+    min-height: 148px !important;
+    padding: clamp(18px, 1.7vw, 23px) !important;
+}
+
+.about-hero-proof article .section-icon,
+.about-hero-proof article>i,
+.about-hero-proof article>svg {
+    position: absolute !important;
+    top: clamp(18px, 1.7vw, 23px);
+    right: clamp(18px, 1.7vw, 23px);
+
+    width: 34px !important;
+    height: 34px !important;
+    margin: 0 !important;
+}
+
+.about-hero-proof article strong {
+    display: block;
+    margin: 0 48px 10px 0 !important;
+}
+
+.about-hero-proof article p {
+    display: block;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+
+    font-size: 0.84rem !important;
+    line-height: 1.5 !important;
+}
+
+/* На телефоне оставляем достаточно места для иконки */
+@media (max-width: 680px) {
+    .about-hero-proof article {
+        min-height: 0 !important;
+    }
+
+    .about-hero-proof article strong {
+        margin-right: 44px !important;
+    }
+}
+
+/* =========================================
+   ABOUT MODEL — COMPACT CARDS
+========================================= */
+
+.about-model-redesign {
+    padding: clamp(42px, 5vw, 68px) 0 !important;
+}
+
+.about-model-redesign-grid {
+    gap: clamp(10px, 1.2vw, 16px) !important;
+}
+
+/* Три основные карточки */
+.about-model-redesign .model-mini-card {
+    min-height: 142px !important;
+    padding: clamp(18px, 1.8vw, 24px) !important;
+}
+
+/* Чуть компактнее внутренние отступы текста */
+.about-model-redesign .model-mini-card h3 {
+    margin-bottom: 7px !important;
+    font-size: clamp(1.22rem, 1.55vw, 1.55rem) !important;
+    line-height: 1.02 !important;
+}
+
+.about-model-redesign .model-mini-card p {
+    margin: 0 !important;
+    font-size: 0.84rem !important;
+    line-height: 1.48 !important;
+}
+
+/* Иконки не должны раздувать высоту */
+.about-model-redesign .model-mini-card .section-icon,
+.about-model-redesign .model-mini-card>i,
+.about-model-redesign .model-mini-card>svg {
+    width: 34px !important;
+    height: 34px !important;
+}
+
+/* Нижняя широкая карточка Important */
+.about-model-redesign .model-wide-note {
+    min-height: 0 !important;
+    padding: clamp(18px, 1.8vw, 24px) !important;
+}
+
+.about-model-redesign .model-wide-note h3 {
+    margin: 5px 0 7px !important;
+    font-size: clamp(1.2rem, 1.55vw, 1.55rem) !important;
+    line-height: 1.04 !important;
+}
+
+.about-model-redesign .model-wide-note p {
+    margin: 0 !important;
+    font-size: 0.84rem !important;
+    line-height: 1.48 !important;
+}
+
+.about-model-redesign .model-wide-note>i,
+.about-model-redesign .model-wide-note>svg {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+/* Мобилка */
+@media (max-width: 680px) {
+    .about-model-redesign {
+        padding: 44px 0 !important;
+    }
+
+    .about-model-redesign .model-mini-card,
+    .about-model-redesign .model-wide-note {
+        min-height: 0 !important;
+        padding: 18px !important;
+    }
+}
+
+/* =========================================
+   ABOUT MODEL — INDIVIDUAL CARD HOVERS
+========================================= */
+
+.about-model-redesign .model-mini-card,
+.about-model-redesign .model-wide-note {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    transform-style: preserve-3d;
+
+    transition:
+        transform 340ms var(--ease-out),
+        border-color 340ms var(--ease-out),
+        box-shadow 340ms var(--ease-out);
+}
+
+/* Общий быстрый световой блик */
+.about-model-redesign .model-mini-card::before,
+.about-model-redesign .model-wide-note::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background: linear-gradient(110deg,
+            transparent 18%,
+            transparent 38%,
+            rgba(255, 255, 255, 0.12) 44%,
+            rgba(255, 255, 255, 0.58) 49%,
+            rgba(255, 255, 255, 0.12) 56%,
+            transparent 66%,
+            transparent 100%);
+
+    opacity: 0;
+    transform: translateX(-130%) skewX(-15deg);
+
+    transition:
+        opacity 160ms ease,
+        transform 680ms var(--ease-out);
+}
+
+/* Нижняя линия */
+.about-model-redesign .model-mini-card::after,
+.about-model-redesign .model-wide-note::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+
+    height: 2px;
+
+    opacity: 0;
+    transform: scaleX(0.16);
+    transform-origin: left;
+
+    transition:
+        opacity 260ms var(--ease-out),
+        transform 360ms var(--ease-out);
+}
+
+/* Иконки без фона */
+.about-model-redesign .model-mini-card>i,
+.about-model-redesign .model-mini-card>svg,
+.about-model-redesign .model-wide-note>i,
+.about-model-redesign .model-wide-note>svg {
+    position: relative;
+    z-index: 2;
+
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+
+    transition:
+        color 300ms var(--ease-out),
+        transform 340ms var(--ease-out),
+        filter 340ms var(--ease-out);
+}
+
+/* ---------- 1. Organizes request — blue ---------- */
+
+.about-model-redesign .model-mini-card:nth-child(1)::after {
+    background: linear-gradient(90deg,
+            var(--brand-blue),
+            rgba(94, 148, 170, 0.12),
+            transparent);
+}
+
+.about-model-redesign .model-mini-card:nth-child(1):hover {
+    border-color: rgba(94, 148, 170, 0.52) !important;
+
+    transform:
+        translateY(-6px) translateX(3px) rotateX(1.5deg);
+
+    box-shadow:
+        0 12px 0 rgba(94, 148, 170, 0.08),
+        0 24px 34px rgba(38, 25, 20, 0.12) !important;
+}
+
+.about-model-redesign .model-mini-card:nth-child(1):hover>i,
+.about-model-redesign .model-mini-card:nth-child(1):hover>svg {
+    color: var(--brand-blue) !important;
+
+    transform:
+        translateY(-5px) rotate(-6deg) scale(1.1);
+
+    filter: drop-shadow(0 10px 14px rgba(94, 148, 170, 0.28));
+}
+
+/* ---------- 2. Supports matching — green ---------- */
+
+.about-model-redesign .model-mini-card:nth-child(2)::after {
+    background: linear-gradient(90deg,
+            var(--color-accent-strong),
+            var(--color-accent),
+            transparent);
+}
+
+.about-model-redesign .model-mini-card:nth-child(2):hover {
+    border-color: rgba(120, 148, 93, 0.58) !important;
+
+    transform:
+        translateY(-7px) rotateX(1.6deg) rotateY(-1deg);
+
+    box-shadow:
+        0 12px 0 rgba(120, 148, 93, 0.09),
+        0 25px 36px rgba(38, 25, 20, 0.13) !important;
+}
+
+.about-model-redesign .model-mini-card:nth-child(2):hover>i,
+.about-model-redesign .model-mini-card:nth-child(2):hover>svg {
+    color: var(--color-accent-strong) !important;
+
+    transform:
+        translateY(-6px) rotate(5deg) scale(1.1);
+
+    filter: drop-shadow(0 10px 15px rgba(83, 108, 69, 0.25));
+}
+
+/* ---------- 3. Encourages comparison — mixed line ---------- */
+
+.about-model-redesign .model-mini-card:nth-child(3)::after {
+    background: linear-gradient(90deg,
+            var(--brand-blue),
+            var(--color-accent),
+            transparent);
+}
+
+.about-model-redesign .model-mini-card:nth-child(3):hover {
+    border-color: rgba(120, 148, 93, 0.48) !important;
+
+    transform:
+        translateY(-6px) translateX(-3px) rotateX(1.5deg) rotateY(1deg);
+
+    box-shadow:
+        0 12px 0 rgba(120, 148, 93, 0.07),
+        0 24px 34px rgba(38, 25, 20, 0.12) !important;
+}
+
+.about-model-redesign .model-mini-card:nth-child(3):hover>i,
+.about-model-redesign .model-mini-card:nth-child(3):hover>svg {
+    color: #6EAABD !important;
+
+    transform:
+        translateY(-5px) rotate(-4deg) scale(1.1);
+
+    filter: drop-shadow(0 10px 15px rgba(94, 148, 170, 0.25));
+}
+
+/* ---------- Wide Important card ---------- */
+
+.about-model-redesign .model-wide-note::after {
+    background: linear-gradient(90deg,
+            var(--color-accent-strong),
+            var(--brand-blue),
+            transparent);
+}
+
+.about-model-redesign .model-wide-note:hover {
+    border-color: rgba(120, 148, 93, 0.48) !important;
+
+    transform:
+        translateY(-5px) perspective(1000px) rotateX(1deg);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.74),
+        0 12px 0 rgba(120, 148, 93, 0.08),
+        0 24px 36px rgba(38, 25, 20, 0.13) !important;
+}
+
+.about-model-redesign .model-wide-note:hover>i,
+.about-model-redesign .model-wide-note:hover>svg {
+    color: var(--color-accent-strong) !important;
+
+    transform:
+        translateY(-4px) rotate(-7deg) scale(1.1);
+
+    filter: drop-shadow(0 10px 14px rgba(83, 108, 69, 0.24));
+}
+
+/* Общие реакции при hover */
+.about-model-redesign .model-mini-card:hover::before,
+.about-model-redesign .model-wide-note:hover::before {
+    opacity: 1;
+    transform: translateX(135%) skewX(-15deg);
+}
+
+.about-model-redesign .model-mini-card:hover::after,
+.about-model-redesign .model-wide-note:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+/* На телефоне без наклонов */
+@media (max-width: 680px) {
+
+    .about-model-redesign .model-mini-card:hover,
+    .about-model-redesign .model-wide-note:hover {
+        transform: translateY(-4px) !important;
+    }
+
+    .about-model-redesign .model-mini-card::after,
+    .about-model-redesign .model-wide-note::after {
+        right: 16px;
+        left: 16px;
+    }
+}
