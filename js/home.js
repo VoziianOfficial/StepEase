@@ -274,6 +274,76 @@
         });
     }
 
+    function initStepEaseFaqStage() {
+        const stage = document.querySelector(".stease-faq-stage");
+
+        if (!stage) {
+            return;
+        }
+
+        const tabs = Array.from(
+            stage.querySelectorAll("[data-faq-key]")
+        );
+
+        const panels = Array.from(
+            stage.querySelectorAll("[data-faq-panel]")
+        );
+
+        const activateFaqPanel = (key) => {
+            tabs.forEach((tab) => {
+                const isActive = tab.dataset.faqKey === key;
+
+                tab.classList.toggle("is-active", isActive);
+                tab.setAttribute("aria-selected", String(isActive));
+                tab.setAttribute("tabindex", isActive ? "0" : "-1");
+            });
+
+            panels.forEach((panel) => {
+                const isActive = panel.dataset.faqPanel === key;
+
+                panel.classList.toggle("is-active", isActive);
+                panel.hidden = !isActive;
+            });
+        };
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener("click", () => {
+                activateFaqPanel(tab.dataset.faqKey);
+            });
+
+            tab.addEventListener("keydown", (event) => {
+                const { key } = event;
+
+                if (!["ArrowDown", "ArrowRight", "ArrowUp", "ArrowLeft", "Home", "End"].includes(key)) {
+                    return;
+                }
+
+                event.preventDefault();
+
+                let nextIndex = index;
+
+                if (key === "ArrowDown" || key === "ArrowRight") {
+                    nextIndex = (index + 1) % tabs.length;
+                }
+
+                if (key === "ArrowUp" || key === "ArrowLeft") {
+                    nextIndex = (index - 1 + tabs.length) % tabs.length;
+                }
+
+                if (key === "Home") {
+                    nextIndex = 0;
+                }
+
+                if (key === "End") {
+                    nextIndex = tabs.length - 1;
+                }
+
+                tabs[nextIndex].focus();
+                activateFaqPanel(tabs[nextIndex].dataset.faqKey);
+            });
+        });
+    }
+
     function init() {
         initProviderSwiper();
         initHomeHeroMotion();
@@ -281,6 +351,7 @@
         initServiceCardFocus();
         initQuoteVisualMotion();
         initHeroCursorGlow();
+        initStepEaseFaqStage();
     }
 
     if (document.readyState === 'loading') {

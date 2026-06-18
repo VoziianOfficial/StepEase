@@ -497,7 +497,6 @@ h2 > span,
     border: 1px solid var(--btn-border);
     border-radius: var(--radius-button);
     background: var(--btn-bg);
-    color: var(--btn-color);
     font-family: var(--font-body);
     font-size: 0.72rem;
     font-weight: 700;
@@ -3531,10 +3530,7 @@ footer .brand,
     color: var(--accent-deep);
 }
 
-.section-on-light i,
-.section-on-light svg {
-    color: var(--accent-soft);
-}
+
 
 .section-on-dark {
     color: var(--text-on-dark);
