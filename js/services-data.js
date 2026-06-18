@@ -16,7 +16,7 @@ window.ServicesData = [
         title: 'Tub-to-Walk-In Tub Conversion',
         shortTitle: 'Conversion',
         href: 'shower-remodeling.html',
-        icon: 'shower-head',
+        icon: 'arrow-left-right',
         image: 'assets/images/services/shower-remodeling-card.jpg',
         description:
             'Compare providers that can help you explore a transition from a standard bathtub to a Walk-In Tub.'
@@ -26,7 +26,7 @@ window.ServicesData = [
         title: 'Walk-In Tub Replacement',
         shortTitle: 'Replacement',
         href: 'bathtub-replacement.html',
-        icon: 'waves',
+        icon: 'refresh-cw',
         image: 'assets/images/services/bathtub-replacement-card.jpg',
         description:
             'Explore local provider options for replacing an aging tub or updating an existing Walk-In Tub setup.'
@@ -36,7 +36,7 @@ window.ServicesData = [
         title: 'Hydrotherapy Walk-In Tubs',
         shortTitle: 'Hydrotherapy',
         href: 'tile-installation.html',
-        icon: 'grid-2x2',
+        icon: 'waves',
         image: 'assets/images/services/tile-installation-card.jpg',
         description:
             'Review local provider options and compare comfort-focused features such as water jets, air massage, and easy-to-reach controls.'

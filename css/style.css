@@ -4272,43 +4272,21 @@ footer .brand,
 
 
 
-[data-aos],
-[data-aos].aos-init,
-[data-aos].aos-animate {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-    animation: none !important;
-}
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 
-.aos-init,
-.aos-animate {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-}
-
-
-section,
-article,
-.surface-card,
-.image-card,
-.tilt-card,
-.compare-image,
-.about-story-media,
-.about-hero-visual,
-.services-hero-directory-panel,
-.home-hero-bottom,
-.hero-actions,
-.quote-floating-card,
-.compare-content,
-.compare-points div {
-    opacity: 1 !important;
-}
-
-
-[data-aos] {
-    pointer-events: auto !important;
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
 }
 
 /* =========================
@@ -5127,4 +5105,3 @@ article,
         min-width: min(292px, calc(100vw - 24px)) !important;
     }
 }
-

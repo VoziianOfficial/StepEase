@@ -30,8 +30,6 @@
 
             card.className = 'service-route-card image-card tilt-card swiper-slide';
             card.href = service.href;
-            card.setAttribute('data-aos', 'fade-up');
-
             const image = document.createElement('img');
             image.src = service.image;
             image.alt = `${service.title} provider comparison`;
@@ -59,13 +57,6 @@
             wrapper.appendChild(card);
         });
 
-        if (window.lucide && typeof window.lucide.createIcons === 'function') {
-            window.lucide.createIcons();
-        }
-
-        if (window.AOS && typeof window.AOS.refreshHard === 'function') {
-            window.AOS.refreshHard();
-        }
     }
 
     function initServicesDirectorySwiper() {

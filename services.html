@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
@@ -191,7 +191,7 @@
             <div class="services-hero-photo__overlay" aria-hidden="true"></div>
         
             <div class="container-wide services-hero-photo__inner">
-                <div class="services-hero-photo__content">
+                <div class="services-hero-photo__content" data-aos="fade-up">
                     <span class="eyebrow">Walk-In Tub service directory</span>
         
                     <h1 class="page-title text-balance" id="services-hero-title">
@@ -217,7 +217,8 @@
                     </div>
                 </div>
         
-                <nav class="hero-quick-nav hero-quick-nav--6" aria-label="Walk-In Tub categories">
+                <nav class="hero-quick-nav hero-quick-nav--6" aria-label="Walk-In Tub categories" data-aos="fade-left"
+                    data-aos-delay="140">
                     <a class="hero-quick-link" href="bathroom-remodeling.html">
                         <i data-lucide="bath" aria-hidden="true"></i>
                         <span class="hero-quick-link__text">
@@ -251,7 +252,7 @@
                     </a>
                 
                     <a class="hero-quick-link" href="vanity-sink-upgrades.html">
-                        <i data-lucide="droplets" aria-hidden="true"></i>
+                        <i data-lucide="ruler" aria-hidden="true"></i>
                         <span class="hero-quick-link__text">
                             <small>Category</small>
                             <strong>Compact Tubs</strong>
@@ -287,7 +288,7 @@
                         </p>
                     </div>
 
-                    <div class="services-directory-slider-head">
+                    <div class="services-directory-slider-head" data-aos="fade-up">
                         <p>
                             Browse the main Walk-In Tub categories. Use the arrows or swipe to compare
                             the starting
@@ -316,7 +317,7 @@
 
 <section class="section stease-compare-strip section-on-dark" aria-labelledby="compare-strip-title">
     <div class="container-wide">
-        <div class="stease-compare-strip__head">
+        <div class="stease-compare-strip__head" data-aos="fade-up">
             <div>
                 <span class="eyebrow">Before hiring</span>
 
@@ -331,7 +332,8 @@
             </p>
         </div>
 
-        <div class="stease-compare-strip__rail" aria-label="Provider comparison checklist">
+        <div class="stease-compare-strip__rail" aria-label="Provider comparison checklist" data-aos="fade-up"
+            data-aos-delay="120">
             <article class="stease-compare-strip__item" tabindex="0">
                 <div class="stease-compare-strip__item-top">
                     <i data-lucide="badge-check" aria-hidden="true"></i>
@@ -464,14 +466,14 @@
 
             <section class="stease-icon-rail section-on-dark" aria-label="Walk-In Tub focus areas">
                 <div class="container-wide">
-                    <nav class="stease-icon-rail__list" aria-label="Walk-In Tub categories">
+                    <nav class="stease-icon-rail__list" aria-label="Walk-In Tub categories" data-aos="fade-up">
             
                         <a class="stease-icon-rail__item" href="bathroom-remodeling.html" aria-label="Walk-In Tub Installation">
                             <i data-lucide="bath" aria-hidden="true"></i>
                         </a>
             
                         <a class="stease-icon-rail__item" href="shower-remodeling.html" aria-label="Tub-to-Walk-In Tub Conversion">
-                            <i data-lucide="repeat-2" aria-hidden="true"></i>
+                            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
                         </a>
             
                         <a class="stease-icon-rail__item" href="bathtub-replacement.html" aria-label="Walk-In Tub Replacement">
@@ -483,12 +485,12 @@
                         </a>
             
                         <a class="stease-icon-rail__item" href="vanity-sink-upgrades.html" aria-label="Compact Walk-In Tubs">
-                            <i data-lucide="maximize-2" aria-hidden="true"></i>
+                            <i data-lucide="ruler" aria-hidden="true"></i>
                         </a>
             
                         <a class="stease-icon-rail__item" href="accessible-bathroom-updates.html"
                             aria-label="Accessibility and Safety Features">
-                            <i data-lucide="shield-check" aria-hidden="true"></i>
+                            <i data-lucide="accessibility" aria-hidden="true"></i>
                         </a>
             
                     </nav>
@@ -572,7 +574,7 @@
 
         <section class="stease-action-cta section-on-dark" aria-labelledby="action-cta-title">
             <div class="container-wide">
-                <div class="stease-action-cta__shell">
+                <div class="stease-action-cta__shell" data-aos="fade-up">
                     <div class="stease-action-cta__copy">
                         <span class="eyebrow">A clearer next step</span>
         
@@ -837,7 +839,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -846,6 +848,7 @@
     <script src="js/services-data.js"></script>
     <script src="js/main.js"></script>
     <script src="js/services.js"></script>
+    <script src="assets/js/motion.js"></script>
 </body>
 
 </html>

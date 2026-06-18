@@ -354,23 +354,6 @@
         renderProjectTypeSelects();
     }
 
-    function initIcons() {
-        if (window.lucide && typeof window.lucide.createIcons === 'function') {
-            window.lucide.createIcons();
-        }
-    }
-
-    function initAOS() {
-        document.querySelectorAll('[data-aos]').forEach((element) => {
-            element.removeAttribute('data-aos');
-            element.removeAttribute('data-aos-delay');
-            element.removeAttribute('data-aos-duration');
-            element.classList.remove('aos-init', 'aos-animate');
-            element.style.opacity = '1';
-            element.style.transform = 'none';
-        });
-    }
-
     function initHeader() {
         const header = document.querySelector(selectors.header);
 
@@ -725,8 +708,6 @@
     function init() {
         renderServicesFromData();
         initConfigInjection();
-        initIcons();
-        initAOS();
         initHeader();
         initMobileMenu();
         initDesktopDropdownA11y();
