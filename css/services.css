@@ -2136,7 +2136,7 @@
     width: clamp(260px, 31vw, 520px);
     aspect-ratio: 1;
 
-    background: url("../images/stepease-bubbles.svg") center / contain no-repeat;
+    background: url("../assets/images/stepease-bubbles.svg") center / contain no-repeat;
 
     opacity: 0.12;
     filter:
@@ -2878,4 +2878,220 @@
 .services-choice-lens .choice-lens-row:hover>svg {
     color: #86BED1 !important;
     filter: drop-shadow(0 10px 15px rgba(94, 148, 170, 0.30));
+}
+
+/* =========================================
+   STEP EASE — DARK ICON RAIL
+========================================= */
+
+.stease-icon-rail {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(15px, 2vw, 26px) 0;
+    background:
+        radial-gradient(circle at 7% 50%,
+            rgba(94, 148, 170, 0.14),
+            transparent 24%),
+        radial-gradient(circle at 94% 50%,
+            rgba(120, 148, 93, 0.11),
+            transparent 25%),
+        linear-gradient(135deg,
+            #0b0908 0%,
+            #171311 52%,
+            #0d0a09 100%);
+}
+
+.stease-icon-rail::before,
+.stease-icon-rail::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: min(100% - 36px, 1360px);
+    height: 1px;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.stease-icon-rail::before {
+    top: 0;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(94, 148, 170, 0.44),
+            rgba(147, 180, 119, 0.44),
+            transparent);
+}
+
+.stease-icon-rail::after {
+    bottom: 0;
+    background: rgba(248, 245, 239, 0.10);
+}
+
+.stease-icon-rail__list {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    border-left: 1px solid rgba(248, 245, 239, 0.11);
+}
+
+.stease-icon-rail__item {
+    position: relative;
+    isolation: isolate;
+
+    min-height: clamp(92px, 8vw, 122px);
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+    border-right: 1px solid rgba(248, 245, 239, 0.11);
+
+    color: rgba(248, 245, 239, 0.72);
+    text-decoration: none;
+
+    transition:
+        background 300ms var(--ease-out),
+        color 300ms var(--ease-out),
+        transform 300ms var(--ease-out);
+}
+
+/* Лёгкий внутренний блик */
+.stease-icon-rail__item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(110deg,
+            transparent 14%,
+            transparent 35%,
+            rgba(255, 255, 255, 0.06) 43%,
+            rgba(255, 255, 255, 0.32) 49%,
+            rgba(255, 255, 255, 0.08) 56%,
+            transparent 68%,
+            transparent 100%);
+
+    opacity: 0;
+    transform: translateX(-130%) skewX(-15deg);
+
+    transition:
+        opacity 180ms ease,
+        transform 720ms var(--ease-out);
+}
+
+/* Нижняя линия раскрывается на hover */
+.stease-icon-rail__item::after {
+    content: "";
+    position: absolute;
+    right: clamp(12px, 1.6vw, 24px);
+    bottom: 0;
+    left: clamp(12px, 1.6vw, 24px);
+
+    height: 2px;
+
+    background: linear-gradient(90deg,
+            transparent,
+            var(--brand-blue),
+            var(--color-accent-light),
+            transparent);
+
+    opacity: 0;
+    transform: scaleX(0.18);
+    transform-origin: center;
+
+    transition:
+        opacity 300ms var(--ease-out),
+        transform 380ms var(--ease-out);
+}
+
+.stease-icon-rail__item i,
+.stease-icon-rail__item svg {
+    position: relative;
+    z-index: 2;
+
+    width: clamp(34px, 3.2vw, 52px);
+    height: clamp(34px, 3.2vw, 52px);
+
+    stroke-width: 1.4;
+
+    filter: drop-shadow(0 7px 14px rgba(0, 0, 0, 0.28));
+
+    transition:
+        color 300ms var(--ease-out),
+        transform 340ms var(--ease-out),
+        filter 340ms var(--ease-out);
+}
+
+/* Hover */
+.stease-icon-rail__item:hover,
+.stease-icon-rail__item:focus-visible {
+    color: var(--color-accent-light);
+    background: rgba(255, 255, 255, 0.035);
+    transform: translateY(-3px);
+}
+
+.stease-icon-rail__item:hover::before,
+.stease-icon-rail__item:focus-visible::before {
+    opacity: 1;
+    transform: translateX(135%) skewX(-15deg);
+}
+
+.stease-icon-rail__item:hover::after,
+.stease-icon-rail__item:focus-visible::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.stease-icon-rail__item:hover i,
+.stease-icon-rail__item:hover svg,
+.stease-icon-rail__item:focus-visible i,
+.stease-icon-rail__item:focus-visible svg {
+    color: #8FC8DD;
+
+    transform:
+        translateY(-6px) rotate(-5deg) scale(1.13);
+
+    filter: drop-shadow(0 12px 18px rgba(94, 148, 170, 0.34));
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .stease-icon-rail__list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .stease-icon-rail__item:nth-child(-n + 3) {
+        border-bottom: 1px solid rgba(248, 245, 239, 0.11);
+    }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+    .stease-icon-rail {
+        padding: 12px 0;
+    }
+
+    .stease-icon-rail__list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .stease-icon-rail__item {
+        min-height: 84px;
+    }
+
+    .stease-icon-rail__item i,
+    .stease-icon-rail__item svg {
+        width: 34px;
+        height: 34px;
+    }
+
+    .stease-icon-rail__item:hover {
+        transform: none;
+    }
+}
+
+
+/* SERVICES FAQ — REMOVE BACKGROUND GRID */
+.services-faq::before {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+    background-image: none !important;
 }
