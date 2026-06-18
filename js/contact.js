@@ -278,6 +278,48 @@
         });
     }
 
+    function initContactCounters() {
+        const counters = document.querySelectorAll("[data-contact-counter]");
+
+        if (!counters.length) return;
+
+        const animateCounter = (counter) => {
+            const target = Number(counter.dataset.count || 0);
+            const duration = 900;
+            const startTime = performance.now();
+
+            const update = (currentTime) => {
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+
+                counter.textContent = Math.round(target * eased);
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    counter.textContent = target;
+                }
+            };
+
+            requestAnimationFrame(update);
+        };
+
+        const observer = new IntersectionObserver(
+            (entries, currentObserver) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+
+                    animateCounter(entry.target);
+                    currentObserver.unobserve(entry.target);
+                });
+            },
+            { threshold: 0.45 }
+        );
+
+        counters.forEach((counter) => observer.observe(counter));
+    }
+
+
     function init() {
         initContactHeroMotion();
         initContactTiltCards();
@@ -285,6 +327,7 @@
         initContactCardsDepth();
         initMapMotion();
         initHeroCursorGlow();
+        initContactCounters();
     }
 
     if (document.readyState === 'loading') {
