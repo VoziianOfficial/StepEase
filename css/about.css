@@ -2613,8 +2613,7 @@
 
 
 .about-hero-copy > p,
-.about-hero-note p,
-.about-hero-proof p {
+.about-hero-note p {
     color: rgba(248, 245, 239, 0.72);
 }
 
@@ -2784,4 +2783,287 @@
             rgba(0, 0, 0, 0.04) 100%),
         linear-gradient(180deg, rgba(247, 243, 235, 0.04) 0%, rgba(247, 243, 235, 0.90) 100%);
     opacity: 1;
+}
+
+/* =========================================
+   ABOUT HERO — GLASS 3D PROOF CARDS
+========================================= */
+
+.about-hero-proof {
+    position: relative;
+    perspective: 1200px;
+}
+
+.about-hero-proof article {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    background:
+        linear-gradient(145deg,
+            rgba(255, 255, 255, 0.52) 0%,
+            rgba(247, 243, 235, 0.22) 100%) !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.62) !important;
+
+    backdrop-filter: blur(18px) saturate(118%);
+    -webkit-backdrop-filter: blur(18px) saturate(118%);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.82),
+        inset 0 -1px 0 rgba(38, 25, 20, 0.05),
+        0 10px 0 rgba(38, 25, 20, 0.025),
+        0 20px 32px rgba(38, 25, 20, 0.10);
+
+    transform-style: preserve-3d;
+
+    transition:
+        transform 420ms var(--ease-out),
+        box-shadow 420ms var(--ease-out),
+        border-color 420ms var(--ease-out),
+        background 420ms var(--ease-out);
+}
+
+/* Мягкий внутренний свет и стеклянный блик */
+.about-hero-proof article::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background:
+        radial-gradient(circle at 100% 0%,
+            rgba(94, 148, 170, 0.16),
+            transparent 40%),
+        radial-gradient(circle at 0% 100%,
+            rgba(120, 148, 93, 0.12),
+            transparent 42%),
+        linear-gradient(112deg,
+            transparent 22%,
+            rgba(255, 255, 255, 0.42) 47%,
+            rgba(255, 255, 255, 0.06) 59%,
+            transparent 76%);
+
+    background-size:
+        100% 100%,
+        100% 100%,
+        72% 100%;
+
+    background-position:
+        center,
+        center,
+        -125% 0;
+
+    background-repeat: no-repeat;
+
+    opacity: 0.76;
+    transition:
+        opacity 300ms var(--ease-out),
+        background-position 760ms var(--ease-out);
+}
+
+/* Маленькое декоративное ребро снизу */
+.about-hero-proof article::after {
+    content: "";
+    position: absolute;
+    right: 18px;
+    bottom: 0;
+    left: 18px;
+
+    height: 2px;
+
+    background: linear-gradient(90deg,
+            transparent,
+            var(--brand-blue),
+            var(--color-accent),
+            transparent);
+
+    opacity: 0.42;
+    transform: scaleX(0.46);
+    transform-origin: center;
+
+    transition:
+        opacity 320ms var(--ease-out),
+        transform 420ms var(--ease-out);
+}
+
+/* Чуть разная глубина у карточек */
+.about-hero-proof article:nth-child(1) {
+    transform: translateY(4px) rotateZ(-0.35deg);
+}
+
+.about-hero-proof article:nth-child(2) {
+    transform: translateY(-3px);
+}
+
+.about-hero-proof article:nth-child(3) {
+    transform: translateY(5px) rotateZ(0.35deg);
+}
+
+/* Иконки остаются без фона, но выглядят ярче */
+.about-hero-proof article .section-icon,
+.about-hero-proof article i,
+.about-hero-proof article svg {
+    position: relative;
+    z-index: 2;
+
+    color: var(--brand-blue) !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+
+    filter: drop-shadow(0 7px 12px rgba(94, 148, 170, 0.18));
+
+    transition:
+        color 320ms var(--ease-out),
+        transform 360ms var(--ease-out),
+        filter 360ms var(--ease-out);
+}
+
+/* Hover */
+.about-hero-proof article:hover {
+    z-index: 3;
+
+    border-color: rgba(120, 148, 93, 0.48) !important;
+
+    background:
+        linear-gradient(145deg,
+            rgba(255, 255, 255, 0.68) 0%,
+            rgba(247, 243, 235, 0.34) 100%) !important;
+
+    transform:
+        perspective(1100px) translateY(-10px) rotateX(3deg) rotateY(-2deg);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.96),
+        inset 0 -1px 0 rgba(38, 25, 20, 0.04),
+        0 14px 0 rgba(120, 148, 93, 0.08),
+        0 30px 42px rgba(38, 25, 20, 0.16);
+}
+
+.about-hero-proof article:hover::before {
+    opacity: 1;
+    background-position:
+        center,
+        center,
+        175% 0;
+}
+
+.about-hero-proof article:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.about-hero-proof article:hover .section-icon,
+.about-hero-proof article:hover i,
+.about-hero-proof article:hover svg {
+    color: var(--color-accent-strong) !important;
+
+    transform:
+        translateY(-5px) rotate(-5deg) scale(1.1);
+
+    filter: drop-shadow(0 12px 16px rgba(83, 108, 69, 0.24));
+}
+
+/* На телефоне сохраняем эффект, но без сильного наклона */
+@media (max-width: 680px) {
+
+    .about-hero-proof article:nth-child(1),
+    .about-hero-proof article:nth-child(2),
+    .about-hero-proof article:nth-child(3) {
+        transform: none;
+    }
+
+    .about-hero-proof article:hover {
+        transform: translateY(-5px);
+    }
+
+    .about-hero-proof article {
+        backdrop-filter: blur(14px) saturate(112%);
+        -webkit-backdrop-filter: blur(14px) saturate(112%);
+    }
+}
+
+/* =========================================
+   ABOUT HERO PROOF — COMPACT, ICONS RIGHT
+========================================= */
+
+.about-hero-proof article {
+    min-height: 154px !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    grid-template-areas:
+        "title icon"
+        "text  icon" !important;
+    align-content: start;
+    column-gap: 16px;
+    row-gap: 9px;
+
+    padding: clamp(18px, 1.7vw, 23px) !important;
+}
+
+/* Иконка уходит вправо */
+.about-hero-proof article .section-icon,
+.about-hero-proof article>i,
+.about-hero-proof article>svg {
+    grid-area: icon !important;
+    justify-self: end;
+    align-self: start;
+
+    width: 34px !important;
+    height: 34px !important;
+    margin: 0 !important;
+}
+
+/* Заголовок */
+.about-hero-proof article strong {
+    grid-area: title !important;
+    align-self: start;
+
+    margin: 0 !important;
+    padding-right: 4px;
+}
+
+/* Описание */
+.about-hero-proof article p {
+    grid-area: text !important;
+    align-self: start;
+
+    margin: 0 !important;
+    max-width: 100%;
+    font-size: 0.82rem !important;
+    line-height: 1.48 !important;
+}
+
+/* На hover карточки остаются компактными */
+.about-hero-proof article:hover {
+    transform:
+        perspective(1100px) translateY(-7px) rotateX(2deg) rotateY(-1.4deg) !important;
+}
+
+/* Планшет */
+@media (max-width: 980px) {
+    .about-hero-proof article {
+        min-height: 136px !important;
+    }
+}
+
+/* Телефон */
+@media (max-width: 680px) {
+    .about-hero-proof article {
+        min-height: 0 !important;
+        padding: 18px !important;
+    }
+
+    .about-hero-proof article .section-icon,
+    .about-hero-proof article>i,
+    .about-hero-proof article>svg {
+        width: 31px !important;
+        height: 31px !important;
+    }
+
+    .about-hero-proof article:hover {
+        transform: translateY(-4px) !important;
+    }
 }
