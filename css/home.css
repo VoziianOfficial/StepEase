@@ -1979,7 +1979,6 @@
 
 .home-process .process-step:hover {
     border-color: rgba(147, 180, 119, 0.55);
-    background: var(--color-bg-panel-hover);
 }
 
 .home-process .process-step>span {
