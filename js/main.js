@@ -242,17 +242,19 @@
             ['StepEase', companyName],
             ['TB-BATH-2048', companyId],
             ['FL-WIN-2048', companyId],
+            ['WT-STEP-2048', companyId],
 
             ['(888) 555-0148', phoneDisplay],
             ['888-555-0148', phoneDisplay],
             ['+18885550148', phoneRaw],
 
             ['hello@tileandbath.com', email],
+            ['hello@stepease.com', email],
 
             ['USA Service Area', address],
             ['Available across selected areas in the United States', serviceArea],
             [
-                'Independent bathroom remodeling provider matching across selected areas in the United States',
+                'Independent Walk-In Tub provider matching across selected areas in the United States',
                 serviceArea
             ],
 

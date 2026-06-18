@@ -3,28 +3,28 @@
 window.SiteConfig = {
     company: {
         name: 'StepEase',
-        companyId: 'TB-BATH-2048',
+        companyId: 'WT-STEP-2048',
         address: 'USA Service Area',
-        serviceArea: 'Independent bathroom remodeling provider matching across selected areas in the United States'
+        serviceArea: 'Independent Walk-In Tub provider matching across selected areas in the United States'
     },
 
     contact: {
         phoneRaw: '+18885550148',
         phoneDisplay: '(888) 555-0148',
-        phoneButtonText: 'Compare Providers',
-        email: 'hello@tileandbath.com',
+        phoneButtonText: 'Start Your Request',
+        email: 'hello@stepease.com',
         supportHours: 'Mon–Fri, 8:00 AM–7:00 PM'
     },
 
     footer: {
         description:
-            'StepEase is an independent bathroom remodeling provider matching platform that helps homeowners compare local provider options for bathroom upgrades, tile, showers, tubs, vanities, and remodeling projects.',
+            'StepEase is an independent Walk-In Tub provider-matching platform that helps homeowners compare local provider options for installation, replacement, accessibility-focused upgrades, and comfort-led projects.',
         copyright: 'All rights reserved.'
     },
 
     legal: {
         disclaimer:
-            'Disclaimer: StepEase is a free independent matching platform that helps homeowners connect with local bathroom remodeling service providers. StepEase does not perform bathroom remodeling, plumbing, tile installation, demolition, design, or construction work directly. All contractors/providers are independent. Homeowners are responsible for verifying licensing, insurance, estimates, project scope, materials, timelines, warranties, and contract terms before hiring any provider. Provider availability may vary by location and project type. All persons depicted in photos or videos are actors or models and not contractors listed on this site.'
+            'Disclaimer: StepEase is a free independent Walk-In Tub provider-matching platform. StepEase does not manufacture, sell, install, repair, inspect, or service Walk-In Tubs directly. All contractors/providers are independent. Homeowners are responsible for verifying licensing, insurance, estimates, project scope, features, timelines, warranties, and contract terms before hiring any provider. Provider availability may vary by location and project type. StepEase does not guarantee provider pricing, timing, availability, inspection results, or project outcomes. Walk-In Tub features may support comfort and accessibility preferences, but StepEase does not provide medical advice, diagnosis, treatment, or health guarantees. All persons depicted in photos or videos are actors or models and not contractors listed on this site.'
     },
 
     cookieConsent: {
