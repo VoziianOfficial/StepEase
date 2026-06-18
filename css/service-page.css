@@ -17,15 +17,8 @@
     align-items: center;
     overflow: hidden;
     padding: clamp(92px, 8vw, 118px) 0 clamp(28px, 4vw, 48px);
-    background:
-        linear-gradient(90deg,
-            rgba(247, 243, 235, 0.98) 0%,
-            rgba(247, 243, 235, 0.90) 38%,
-            rgba(247, 243, 235, 0.34) 68%,
-            rgba(0, 0, 0, 0.04) 100%),
-        linear-gradient(180deg, rgba(247, 243, 235, 0.06) 0%, rgba(247, 243, 235, 0.90) 100%),
-        url("../assets/images/services/window-installation-card.jpg") center right / cover no-repeat;
-    color: var(--color-text);
+    background: url("../assets/images/services/window-installation-card.jpg") center right / cover no-repeat;
+    color: var(--color-text-light);
 }
 
 .service-hero-bg,
@@ -34,8 +27,8 @@
 }
 
 .service-hero .noise-layer {
-    z-index: 1;
-    opacity: 0.12;
+    z-index: 2;
+    opacity: 0.08;
 }
 
 .service-hero::before {
@@ -44,11 +37,7 @@
     inset: 0;
     z-index: 1;
     pointer-events: none;
-    background:
-        linear-gradient(rgba(52, 32, 23, 0.045) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(52, 32, 23, 0.035) 1px, transparent 1px);
-    background-size: 64px 64px;
-    opacity: 0.14;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 100%);
 }
 
 .service-hero-shell {
@@ -68,26 +57,24 @@
 }
 
 .service-hero .eyebrow {
-    color: var(--color-accent-strong);
+    color: #B7CD9B;
 }
 
 .service-hero .page-title,
 .service-hero .page-title.text-balance {
     max-width: 1040px;
-    color: var(--color-text);
+    color: #F8F5EF;
     font-size: clamp(2.8rem, 5.8vw, 6.6rem);
     font-weight: 500;
     line-height: 0.92;
     letter-spacing: -0.055em;
     text-wrap: initial;
-    text-shadow:
-        0 14px 42px rgba(22, 13, 9, 0.24),
-        0 2px 16px rgba(22, 13, 9, 0.18);
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.24);
 }
 
 .service-hero-copy p {
     max-width: 860px;
-    color: var(--color-muted-dark);
+    color: rgba(248, 245, 239, 0.84);
     font-size: clamp(0.98rem, 1.08vw, 1.08rem);
     line-height: 1.58;
 }
@@ -95,6 +82,42 @@
 .service-hero .hero-actions {
     margin-top: 2px;
     gap: 10px;
+}
+
+.service-hero .btn-primary {
+    --btn-bg: #78945D;
+    --btn-color: #0F0907;
+    --btn-border: #78945D;
+}
+
+.service-hero .btn-primary:hover {
+    --btn-bg: #93B477;
+    --btn-border: #93B477;
+    color: #0F0907;
+}
+
+.service-hero .btn-light,
+.service-hero .btn-outline {
+    --btn-bg: rgba(255, 255, 255, 0.04);
+    --btn-color: #F8F5EF;
+    --btn-border: rgba(248, 245, 239, 0.34);
+}
+
+.service-hero .btn-light:hover,
+.service-hero .btn-outline:hover {
+    --btn-bg: rgba(255, 255, 255, 0.09);
+    --btn-border: #B7CD9B;
+    color: #F8F5EF;
+}
+
+.service-hero .btn-primary i,
+.service-hero .btn-primary svg,
+.service-hero .btn-light i,
+.service-hero .btn-light svg,
+.service-hero .btn-outline i,
+.service-hero .btn-outline svg {
+    color: currentColor;
+    stroke: currentColor;
 }
 
 .service-hero-panel {
@@ -124,18 +147,18 @@
 .service-hero-panel span {
     display: inline-flex;
     margin-bottom: 16px;
-    font-family: var(--font-accent);
+    font-family: var(--font-body);
     font-size: 0.62rem;
-    font-weight: 800;
-    letter-spacing: 0.18em;
+    font-weight: 700;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--color-accent);
 }
 
 .service-hero-panel h2 {
-    font-family: var(--font-heading);
+    font-family: var(--font-display);
     font-size: clamp(1.65rem, 2.5vw, 2.55rem);
-    font-weight: 500;
+    font-weight: 400;
     line-height: 0.98;
     letter-spacing: -0.045em;
 }
@@ -823,12 +846,7 @@
         min-height: auto;
         padding-top: 92px;
         padding-bottom: 34px;
-        background:
-            linear-gradient(180deg,
-                rgba(22, 13, 9, 0.74) 0%,
-                rgba(22, 13, 9, 0.56) 52%,
-                rgba(22, 13, 9, 0.72) 100%),
-            url("../assets/images/services/window-installation-card.jpg") center / cover no-repeat;
+        background: url("../assets/images/services/window-installation-card.jpg") center / cover no-repeat;
     }
 
     .service-hero-shell,
@@ -1159,6 +1177,12 @@
 
     .service-cta-content {
         padding: 20px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-hero::before {
+        background: rgba(0, 0, 0, 0.57);
     }
 }
 
@@ -1727,33 +1751,22 @@
 
 /* Premium dark refresh */
 .service-hero {
-    background:
-        linear-gradient(90deg,
-            rgba(3, 3, 3, 0.94) 0%,
-            rgba(15, 9, 7, 0.90) 45%,
-            rgba(23, 16, 12, 0.72) 100%),
-        linear-gradient(180deg,
-            rgba(3, 3, 3, 0.16) 0%,
-            rgba(5, 5, 5, 0.82) 100%),
-        url("../assets/images/services/window-installation-card.jpg") center right / cover no-repeat;
-    color: var(--color-text);
+    background: url("../assets/images/services/window-installation-card.jpg") center right / cover no-repeat;
+    color: var(--color-text-light);
 }
 
 .service-hero::before {
-    background:
-        radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.24), transparent 30%),
-        radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.08), transparent 28%),
-        linear-gradient(180deg, rgba(247, 243, 235, 0.06) 0%, rgba(247, 243, 235, 0.92) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 100%);
 }
 
 .service-hero .eyebrow,
 .service-hero .page-title,
 .service-hero-copy p {
-    color: var(--color-text);
+    color: var(--color-text-light);
 }
 
 .service-hero-copy p {
-    color: var(--color-muted);
+    color: rgba(248, 245, 239, 0.84);
 }
 
 .service-hero-panel {
