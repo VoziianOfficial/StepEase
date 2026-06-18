@@ -344,6 +344,56 @@
         });
     }
 
+    function initStepEaseCounters() {
+        const counters = document.querySelectorAll("[data-stease-count]");
+
+        if (!counters.length) return;
+
+        const animateCounter = (counter) => {
+            if (counter.dataset.counted === "true") return;
+
+            const target = Number(counter.dataset.steaseCount);
+            const duration = 950;
+            const startTime = performance.now();
+
+            counter.dataset.counted = "true";
+
+            const update = (currentTime) => {
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+
+                counter.textContent = Math.round(target * eased);
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    counter.textContent = target;
+                }
+            };
+
+            requestAnimationFrame(update);
+        };
+
+        const observer = new IntersectionObserver(
+            (entries, currentObserver) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+
+                    entry.target
+                        .querySelectorAll("[data-stease-count]")
+                        .forEach(animateCounter);
+
+                    currentObserver.unobserve(entry.target);
+                });
+            },
+            { threshold: 0.35 }
+        );
+
+        document
+            .querySelectorAll(".stease-counter-band")
+            .forEach((section) => observer.observe(section));
+    }
+
     function init() {
         initProviderSwiper();
         initHomeHeroMotion();
@@ -352,6 +402,7 @@
         initQuoteVisualMotion();
         initHeroCursorGlow();
         initStepEaseFaqStage();
+        initStepEaseCounters();
     }
 
     if (document.readyState === 'loading') {
