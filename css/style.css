@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700&display=swap");
-
 @import url("./home.css");
 @import url("./services.css");
 @import url("./about.css");
@@ -67,9 +65,14 @@
     --line-on-light: var(--color-line);
     --line-on-dark: rgba(248, 245, 239, 0.14);
 
-    --font-heading: "Cormorant Garamond", Georgia, serif;
-    --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --font-accent: "Manrope", system-ui, sans-serif;
+    --font-display: "DM Serif Display", Georgia, serif;
+    --font-body: "DM Sans", Arial, sans-serif;
+    --font-weight-body: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-heading: var(--font-display);
+    --font-accent: var(--font-body);
 
     --container: 1180px;
     --container-wide: 1360px;
@@ -114,10 +117,22 @@ body {
     background: var(--color-bg);
     color: var(--color-text);
     font-family: var(--font-body);
+    font-weight: var(--font-weight-body);
+    letter-spacing: -0.01em;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.62;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
+}
+
+p,
+.body-copy,
+.card-copy,
+.form-copy {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-body);
+    letter-spacing: -0.01em;
+    line-height: 1.62;
 }
 
 body.menu-open,
@@ -302,28 +317,70 @@ h6 {
 
 .section-title,
 .hero-title,
-.page-title {
-    font-family: var(--font-heading);
-    font-weight: 600;
+.page-title,
+.display-title,
+h1,
+h2 {
+    font-family: var(--font-display) !important;
+    font-weight: 400 !important;
     letter-spacing: -0.045em;
-    line-height: 0.95;
+    line-height: 0.98;
     color: var(--color-text);
 }
 
+h1,
 .hero-title {
-    font-size: clamp(4rem, 11vw, 11rem);
+    font-size: clamp(3rem, 6vw, 6.4rem);
+    line-height: 0.94;
+    letter-spacing: -0.055em;
+    text-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.62),
+        0 8px 20px rgba(38, 25, 20, 0.07);
+}
+
+.section-title,
+h2 {
+    font-size: clamp(2.35rem, 4.3vw, 4.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.048em;
+    text-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.62),
+        0 8px 20px rgba(38, 25, 20, 0.07);
+}
+
+.hero-title {
+    font-size: clamp(3rem, 6vw, 6.4rem);
 }
 
 .page-title {
-    font-size: clamp(3.1rem, 8vw, 8rem);
+    font-size: clamp(3rem, 6vw, 6.4rem);
 }
 
 .section-title {
-    font-size: clamp(2.55rem, 5vw, 5.5rem);
+    font-size: clamp(2.35rem, 4.3vw, 4.5rem);
+}
+
+h3 {
+    font-family: var(--font-body) !important;
+    font-size: clamp(1.15rem, 1.7vw, 1.45rem);
+    font-weight: var(--font-weight-semibold) !important;
+    line-height: 1.18;
+    letter-spacing: -0.025em;
+}
+
+.display-title {
+    font-size: clamp(3rem, 6vw, 6.4rem);
+    line-height: 0.94;
+    letter-spacing: -0.055em;
+    text-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.62),
+        0 8px 20px rgba(38, 25, 20, 0.07);
 }
 
 .section-kicker {
     max-width: 680px;
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-medium);
     color: var(--color-muted);
     font-size: clamp(1rem, 1.35vw, 1.16rem);
     line-height: 1.75;
@@ -336,6 +393,78 @@ h6 {
 .text-small {
     font-size: 0.9rem;
     line-height: 1.65;
+}
+
+.site-header,
+.site-header a,
+.button,
+.btn,
+input,
+textarea,
+select,
+label,
+.badge,
+.tag,
+.card-label,
+.brand-label,
+.eyebrow {
+    font-family: var(--font-body);
+}
+
+.btn,
+.button,
+.header-cta {
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+}
+
+.btn {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.035em;
+}
+
+.brand-name {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.04em;
+}
+
+.heading-accent,
+.text-accent,
+.title-accent,
+.section-title > span,
+.hero-title > span,
+h1 > span,
+h2 > span,
+.display-title > span {
+    position: relative;
+    display: inline-block;
+    color: #78945D;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.section-on-dark :is(h1, h2, .section-title, .hero-title, .page-title, .display-title),
+.site-footer :is(h1, h2, .section-title, .hero-title, .page-title, .display-title),
+.hero--dark :is(h1, h2, .section-title, .hero-title, .page-title, .display-title) {
+    text-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.06),
+        0 10px 28px rgba(0, 0, 0, 0.30);
+}
+
+.section-on-dark .heading-accent,
+.section-on-dark .text-accent,
+.section-on-dark .title-accent,
+.site-footer .heading-accent,
+.site-footer .text-accent,
+.site-footer .title-accent,
+.hero--dark .heading-accent,
+.hero--dark .text-accent,
+.hero--dark .title-accent {
+    color: #B7CD9B;
 }
 
 .text-balance {
@@ -364,11 +493,11 @@ h6 {
     border-radius: var(--radius-button);
     background: var(--btn-bg);
     color: var(--btn-color);
-    font-family: var(--font-accent);
-    font-size: 0.78rem;
-    font-weight: 800;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 700;
     line-height: 1;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.035em;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
@@ -603,10 +732,10 @@ h6 {
 }
 
 .brand-name {
-    font-family: var(--font-heading);
+    font-family: var(--font-display);
     font-size: 1.45rem;
-    font-weight: 700;
-    letter-spacing: -0.03em;
+    font-weight: 400;
+    letter-spacing: -0.04em;
     white-space: nowrap;
 }
 
@@ -620,10 +749,10 @@ h6 {
 
 .brand-label {
     margin-top: 4px;
-    font-family: var(--font-accent);
+    font-family: var(--font-body);
     font-size: 0.62rem;
-    font-weight: 800;
-    letter-spacing: 0.18em;
+    font-weight: 700;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: #8E8178;
     white-space: nowrap;
@@ -650,10 +779,10 @@ h6 {
     border-radius: var(--radius-button-compact);
     color: rgba(248, 245, 239, 0.82);
     background: transparent;
-    font-family: var(--font-accent);
+    font-family: var(--font-body);
     font-size: 0.74rem;
-    font-weight: 800;
-    letter-spacing: 0.09em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     transition:
         color 0.25s var(--ease-out),
@@ -917,10 +1046,10 @@ h6 {
 }
 
 .mobile-services-head span {
-    font-family: var(--font-accent);
+    font-family: var(--font-body);
     font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
+    font-weight: 700;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: rgba(248, 245, 239, 0.58);
 }
@@ -1140,10 +1269,10 @@ h6 {
 }
 
 .form-label {
-    font-family: var(--font-accent);
+    font-family: var(--font-body);
     font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 0.12em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-muted-dark);
 }
@@ -1406,10 +1535,10 @@ footer .brand-label,
 }
 
 .footer-title {
-    font-family: var(--font-accent);
+    font-family: var(--font-body);
     font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 0.18em;
+    font-weight: 700;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: rgba(246, 242, 233, 0.82);
 }
@@ -2819,10 +2948,10 @@ button,
 }
 
 .contact-area-map-overlay span {
-    font-family: var(--font-accent);
+    font-family: var(--font-body);
     font-size: 0.66rem;
-    font-weight: 800;
-    letter-spacing: 0.16em;
+    font-weight: 700;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--color-accent);
 }
@@ -2881,10 +3010,10 @@ button,
     border: 1px solid rgba(52, 32, 23, 0.16);
     background: rgba(147, 180, 119, 0.18);
     color: var(--color-dark);
-    font-family: var(--font-accent);
+    font-family: var(--font-body);
     font-size: 0.68rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
 }
 
 .contact-area-steps strong {
